@@ -25,3 +25,5 @@ Thumbs.db
 
 # VS Code
 .vscode/
+# Dataset metadata
+data/metadata/
