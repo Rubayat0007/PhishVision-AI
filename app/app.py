@@ -159,6 +159,48 @@ if uploaded_file is not None:
                 )
 
         # -------------------------
+        # CNN Analysis
+        # -------------------------
+
+        st.header("CNN Image Analysis")
+
+        cnn_result = result["cnn_analysis"]
+
+        if cnn_result["model_loaded"]:
+
+            prediction = cnn_result["prediction"]
+
+            if prediction == "phishing":
+                st.error(
+                    f"🚨 CNN Prediction: {prediction.upper()}"
+                )
+            else:
+                st.success(
+                    f"✅ CNN Prediction: {prediction.upper()}"
+                )
+
+            col1, col2 = st.columns(2)
+
+            with col1:
+                st.metric(
+                    "Phishing Probability",
+                    f"{cnn_result['phishing_probability'] * 100:.2f}%"
+                )
+
+            with col2:
+                st.metric(
+                    "Legitimate Probability",
+                    f"{cnn_result['legitimate_probability'] * 100:.2f}%"
+                )
+
+        else:
+            st.info(
+                "🤖 CNN model is not trained yet. "
+                "Image-based ML prediction will be available "
+                "after model training."
+            )        
+
+        # -------------------------
         # Final Assessment
         # -------------------------
 
