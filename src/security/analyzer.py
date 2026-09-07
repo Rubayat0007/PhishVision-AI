@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from src.models.predictor import CNNPredictor
 from src.ocr.ocr_engine import OCREngine
 from src.security.text_analyzer import detect_suspicious_text
@@ -9,7 +11,15 @@ class PhishVisionAnalyzer:
 
     def __init__(self):
         self.ocr = OCREngine()
-        self.cnn = CNNPredictor()
+
+        model_path = Path("models/phishvision_cnn.pth")
+
+        if model_path.exists():
+            self.cnn = CNNPredictor(
+                model_path=str(model_path)
+            )
+        else:
+            self.cnn = CNNPredictor()
 
     def analyze(self, image, url=None):
 
@@ -42,7 +52,15 @@ class PhishVisionAnalyzer:
         # CNN image analysis
         # --------------------
 
-        cnn_result = self.cnn.predict(image)
+        if self.cnn.model_loaded:
+            cnn_result = self.cnn.predict(image)
+        else:
+            cnn_result = {
+                "prediction": None,
+                "phishing_probability": None,
+                "legitimate_probability": None,
+                "model_loaded": False,
+            }
 
         # --------------------
         # Risk engine
