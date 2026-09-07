@@ -19,10 +19,17 @@ def calculate_risk(text_score, url_score):
     # Risk classification
     if combined_score >= 70:
         risk_level = "HIGH"
+
     elif combined_score >= 30:
         risk_level = "MEDIUM"
+
+    # Multiple independent suspicious signals
+    elif text_score > 0 and url_score > 0:
+        risk_level = "MEDIUM"
+
     elif text_score > 0 or url_score > 0:
         risk_level = "LOW"
+
     else:
         risk_level = "MINIMAL"
 
