@@ -27,3 +27,6 @@ Thumbs.db
 .vscode/
 # Dataset metadata
 data/metadata/
+
+# Generated dataset split
+data/split/

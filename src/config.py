@@ -21,7 +21,7 @@ MODEL_DIR = MODELS_DIR
 
 
 # Image configuration
-IMAGE_SIZE = (224, 224)
+IMAGE_SIZE = 224
 
 
 # Classification labels
