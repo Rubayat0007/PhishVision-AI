@@ -297,6 +297,52 @@ Model performance will be evaluated using:
 
 Additional metrics may be considered depending on the final experimental design.
 
+## Adversarial Robustness Evaluation
+
+PhishVision includes an isolated adversarial robustness evaluation for the
+CNN classifier. The robustness experiments do not modify the production
+predictor or retrain the existing model.
+
+The evaluation uses phishing screenshots from the clean validation split and
+focuses on phishing samples that are correctly classified by the clean model.
+This prevents samples that were already misclassified from being counted as
+successful adversarial attacks.
+
+### Threat Model
+
+The robustness evaluation tests image-space perturbations against the trained
+CNN using gradient-based attacks:
+
+- **FGSM (Fast Gradient Sign Method)** — single-step gradient perturbation.
+- **PGD (Projected Gradient Descent)** — iterative gradient perturbation
+  constrained by an L-infinity perturbation budget.
+
+The perturbation is applied to the image tensor in the `[0, 1]` pixel space.
+
+Tested perturbation magnitudes:
+
+- `epsilon = 0.005`
+- `epsilon = 0.010`
+- `epsilon = 0.020`
+- `epsilon = 0.040`
+
+For PGD, the evaluation uses 10 iterations with a step size of
+`epsilon / 10`.
+
+### Evaluation Protocol
+
+The validation split contains 58 phishing images. The clean model correctly
+classifies 35 of these as phishing.
+
+Only those 35 correctly classified phishing images are used for adversarial
+evaluation.
+
+A successful adversarial attack is defined as:
+
+```text
+clean prediction:       phishing
+adversarial prediction: legitimate
+
 ### Why These Metrics Matter
 
 For phishing detection, accuracy alone may not be sufficient.
