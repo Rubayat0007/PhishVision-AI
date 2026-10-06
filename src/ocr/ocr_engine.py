@@ -2,6 +2,9 @@ import easyocr
 import numpy as np
 from PIL import Image
 
+from src.config import MAX_OCR_TEXT_LENGTH
+
+
 
 class OCREngine:
     def __init__(self, languages=None):
@@ -32,4 +35,12 @@ class OCREngine:
             if confidence >= 0.4:
                 detected_text.append(text)
 
-        return " ".join(detected_text)
+        extracted_text = " ".join(detected_text)
+
+        if len(extracted_text) > MAX_OCR_TEXT_LENGTH:
+            raise ValueError(
+                "OCR text exceeds maximum allowed length of "
+                f"{MAX_OCR_TEXT_LENGTH} characters"
+            )
+
+        return extracted_text

@@ -1,6 +1,8 @@
 import re
 from urllib.parse import urlparse
 
+from src.config import MAX_URL_LENGTH
+
 
 SUSPICIOUS_URL_KEYWORDS = [
     "login",
@@ -21,6 +23,14 @@ def analyze_url(url):
     Analyze a URL for basic phishing-related indicators.
     """
 
+    if not isinstance(url, str):
+        raise TypeError("URL must be a string")
+
+    if len(url) > MAX_URL_LENGTH:
+        raise ValueError(
+            f"URL exceeds maximum allowed length of {MAX_URL_LENGTH} characters"
+        )
+
     parsed = urlparse(url)
 
     hostname = parsed.hostname or ""
@@ -36,18 +46,23 @@ def analyze_url(url):
         indicators.append("uses_http")
 
     # IP address used as hostname
-    if re.fullmatch(
-        r"\d{1,3}(\.\d{1,3}){3}",
-        hostname,
-    ):
+    is_ip_address = bool(
+        re.fullmatch(
+            r"\d{1,3}(\.\d{1,3}){3}",
+            hostname,
+        )
+    )
+
+    if is_ip_address:
         indicators.append("ip_address")
 
     # Very long URL
     if len(url) > 100:
         indicators.append("long_url")
 
-    # Many subdomains
-    if hostname.count(".") >= 3:
+    # Many subdomains.
+    # IPv4 addresses contain three dots but are not subdomains.
+    if not is_ip_address and hostname.count(".") >= 3:
         indicators.append("many_subdomains")
 
     # Suspicious characters

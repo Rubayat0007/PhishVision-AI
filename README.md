@@ -483,6 +483,38 @@ Once the project dependencies are finalized:
 pip install -r requirements.txt
 ```
 
+## Production Model Provisioning
+
+The production CNN model is distributed as a GitHub Release artifact rather than tracked in Git.
+
+From the project root, run:
+
+```powershell
+python .\scripts\provision_model.py
+```
+
+The provisioning script:
+
+1. Downloads the frozen PhishVision CNN v2 production artifact.
+2. Verifies its SHA-256 checksum.
+3. Installs the verified artifact as `models/phishvision_cnn_v2.pth`.
+4. Replaces the local model only after checksum verification succeeds.
+
+Expected SHA-256:
+
+```text
+1403582CCE07BE1E36E70E4A0D425CFB152B86C7ABEE5D1074DEF79CBB2FB628
+```
+
+The production CNN threshold is `0.35`.
+
+Run model provisioning before starting the application:
+
+```powershell
+python .\scripts\provision_model.py
+streamlit run app/app.py
+```
+
 ---
 
 ## ▶️ Usage
