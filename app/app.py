@@ -1,4 +1,4 @@
-﻿import sys
+import sys
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -127,7 +127,7 @@ if uploaded_file is not None:
     image, image_error = load_and_validate_image(uploaded_file)
 
     if image_error:
-        st.error(f"âŒ Upload rejected: {image_error}")
+        st.error(f"Upload rejected: {image_error}")
     else:
 
         st.image(
@@ -163,28 +163,34 @@ if uploaded_file is not None:
 
             if risk["risk_level"] == "HIGH":
                 st.error(
-                    f"ðŸš¨ {verdict} â€” Score: {overall_score}/100"
+                    f"{verdict} - Score: {overall_score}/100"
                 )
 
             elif risk["risk_level"] == "MEDIUM":
                 st.warning(
-                    f"âš ï¸ {verdict} â€” Score: {overall_score}/100"
+                    f"{verdict} - Score: {overall_score}/100"
                 )
 
             elif risk["risk_level"] == "LOW":
                 st.info(
-                    f"â„¹ï¸ {verdict} â€” Score: {overall_score}/100"
+                    f"{verdict} - Score: {overall_score}/100"
                 )
 
             else:
                 st.success(
-                    f"âœ… {verdict} â€” Score: {overall_score}/100"
+                    f"{verdict} - Score: {overall_score}/100"
                 )
 
             st.write(
                 f"**Recommended action:** "
                 f"{assessment['recommended_action']}"
             )
+
+            if url_result and url_result.get("score", 0) > 0:
+                st.warning(
+                    "URL-specific security indicators were detected. "
+                    "A LOW overall risk score does not mean the supplied URL is safe."
+                )
 
             # -------------------------
             # Component Scores
@@ -230,7 +236,7 @@ if uploaded_file is not None:
                     evidence = finding["evidence"]
 
                     title = (
-                        f"{severity} â€” "
+                        f"{severity} - "
                         f"{category.replace('_', ' ').title()}"
                     )
 
@@ -283,7 +289,7 @@ if uploaded_file is not None:
 
                     for keyword in text_analysis["matches"]:
                         st.warning(
-                            f"âš ï¸ {keyword}"
+                            f"{keyword}"
                         )
 
                 else:
@@ -315,7 +321,7 @@ if uploaded_file is not None:
 
                         for indicator in url_result["indicators"]:
                             st.warning(
-                                f"âš ï¸ {indicator}"
+                                f"{indicator}"
                             )
 
                     else:
@@ -340,12 +346,12 @@ if uploaded_file is not None:
 
                     if prediction == "phishing":
                         st.error(
-                            f"ðŸš¨ CNN prediction: "
+                            f"CNN prediction: "
                             f"{prediction.upper()}"
                         )
                     else:
                         st.success(
-                            f"âœ… CNN prediction: "
+                            f"CNN prediction: "
                             f"{prediction.upper()}"
                         )
 
@@ -390,7 +396,7 @@ if uploaded_file is not None:
                 )
 
                 st.code(
-                    "0.30 Ã— Text + 0.30 Ã— URL + 0.40 Ã— CNN"
+                    "0.30 x Text + 0.30 x URL + 0.40 x CNN"
                 )
 
                 st.write(
