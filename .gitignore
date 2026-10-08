@@ -1,5 +1,6 @@
-# Virtual Environment
+# Virtual environments
 venv/
+.venv/
 
 # Python cache
 __pycache__/
@@ -11,11 +12,10 @@ __pycache__/
 # Jupyter
 .ipynb_checkpoints/
 
-# Dataset files
-data/raw/
-data/processed/
+# Local datasets and generated splits
+data/
 
-# Trained models
+# Local trained model checkpoints
 models/*.pth
 models/*.pt
 
@@ -25,20 +25,6 @@ Thumbs.db
 
 # VS Code
 .vscode/
-# Dataset metadata
-data/metadata/
-
-# Generated dataset split
-data/split/
-# Local virtual environment
-.venv/
-
-# Local datasets and generated splits
-data/
-
-# Local trained model checkpoints
-models/*.pth
-models/*.pt
 
 # Local experiment snapshots
 requirements_snapshot_*.txt
