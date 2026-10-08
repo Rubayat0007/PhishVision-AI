@@ -32,3 +32,21 @@ data/metadata/
 data/split/
 # Local virtual environment
 .venv/
+
+# Local datasets and generated splits
+data/
+
+# Local trained model checkpoints
+models/*.pth
+models/*.pt
+
+# Local experiment snapshots
+requirements_snapshot_*.txt
+
+# Generated evaluation artifacts
+results/*.csv
+results/*.jpg
+
+# Local backup/snapshot files
+*.before-*
+*.step*-backup
