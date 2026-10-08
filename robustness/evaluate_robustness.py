@@ -6,6 +6,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
+import argparse
 import csv
 
 import numpy as np
@@ -18,7 +19,11 @@ from robustness.attacks.fgsm import fgsm_attack
 from robustness.attacks.pgd import pgd_attack
 
 
-MODEL_PATH = PROJECT_ROOT / "models" / "phishvision_cnn.pth"
+DEFAULT_MODEL_PATH = (
+    PROJECT_ROOT
+    / "models"
+    / "phishvision_cnn.pth"
+)
 VAL_DIR = PROJECT_ROOT / "data" / "clean_split" / "val"
 RESULTS_DIR = PROJECT_ROOT / "results"
 
@@ -76,11 +81,11 @@ def predict(model, images):
     )
 
 
-def load_model():
+def load_model(model_path):
     model = PhishVisionCNN(num_classes=2)
 
     checkpoint = torch.load(
-        MODEL_PATH,
+        model_path,
         map_location=DEVICE,
     )
 
@@ -202,15 +207,53 @@ def evaluate_attack(
 
 
 def main():
+    parser = argparse.ArgumentParser(
+        description="Evaluate PhishVision adversarial robustness."
+    )
+
+    parser.add_argument(
+        "--model",
+        type=Path,
+        default=DEFAULT_MODEL_PATH,
+        help=(
+            "Path to the model checkpoint. "
+            "Defaults to the clean baseline model."
+        ),
+    )
+
+    parser.add_argument(
+        "--output",
+        type=Path,
+        default=None,
+        help=(
+            "Optional output CSV path. "
+            "If omitted, a model-specific filename is generated."
+        ),
+    )
+
+    args = parser.parse_args()
+
+    model_path = args.model
+
+    if not model_path.is_absolute():
+        model_path = PROJECT_ROOT / model_path
+
+    model_path = model_path.resolve()
+
+    if not model_path.exists():
+        raise FileNotFoundError(
+            f"Model checkpoint not found: {model_path}"
+        )
+
     RESULTS_DIR.mkdir(
         parents=True,
         exist_ok=True,
     )
 
     print(f"Evaluation device: {DEVICE}")
-    print(f"Model: {MODEL_PATH}")
+    print(f"Model: {model_path}")
 
-    model = load_model()
+    model = load_model(model_path)
 
     samples = get_eligible_samples(model)
 
@@ -243,8 +286,25 @@ def main():
 
                 rows.append(result)
 
-    output_path = (
-        RESULTS_DIR / "adversarial_robustness.csv"
+    if args.output is not None:
+        output_path = args.output
+
+        if not output_path.is_absolute():
+            output_path = PROJECT_ROOT / output_path
+
+        output_path = output_path.resolve()
+
+    else:
+        model_name = model_path.stem
+
+        output_path = (
+            RESULTS_DIR
+            / f"adversarial_robustness_{model_name}.csv"
+        )
+
+    output_path.parent.mkdir(
+        parents=True,
+        exist_ok=True,
     )
 
     fieldnames = [
