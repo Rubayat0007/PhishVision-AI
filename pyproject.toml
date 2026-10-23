@@ -1,5 +1,8 @@
 [tool.pytest.ini_options]
 minversion = "7.0"
+markers = [
+    "slow: needs torch and EasyOCR (tens of seconds)",
+]
 testpaths = ["tests"]
 pythonpath = ["."]
 addopts = "-ra"
