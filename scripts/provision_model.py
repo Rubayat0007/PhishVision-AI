@@ -1,6 +1,5 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
-import hashlib
 import sys
 import tempfile
 from pathlib import Path
@@ -11,24 +10,20 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 MODELS_DIR = PROJECT_ROOT / "models"
 MODEL_PATH = MODELS_DIR / "phishvision_cnn_v2.pth"
 
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+from src.models.integrity import (  # noqa: E402
+    PRODUCTION_MODEL_SHA256,
+    calculate_sha256,
+)
+
 MODEL_URL = (
     "https://github.com/Rubayat0007/PhishVision-AI/"
     "releases/download/v1.0.0-model/phishvision_cnn_v2-release.pth"
 )
 
-EXPECTED_SHA256 = (
-    "1403582CCE07BE1E36E70E4A0D425CFB152B86C7ABEE5D1074DEF79CBB2FB628"
-)
-
-
-def calculate_sha256(path: Path) -> str:
-    digest = hashlib.sha256()
-
-    with path.open("rb") as file:
-        for chunk in iter(lambda: file.read(1024 * 1024), b""):
-            digest.update(chunk)
-
-    return digest.hexdigest().upper()
+EXPECTED_SHA256 = PRODUCTION_MODEL_SHA256
 
 
 def download_model(destination: Path) -> None:
@@ -80,8 +75,11 @@ def main() -> int:
 
         return 0
 
-    except Exception:
-        print("ERROR: Production CNN model provisioning failed.")
+    except Exception as exc:
+        print(
+            f"ERROR: Production CNN model provisioning failed: "
+            f"{type(exc).__name__}: {exc}"
+        )
         return 1
 
     finally:

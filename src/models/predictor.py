@@ -1,9 +1,16 @@
-﻿from pathlib import Path
+import sys
+from pathlib import Path
 
 import torch
 from PIL import Image
 
 from src.models.cnn import PhishVisionCNN
+from src.models.integrity import (
+    BYPASS_ENV_VAR,
+    ModelIntegrityError,
+    is_verification_bypassed,
+    verify_model_file,
+)
 from src.data.transforms import val_transform
 from src.config import ACTIVE_MODEL_PATH, CNN_THRESHOLD
 
@@ -34,6 +41,7 @@ class CNNPredictor:
         ).to(self.device)
 
         self.model_loaded = False
+        self.model_sha256 = None
 
         # Default to the centralized active model.
         if model_path is None:
@@ -44,16 +52,37 @@ class CNNPredictor:
         if model_path.exists():
             try:
                 self.load_model(model_path)
-            except Exception as exc:
+            except ModelIntegrityError as exc:
                 self.model_loaded = False
-                print("CNN model unavailable: model could not be loaded safely.")
+                print(f"CNN model rejected: {exc}", file=sys.stderr)
+            except Exception:
+                self.model_loaded = False
+                print(
+                    "CNN model unavailable: model could not be loaded safely.",
+                    file=sys.stderr,
+                )
         else:
             print(
-                "CNN model unavailable: configured model file was not found."
+                "CNN model unavailable: configured model file was not found.",
+                file=sys.stderr,
             )
 
     def load_model(self, model_path):
         model_path = Path(model_path)
+
+        allow_unverified = is_verification_bypassed()
+
+        self.model_sha256 = verify_model_file(
+            model_path,
+            allow_unverified=allow_unverified,
+        )
+
+        if allow_unverified:
+            print(
+                "WARNING: model integrity verification bypassed via "
+                f"{BYPASS_ENV_VAR}; loaded SHA-256 {self.model_sha256}",
+                file=sys.stderr,
+            )
 
         try:
             checkpoint = torch.load(

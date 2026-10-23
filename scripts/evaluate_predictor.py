@@ -1,5 +1,6 @@
 import argparse
 import hashlib
+import os
 from pathlib import Path
 import sys
 
@@ -19,6 +20,7 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 from src.models.predictor import CNNPredictor
+from src.models.integrity import BYPASS_ENV_VAR
 
 
 IMAGE_EXTENSIONS = {
@@ -75,6 +77,15 @@ def parse_args():
         help="CSV path for per-image probabilities.",
     )
 
+    parser.add_argument(
+        "--allow-unverified-model",
+        action="store_true",
+        help=(
+            "Permit a checkpoint that does not match the published "
+            "production SHA-256. Intended only for experimental models."
+        ),
+    )
+
     return parser.parse_args()
 
 
@@ -110,6 +121,9 @@ def collect_images(split_dir):
 def main():
 
     args = parse_args()
+
+    if args.allow_unverified_model:
+        os.environ[BYPASS_ENV_VAR] = "1"
 
     model_path = Path(args.model)
 
