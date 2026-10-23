@@ -35,7 +35,7 @@ python scripts/evaluate_predictor.py --split test `
 # 3. Metrics from those predictions
 python ../Unified-Cybersecurity-Platform/tools/evaluate_predictions.py
     results/evaluation/v2-test-035/predictions.csv `
-    --score-column p_phish --threshold 0.35 `
+    --actual-column true_label --predicted-column predicted_label --score-column p_phish --threshold 0.35 `
     --positive-name phishing `
     --output-dir results/evaluation/v2-test-035
 ```

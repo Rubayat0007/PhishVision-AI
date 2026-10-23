@@ -1,0 +1,30 @@
+{
+  "corrupt_files": [],
+  "cross_split_duplicates": [],
+  "dataset_root": "D:\\Projects\\PhishVision-AI\\data\\clean_split_v2",
+  "errors": [],
+  "filename_collisions": {},
+  "generated_at_utc": "2026-10-23T16:18:38.377399+00:00",
+  "identical_content": {},
+  "schema_version": 1,
+  "splits": {
+    "test": {
+      "legitimate": 41,
+      "phishing": 44
+    },
+    "train": {
+      "legitimate": 187,
+      "phishing": 200
+    },
+    "val": {
+      "legitimate": 40,
+      "phishing": 43
+    }
+  },
+  "totals": {
+    "images": 555,
+    "legitimate": 268,
+    "phishing": 287
+  },
+  "valid": true
+}
