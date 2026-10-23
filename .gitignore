@@ -30,8 +30,8 @@ Thumbs.db
 requirements_snapshot_*.txt
 
 # Generated evaluation artifacts
-results/*.csv
-results/*.jpg
+results/**/*.csv
+results/**/*.jpg
 
 # Local backup/snapshot files
 *.before-*
