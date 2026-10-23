@@ -13,7 +13,7 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Local datasets and generated splits
-data/
+/data/
 
 # Local trained model checkpoints
 models/*.pth
