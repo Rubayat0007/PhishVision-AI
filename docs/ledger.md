@@ -13,6 +13,7 @@ A number without a row does not go in a README or report.
 | R-PV-advtrained-test | 7b474ed | 2026-10-24 | `scripts/compare_models.py` | test | 85 | candidate | 0.35 | F1 .6990 prec .6102 rec .8182 | — | RECORDED, DEVELOPMENT |
 | R-PV-threshold-01 | 7b474ed | 2026-10-24 | `scripts/threshold_study.py` | val → test | 83 / 85 | `1403582C…` | 0.35 vs 0.50 | val selected 0.50 by Youden J; test F1 .5823 at 0.50 vs .7222 at 0.35 | — | RECORDED, DEVELOPMENT |
 | R-PV-components-01 | 7b474ed | 2026-10-24 | `scripts/component_diagnostics.py` | val, no URL | 83 (40 legit / 43 phish) | `1403582C…` | 0.35 | AUC: text .7419, CNN .7424, combined .8041; Brier .206, ECE .0821; bins 0.2–0.4 predicted .313 observed .421, 0.4–0.6 .498/.462, 0.6–0.8 .704/.842 | bootstrap 2,000: text .650–.830, CNN .638–.836, combined .705–.890 | RECORDED, DEVELOPMENT |
+| R-PV-dataaudit-01 | a2999ef | 2026-10-24 | `scripts/data_audit.py` | clean_split_v2, 555 images | 555 | — | — | near-duplicates (dHash Hamming<=6): 839 within-split, **735 across splits**; metadata-only classifier val acc .5783 vs majority .5181 (no strong shortcut) | — | RECORDED, DEVELOPMENT |
 | R-PV-tests-01 | 7b474ed | 2026-10-24 | `python -m pytest -q` | — | 159 | — | — | 131 fast + 28 slow, all pass | — | RECORDED |
 
 Notes:

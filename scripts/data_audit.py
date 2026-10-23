@@ -185,7 +185,7 @@ def main() -> int:
     docs = PROJECT_ROOT / "docs" / "measurements"
     docs.mkdir(parents=True, exist_ok=True)
     (docs / "data-audit-2026-10-24.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
-    print("\n".join(lines))
+    print("\n".join(lines).encode("ascii", "replace").decode("ascii"))
     return 0
 
 
