@@ -1,0 +1,62 @@
+{
+  "extracted_text": "SECURITY ALERT. Verify your account and enter your password.",
+  "text_analysis": {
+    "matches": ["password"],
+    "score": 10.0,
+    "is_suspicious": true
+  },
+  "url_analysis": {
+    "url": "http://192.168.1.10/login/verify",
+    "hostname": "192.168.1.10",
+    "indicators": ["ip_address"],
+    "matched_keywords": ["login"],
+    "score": 15.0,
+    "is_suspicious": true
+  },
+  "cnn_analysis": {
+    "prediction": "phishing",
+    "phishing_probability": 0.9,
+    "legitimate_probability": 0.1,
+    "threshold": 0.35,
+    "model_loaded": true
+  },
+  "risk": {
+    "text_score": 10.0,
+    "url_score": 15.0,
+    "cnn_score": 90.0,
+    "overall_score": 43.5,
+    "risk_level": "MEDIUM"
+  },
+  "security_assessment": {
+    "verdict": "MEDIUM RISK",
+    "risk_level": "MEDIUM",
+    "overall_score": 43.5,
+    "evidence": [
+      {
+        "source": "OCR",
+        "category": "credential_harvesting",
+        "severity": "HIGH",
+        "evidence": "password"
+      },
+      {
+        "source": "CNN",
+        "category": "visual_phishing_signal",
+        "severity": "MEDIUM",
+        "evidence": "CNN detected a visual phishing signal with p=0.9000"
+      }
+    ],
+    "finding_count": 2,
+    "recommended_action": "Exercise caution. Verify the website and its domain through an independent trusted source.",
+    "component_scores": {
+      "text": 10.0,
+      "url": 15.0,
+      "cnn": 90.0
+    }
+  },
+  "model": {
+    "name": "phishvision_cnn_v2",
+    "loaded": true,
+    "sha256": "1403582CCE07BE1E36E70E4A0D425CFB152B86C7ABEE5D1074DEF79CBB2FB628",
+    "threshold": 0.35
+  }
+}

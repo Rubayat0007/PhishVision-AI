@@ -64,3 +64,29 @@ def test_url_input_can_be_set_without_breaking_the_page(app):
 def test_no_analysis_is_attempted_before_upload(app):
     # The analyze button lives inside the "file uploaded" branch.
     assert len(app.button) == 0
+
+
+HARNESS = REPO / "tests" / "ui_render_harness.py"
+
+
+def test_render_analysis_shows_verdict_metrics_and_evidence():
+    rendered = AppTest.from_file(str(HARNESS), default_timeout=120).run()
+
+    assert not rendered.exception, [str(item) for item in rendered.exception]
+
+    headers = [item.value for item in rendered.header]
+    assert "Security Verdict" in headers
+    assert "Component Analysis" in headers
+    assert "Security Evidence" in headers
+
+    assert len(rendered.metric) >= 3
+    assert [metric.label for metric in rendered.metric][:3] == [
+        "Screenshot / CNN",
+        "Text / OCR",
+        "URL",
+    ]
+
+    # One HIGH finding renders as st.error, one MEDIUM as st.warning.
+    assert len(rendered.error) >= 1
+    assert len(rendered.warning) >= 1
+    assert any("MEDIUM RISK" in str(item.value) for item in rendered.warning)

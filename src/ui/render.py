@@ -1,0 +1,285 @@
+"""Rendering of one analyzer result.
+
+Kept out of ``app.py`` so it can be exercised without uploading a file
+through the Streamlit widget (see tests/test_app_ui.py).
+"""
+
+import streamlit as st
+
+
+def render_analysis(result: dict) -> None:
+    risk = result["risk"]
+    assessment = result["security_assessment"]
+    cnn_result = result["cnn_analysis"]
+    text_analysis = result["text_analysis"]
+    url_result = result["url_analysis"]
+
+    st.divider()
+
+    # -------------------------
+    # Security Verdict
+    # -------------------------
+
+    st.header("Security Verdict")
+
+    verdict = assessment["verdict"]
+    overall_score = assessment["overall_score"]
+
+    if risk["risk_level"] == "HIGH":
+        st.error(
+            f"{verdict} - Score: {overall_score}/100"
+        )
+
+    elif risk["risk_level"] == "MEDIUM":
+        st.warning(
+            f"{verdict} - Score: {overall_score}/100"
+        )
+
+    elif risk["risk_level"] == "LOW":
+        st.info(
+            f"{verdict} - Score: {overall_score}/100"
+        )
+
+    else:
+        st.success(
+            f"{verdict} - Score: {overall_score}/100"
+        )
+
+    st.write(
+        f"**Recommended action:** "
+        f"{assessment['recommended_action']}"
+    )
+
+    if url_result and url_result.get("score", 0) > 0:
+        st.warning(
+            "URL-specific security indicators were detected. "
+            "A LOW overall risk score does not mean the supplied URL is safe."
+        )
+
+    # -------------------------
+    # Component Scores
+    # -------------------------
+
+    st.header("Component Analysis")
+
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+        st.metric(
+            "Screenshot / CNN",
+            f"{assessment['component_scores']['cnn']:.2f}",
+        )
+
+    with col2:
+        st.metric(
+            "Text / OCR",
+            f"{assessment['component_scores']['text']:.2f}",
+        )
+
+    with col3:
+        st.metric(
+            "URL",
+            f"{assessment['component_scores']['url']:.2f}",
+        )
+
+    # -------------------------
+    # Security Evidence
+    # -------------------------
+
+    st.header("Security Evidence")
+
+    findings = assessment["evidence"]
+
+    if findings:
+
+        for finding in findings:
+
+            source = finding["source"]
+            category = finding["category"]
+            severity = finding["severity"]
+            evidence = finding["evidence"]
+
+            title = (
+                f"{severity} - "
+                f"{category.replace('_', ' ').title()}"
+            )
+
+            if severity == "HIGH":
+                st.error(
+                    f"**{title}**  \n"
+                    f"Source: {source}  \n"
+                    f"{evidence}"
+                )
+
+            elif severity == "MEDIUM":
+                st.warning(
+                    f"**{title}**  \n"
+                    f"Source: {source}  \n"
+                    f"{evidence}"
+                )
+
+            else:
+                st.info(
+                    f"**{title}**  \n"
+                    f"Source: {source}  \n"
+                    f"{evidence}"
+                )
+
+    else:
+        st.success(
+            "No structured security findings were generated."
+        )
+
+    # -------------------------
+    # OCR
+    # -------------------------
+
+    with st.expander("OCR Analysis", expanded=False):
+
+        extracted_text = result["extracted_text"]
+
+        if extracted_text:
+            st.text_area(
+                "Detected Text",
+                extracted_text,
+                height=180,
+            )
+        else:
+            st.info("No readable text detected.")
+
+        st.subheader("Suspicious Text Indicators")
+
+        if text_analysis["matches"]:
+
+            for keyword in text_analysis["matches"]:
+                st.warning(
+                    f"{keyword}"
+                )
+
+        else:
+            st.success(
+                "No suspicious keywords detected."
+            )
+
+    # -------------------------
+    # URL Analysis
+    # -------------------------
+
+    with st.expander("URL Analysis", expanded=False):
+
+        if url_result:
+
+            st.write(
+                "**Hostname:**",
+                url_result["hostname"],
+            )
+
+            st.metric(
+                "URL Risk Score",
+                url_result["score"],
+            )
+
+            if url_result["indicators"]:
+
+                st.write("**Indicators:**")
+
+                for indicator in url_result["indicators"]:
+                    st.warning(
+                        f"{indicator}"
+                    )
+
+            else:
+                st.success(
+                    "No suspicious URL indicators detected."
+                )
+
+        else:
+            st.info(
+                "No URL was provided. URL analysis was skipped."
+            )
+
+    # -------------------------
+    # CNN Analysis
+    # -------------------------
+
+    with st.expander("CNN Image Analysis", expanded=False):
+
+        if cnn_result["model_loaded"]:
+
+            prediction = cnn_result["prediction"]
+
+            if prediction == "phishing":
+                st.error(
+                    f"CNN prediction: "
+                    f"{prediction.upper()}"
+                )
+            else:
+                st.success(
+                    f"CNN prediction: "
+                    f"{prediction.upper()}"
+                )
+
+            col1, col2 = st.columns(2)
+
+            with col1:
+                st.metric(
+                    "Phishing Probability",
+                    (
+                        f"{cnn_result['phishing_probability'] * 100:.2f}%"
+                    ),
+                )
+
+            with col2:
+                st.metric(
+                    "Legitimate Probability",
+                    (
+                        f"{cnn_result['legitimate_probability'] * 100:.2f}%"
+                    ),
+                )
+
+            st.caption(
+                f"Decision threshold: "
+                f"{cnn_result.get('threshold', 0.35):.2f}"
+            )
+
+        else:
+            st.warning(
+                "CNN model is not available. "
+                "Image-based analysis could not be performed."
+            )
+
+    # -------------------------
+    # Risk Calculation
+    # -------------------------
+
+    with st.expander("Risk Calculation", expanded=False):
+
+        st.write(
+            "The overall risk score is a heuristic combination "
+            "of the available security signals."
+        )
+
+        st.code(
+            "0.30 x Text + 0.30 x URL + 0.40 x CNN"
+        )
+
+        st.write(
+            f"**Text:** {risk['text_score']:.2f}"
+        )
+
+        st.write(
+            f"**URL:** {risk['url_score']:.2f}"
+        )
+
+        st.write(
+            f"**CNN:** {risk['cnn_score']:.2f}"
+        )
+
+        st.write(
+            f"**Overall:** {risk['overall_score']:.2f}"
+        )
+
+        st.caption(
+            "This score is a heuristic security score, "
+            "not a calibrated probability of phishing."
+        )
