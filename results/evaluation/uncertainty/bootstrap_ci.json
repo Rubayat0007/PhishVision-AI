@@ -1,0 +1,42 @@
+{
+  "input": "results\\evaluation\\v2-test-035\\predictions.csv",
+  "input_sha256": "DE5B95CDC79FE78EC7586542612A93F394335BF6E643EDF5835330FF762E4991",
+  "intervals": {
+    "accuracy": {
+      "p2_5": 0.541176,
+      "p97_5": 0.752941
+    },
+    "f1": {
+      "p2_5": 0.617021,
+      "p97_5": 0.810356
+    },
+    "precision": {
+      "p2_5": 0.484375,
+      "p97_5": 0.728571
+    },
+    "recall": {
+      "p2_5": 0.785714,
+      "p97_5": 0.975
+    },
+    "roc_auc": {
+      "p2_5": 0.578179,
+      "p97_5": 0.800673
+    },
+    "specificity": {
+      "p2_5": 0.243902,
+      "p97_5": 0.542857
+    }
+  },
+  "point_estimates": {
+    "accuracy": 0.647059,
+    "f1": 0.722222,
+    "precision": 0.609375,
+    "recall": 0.886364,
+    "roc_auc": 0.694568,
+    "specificity": 0.390244
+  },
+  "resamples": 5000,
+  "rows": 85,
+  "seed": 42,
+  "threshold": 0.35
+}
