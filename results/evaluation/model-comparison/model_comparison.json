@@ -1,0 +1,165 @@
+{
+  "baseline": {
+    "accuracy": 0.6265,
+    "f1": 0.7103,
+    "fn": 5,
+    "fp": 26,
+    "model": "phishvision_cnn_v2.pth",
+    "precision": 0.5938,
+    "recall": 0.8837,
+    "specificity": 0.35,
+    "tn": 14,
+    "tp": 38
+  },
+  "inputs": {
+    "test_images": 85,
+    "val_images": 83
+  },
+  "promoted": "phishvision_cnn_advtrained_v2.pth",
+  "rule": {
+    "min_f1_gain_absolute": 0.02,
+    "recall_must_not_drop": true,
+    "split_for_selection": "validation",
+    "threshold": 0.35
+  },
+  "skipped": [
+    {
+      "model": "phishvision_cnn_v3.pth",
+      "reason": "RuntimeError: Error(s) in loading state_dict for PhishVisionCNN:\n\tMissing key(s) in state_dict: \"classifier.1.weight\", \""
+    }
+  ],
+  "test": {
+    "phishvision_cnn_advtrained_v2.pth": {
+      "accuracy": 0.6353,
+      "f1": 0.699,
+      "fn": 8,
+      "fp": 23,
+      "precision": 0.6102,
+      "recall": 0.8182,
+      "specificity": 0.439,
+      "tn": 18,
+      "tp": 36
+    },
+    "phishvision_cnn_v2.pth": {
+      "accuracy": 0.6471,
+      "f1": 0.7222,
+      "fn": 5,
+      "fp": 25,
+      "precision": 0.6094,
+      "recall": 0.8864,
+      "specificity": 0.3902,
+      "tn": 16,
+      "tp": 39
+    }
+  },
+  "validation": [
+    {
+      "accuracy": 0.747,
+      "f1": 0.7692,
+      "fn": 8,
+      "fp": 13,
+      "model": "phishvision_cnn.pth",
+      "precision": 0.7292,
+      "recall": 0.814,
+      "specificity": 0.675,
+      "tn": 27,
+      "tp": 35
+    },
+    {
+      "accuracy": 0.5422,
+      "f1": 0.6935,
+      "fn": 0,
+      "fp": 38,
+      "model": "phishvision_cnn_advtrained.pth",
+      "precision": 0.5309,
+      "recall": 1.0,
+      "specificity": 0.05,
+      "tn": 2,
+      "tp": 43
+    },
+    {
+      "accuracy": 0.759,
+      "f1": 0.7959,
+      "fn": 4,
+      "fp": 16,
+      "model": "phishvision_cnn_advtrained_v2.pth",
+      "precision": 0.7091,
+      "recall": 0.907,
+      "specificity": 0.6,
+      "tn": 24,
+      "tp": 39
+    },
+    {
+      "accuracy": 0.747,
+      "f1": 0.7692,
+      "fn": 8,
+      "fp": 13,
+      "model": "phishvision_cnn_backup.pth",
+      "precision": 0.7292,
+      "recall": 0.814,
+      "specificity": 0.675,
+      "tn": 27,
+      "tp": 35
+    },
+    {
+      "accuracy": 0.747,
+      "f1": 0.7692,
+      "fn": 8,
+      "fp": 13,
+      "model": "phishvision_cnn_baseline_73.pth",
+      "precision": 0.7292,
+      "recall": 0.814,
+      "specificity": 0.675,
+      "tn": 27,
+      "tp": 35
+    },
+    {
+      "accuracy": 0.7229,
+      "f1": 0.781,
+      "fn": 2,
+      "fp": 21,
+      "model": "phishvision_cnn_old.pth",
+      "precision": 0.6613,
+      "recall": 0.9535,
+      "specificity": 0.475,
+      "tn": 19,
+      "tp": 41
+    },
+    {
+      "accuracy": 0.6265,
+      "f1": 0.7103,
+      "fn": 5,
+      "fp": 26,
+      "model": "phishvision_cnn_v2-release.pth",
+      "precision": 0.5938,
+      "recall": 0.8837,
+      "specificity": 0.35,
+      "tn": 14,
+      "tp": 38
+    },
+    {
+      "accuracy": 0.6265,
+      "f1": 0.7103,
+      "fn": 5,
+      "fp": 26,
+      "model": "phishvision_cnn_v2.pth",
+      "precision": 0.5938,
+      "recall": 0.8837,
+      "specificity": 0.35,
+      "tn": 14,
+      "tp": 38
+    },
+    {
+      "accuracy": 0.5422,
+      "f1": 0.6833,
+      "fn": 2,
+      "fp": 36,
+      "model": "phishvision_cnn_v2_advtrained_eps001.pth",
+      "precision": 0.5325,
+      "recall": 0.9535,
+      "specificity": 0.1,
+      "tn": 4,
+      "tp": 41
+    }
+  ]
+}
