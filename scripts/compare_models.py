@@ -212,6 +212,29 @@ def main() -> int:
             f"{row['specificity']} | {row['f1']} | {row['accuracy']} |"
         )
 
+    if promoted:
+        promoted_test = test_rows[promoted["model"]]
+        lines += ["", "## Outcome", ""]
+        lines.append(
+            f"Validation selected `{promoted['model']}` (F1 {promoted['f1']} vs "
+            f"{baseline['f1']}). On the test split it scored F1 "
+            f"{promoted_test['f1']} against {test_baseline['f1']} for the baseline."
+        )
+        if promoted_test["f1"] <= test_baseline["f1"]:
+            lines.append(
+                "The promotion rule passed on validation but the candidate did not "
+                "hold up on test, so production stays on `phishvision_cnn_v2.pth`."
+            )
+            lines.append(
+                "This is the expected cost of selecting on 83 images: a 8-point "
+                "validation gain did not generalise. Do not switch on these numbers."
+            )
+        else:
+            lines.append(
+                "The candidate also beat the baseline on test. Promoting it is a "
+                "deliberate configuration change (model path + digest + threshold)."
+            )
+
     if skipped:
         lines += ["", "## Skipped checkpoints", ""]
         for item in skipped:

@@ -28,6 +28,12 @@ Promote **phishvision_cnn_advtrained_v2.pth** (validation F1 0.7959 vs baseline 
 | phishvision_cnn_advtrained_v2.pth | 0.6102 | 0.8182 | 0.439 | 0.699 | 0.6353 |
 | phishvision_cnn_v2.pth | 0.6094 | 0.8864 | 0.3902 | 0.7222 | 0.6471 |
 
+## Outcome
+
+Validation selected `phishvision_cnn_advtrained_v2.pth` (F1 0.7959 vs 0.7103). On the test split it scored F1 0.699 against 0.7222 for the baseline.
+The promotion rule passed on validation but the candidate did not hold up on test, so production stays on `phishvision_cnn_v2.pth`.
+This is the expected cost of selecting on 83 images: a 8-point validation gain did not generalise. Do not switch on these numbers.
+
 ## Skipped checkpoints
 
 - `phishvision_cnn_v3.pth` — RuntimeError: Error(s) in loading state_dict for PhishVisionCNN:
