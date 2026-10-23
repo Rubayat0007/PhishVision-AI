@@ -36,3 +36,6 @@ results/*.jpg
 # Local backup/snapshot files
 *.before-*
 *.step*-backup
+
+# Local research scripts and experiment artifacts
+/research/
