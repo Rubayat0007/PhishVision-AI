@@ -4,7 +4,7 @@
 
 PhishVision AI is a cybersecurity-focused artificial intelligence project designed to detect phishing websites and malicious web interfaces from screenshots and images.
 
-The system combines **Computer Vision, Optical Character Recognition (OCR), QR Code Detection, URL Analysis, and cybersecurity-based risk assessment** to identify potentially malicious web interfaces.
+The system combines **Computer Vision, Optical Character Recognition (OCR), URL Analysis, and cybersecurity-based risk assessment** to identify potentially malicious web interfaces.
 
 The project explores how artificial intelligence can analyze both the **visual appearance** and **textual content** of a web interface to identify phishing indicators.
 
@@ -29,9 +29,7 @@ The project also investigates whether combining multiple security indicators can
 * Computer Vision-based interface analysis
 * OCR-based text extraction
 * Suspicious text detection
-* URL extraction and analysis
-* QR code detection
-* QR-based URL extraction
+* URL analysis of a user-supplied URL
 * Cybersecurity risk scoring
 * AI-based phishing classification
 * Interactive web interface
@@ -47,21 +45,18 @@ The project also investigates whether combining multiple security indicators can
                            ▼
                   Image Preprocessing
                            │
-             ┌─────────────┼─────────────┐
-             │             │             │
-             ▼             ▼             ▼
-      Visual Analysis     OCR       QR Detection
-             │             │             │
-             │             ▼             ▼
-             │       Text Analysis   URL Extraction
-             │             │             │
-             └─────────────┼─────────────┘
+             ┌─────────────┴─────────────┐
+             │                           │
+             ▼                           ▼
+      Visual Analysis (CNN)              OCR
+             │                           │
+             │                           ▼
+             │                    Text Analysis
+             │                           │
+             └─────────────┬─────────────┘
                            │
                            ▼
-                     URL Analysis
-                           │
-                           ▼
-                     Risk Engine
+                      Risk Engine
                            │
                            ▼
                   Final Classification
@@ -75,7 +70,8 @@ The project also investigates whether combining multiple security indicators can
 
 ## 🔄 Detection Pipeline
 
-The system follows a multi-stage detection pipeline:
+The system follows a multi-stage detection pipeline. Every step below is
+implemented in `src/`:
 
 ### 1. Image Input
 
@@ -120,15 +116,9 @@ The extracted text can then be analyzed for potentially suspicious content such 
 * Security warnings
 * Suspicious instructions
 
-### 5. QR Code Detection
+### 5. URL Analysis
 
-The system can identify QR codes appearing within screenshots.
-
-If a QR code is detected, the system attempts to extract the encoded information, particularly URLs.
-
-### 6. URL Analysis
-
-Extracted URLs can be analyzed for potential security indicators.
+The user-supplied URL is analyzed for potential security indicators.
 
 Possible indicators include:
 
@@ -140,19 +130,18 @@ Possible indicators include:
 * Suspicious characters
 * Potentially malicious destinations
 
-### 7. Risk Engine
+### 6. Risk Engine
 
-The different analysis results are combined into a cybersecurity risk assessment.
+Component scores are combined into a heuristic cybersecurity risk assessment.
 
 The risk engine may consider:
 
-* Visual risk indicators
-* Suspicious text indicators
+* Visual risk indicators (CNN)
+* Suspicious text indicators (OCR)
 * URL indicators
-* QR code indicators
 * AI model prediction
 
-### 8. Final Classification
+### 7. Final Classification
 
 The system produces a final classification:
 
@@ -203,26 +192,32 @@ A risk score and supporting security indicators may also be presented to the use
 
 ```text
 PhishVision-AI/
-│
-├── app/                     # Web application
-│
-├── data/                    # Dataset storage
-│
-├── models/                  # Trained AI models
-│
-├── notebooks/               # Research and experiments
-│
+├── app/app.py                 # Streamlit application entry point
 ├── src/
-│   ├── data/               # Data loading and preprocessing
-│   ├── models/             # AI/ML model implementations
-│   ├── ocr/                # OCR processing
-│   └── security/           # Cybersecurity analysis
-│
-├── tests/                   # Unit and integration tests
-│
-├── .gitignore               # Git ignored files
-└── README.md                # Project documentation
+│   ├── config.py              # Paths, threshold, image/URL limits
+│   ├── data/                  # Dataset, dataloader, transforms, splits
+│   ├── models/                # CNN, predictor, checkpoint integrity
+│   ├── ocr/                   # OCR engine (EasyOCR)
+│   ├── security/              # Analyzer, risk engine, assessment, URL/text
+│   └── training/              # Training entry points
+├── robustness/                # FGSM/PGD adversarial evaluation
+├── scripts/
+│   ├── audit_*.py             # Dataset audit tools
+│   ├── check_*.py             # Manual harnesses (need torch + dataset)
+│   ├── create_train_val_test_split.py
+│   ├── evaluate_predictor.py  # Reproducible per-image evaluation
+│   ├── provision_model.py     # Verified production model download
+│   └── _preflight.py          # Prerequisite checks for check_*.py
+├── tests/                     # pytest suite (torch-free)
+├── results/                   # Tracked evaluation reports and plots
+├── pyproject.toml             # pytest configuration
+├── requirements.txt           # Declared runtime dependencies
+├── requirements-dev.txt       # Runtime + test/evaluation tooling
+└── requirements-lock.txt      # Exact recorded environment
 ```
+
+`data/` (dataset splits) and `models/` (checkpoints) are local-only and
+intentionally not tracked.
 
 ---
 
@@ -386,17 +381,13 @@ OCR-extracted text may be analyzed for:
 
 ### URL Indicators
 
-Extracted URLs may be analyzed for:
+The user-supplied URL is analyzed for:
 
 * Suspicious domains
 * IP addresses
 * Long or obfuscated URLs
 * Unusual subdomains
 * Suspicious URL patterns
-
-### QR Indicators
-
-QR codes may be detected and decoded to determine whether they contain potentially suspicious URLs or other information.
 
 ---
 
@@ -412,8 +403,6 @@ Visual Evidence
 OCR/Text Evidence
        +
 URL Evidence
-       +
-QR Evidence
        +
 AI Prediction
        │
@@ -437,10 +426,9 @@ The application will allow users to:
 1. Upload a screenshot.
 2. Run AI-based analysis.
 3. Extract text using OCR.
-4. Detect QR codes.
-5. Analyze URLs.
-6. Generate a risk assessment.
-7. Display the final classification.
+4. Analyze the supplied URL.
+5. Generate a risk assessment.
+6. Display the final classification.
 
 The intended output will provide both the classification and supporting security indicators.
 
@@ -477,11 +465,18 @@ venv\Scripts\activate
 
 ### 4. Install Dependencies
 
-Once the project dependencies are finalized:
+| File | Contents | Use when |
+|---|---|---|
+| `requirements.txt` | Direct runtime imports of `app/` and `src/` | Running the application |
+| `requirements-dev.txt` | Runtime deps + pytest, scikit-learn, matplotlib | Running tests and evaluation |
+| `requirements-lock.txt` | Exact versions of the recorded environment | Reproducing a known-good environment |
 
 ```bash
-pip install -r requirements.txt
+python -m pip install -r requirements-dev.txt
 ```
+
+Python 3.11 is the supported runtime. The application also needs the
+production checkpoint described below.
 
 ## Production Model Provisioning
 
@@ -508,6 +503,25 @@ Expected SHA-256:
 
 The production CNN threshold is `0.35`.
 
+### Runtime model verification
+
+The predictor re-verifies the checkpoint against the published SHA-256
+before loading it. A mismatch aborts loading: the analyzer degrades to
+"CNN unavailable" and the expected and actual digests are printed to
+stderr. `scripts/provision_model.py` and the predictor share one digest
+constant in `src/models/integrity.py`.
+
+Experimental checkpoints can be loaded deliberately:
+
+```powershell
+$env:PHISHVISION_ALLOW_UNVERIFIED_MODEL = "1"
+python .\scripts\evaluate_predictor.py --split test --model path\to\candidate.pth `
+    --threshold 0.35 --output reports\candidate.csv --allow-unverified-model
+```
+
+The bypass prints the digest that was actually loaded. Never use it for
+the production path.
+
 Run model provisioning before starting the application:
 
 ```powershell
@@ -519,7 +533,7 @@ streamlit run app/app.py
 
 ## ▶️ Usage
 
-After completing the application implementation, the system will be launched using:
+Run the application from the project root:
 
 ```bash
 streamlit run app/app.py
@@ -527,28 +541,53 @@ streamlit run app/app.py
 
 The user will then be able to upload a screenshot and receive a phishing/security analysis.
 
-> **Note:** The exact application entry point may change during development.
+The application validates the upload and image dimensions before running
+OCR, URL analysis, and CNN inference, then renders component scores,
+evidence, and a recommended action.
 
 ---
 
 ## 🧪 Testing
 
-The `tests/` directory will contain tests for important system components.
+The pytest suite is torch-free, so it runs without the ML stack, the
+model checkpoint, or a dataset:
 
-Testing may cover:
+```powershell
+python -m pip install -r requirements-dev.txt
+python -m pytest
+```
 
-* Data preprocessing
-* Image processing
-* OCR extraction
-* QR detection
-* URL analysis
-* Risk scoring
-* Model inference
-* Application functionality
+| Module | Covers |
+|---|---|
+| `tests/test_risk_engine.py` | Published 30/30/40 weights, clamping, risk bands |
+| `tests/test_security_assessment.py` | Verdict/action mapping and OCR/URL/CNN evidence |
+| `tests/test_model_integrity.py` | Checkpoint digest verification and the experiment bypass |
+| `tests/test_app_upload_boundary.py` | Upload size limit enforced before image decoding |
+
+The Streamlit page is never imported by the tests: the upload validator is
+extracted from `app/app.py` with `ast` and executed in isolation.
+
+### Manual validation harnesses
+
+`scripts/check_*.py` exercise the full analyzer (torch, EasyOCR, CNN, a real
+screenshot). They need `requirements.txt`, the provisioned model, and
+`data/clean_split_v2/`. When a prerequisite is missing they print one SKIP
+line and exit with status `2` instead of raising:
+
+```powershell
+python .\scripts\check_security_assessment.py
+python .\scripts\check_production_hardening.py
+python .\scripts\check_failure_injection.py
+python .\scripts\check_security_scenarios.py
+```
 
 ---
 
 ## 🗺️ Development Roadmap
+
+> This roadmap is the original project plan, kept for history. Current
+> behaviour is documented in the sections above and in `results/`;
+> unchecked boxes are not evidence that a capability is missing or present.
 
 ### Phase 1 — Project Foundation
 
@@ -659,11 +698,13 @@ Any datasets, screenshots, URLs, or external resources used during development s
 
 ## 📌 Project Status
 
-🚧 **Currently under active development.**
+The application, the frozen v2 production CNN, the security assessment
+layer, and the robustness evaluation are implemented. Evaluation records,
+including the adversarial robustness study and candidate-model
+experiments, are tracked under `results/`.
 
-The project is currently in the foundational development stage. Dataset development, model experimentation, cybersecurity analysis, and application implementation will be completed progressively.
-
-Experimental results will be added after the relevant experiments are conducted.
+The frozen production checkpoint remains v2; candidate and experimental
+models documented in `results/` have not been promoted.
 
 ---
 
