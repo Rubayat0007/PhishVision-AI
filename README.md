@@ -740,7 +740,7 @@ is **not claimed**.
 | 159 tests pass (131 fast, 28 slow) | `R-PV-tests-01`, `pytest -q` | verified |
 | Checkpoint digest is verified before load | `R-PV-integrity-01` | verified |
 | Dataset accepted: 555 images, no cross-split duplicates | `R-PV-dataset-01` | verified |
-| Development-set metrics at 0.35 on a **cluster-disjoint** split: acc 62.7 %, F1 60.8 %, AUC 0.657 | `R-PV-leakagefree-01` | **DEVELOPMENT; supersedes the leaky-split F1 72.2 %** |
+| Development-set metrics at 0.35 on a **cluster-disjoint** split: acc 62.7 %, F1 60.8 %, CNN AUC 0.657, combined AUC 0.694 | `R-PV-leakagefree-01`, `R-PV-components-cluster-01` | **DEVELOPMENT; supersedes the leaky-split F1 72.2 % and the leaky component AUCs** |
 | Threshold 0.35 retained after test was consulted | `R-PV-threshold-01` | recorded |
 | Candidate `advtrained_v2` rejected (test F1 0.699 vs 0.722) | `R-PV-advtrained-test` | recorded |
 | QR-code detection, URL extraction from images | — | **not claimed / not implemented** |

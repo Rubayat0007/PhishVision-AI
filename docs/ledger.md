@@ -15,6 +15,7 @@ A number without a row does not go in a README or report.
 | R-PV-components-01 | 7b474ed | 2026-10-24 | `scripts/component_diagnostics.py` | val, no URL | 83 (40 legit / 43 phish) | `1403582C…` | 0.35 | AUC: text .7419, CNN .7424, combined .8041; Brier .206, ECE .0821; bins 0.2–0.4 predicted .313 observed .421, 0.4–0.6 .498/.462, 0.6–0.8 .704/.842 | bootstrap 2,000: text .650–.830, CNN .638–.836, combined .705–.890 | RECORDED, DEVELOPMENT |
 | R-PV-dataaudit-01 | a2999ef | 2026-10-24 | `scripts/data_audit.py` | clean_split_v2, 555 images | 555 | — | — | near-duplicates (dHash Hamming<=6): 839 within-split, **735 across splits**; metadata-only classifier val acc .5783 vs majority .5181 (no strong shortcut) | — | RECORDED, DEVELOPMENT |
 | R-PV-leakagefree-01 | 05125d1 | 2026-10-24 | `scripts/leakage_free_eval.py` | cluster-disjoint split (324 clusters, 0 spanning) | 83 test (389/83/83) | `1403582C…` | 0.35 | acc .6265 prec .5333 rec .7059 F1 .6076 AUC .6573 | — | RECORDED, DEVELOPMENT |
+| R-PV-components-cluster-01 | 05125d1 | 2026-10-24 | `scripts/component_diagnostics_cluster.py` | cluster-disjoint test (324 clusters, 0 spanning) | 83 (49 legit / 34 phish) | `1403582C…` | 0.35 | AUC text .6375, CNN .6573, combined .6942; Brier .2304, ECE .0407 | bootstrap 2,000: text .529-.743, CNN .537-.772, combined .566-.808 | RECORDED, DEVELOPMENT |
 | R-PV-tests-01 | 7b474ed | 2026-10-24 | `python -m pytest -q` | — | 159 | — | — | 131 fast + 28 slow, all pass | — | RECORDED |
 
 Notes:
