@@ -4,8 +4,12 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from PIL import Image
-from src.security.analyzer import PhishVisionAnalyzer
+from _preflight import require_runtime  # noqa: E402
+
+require_runtime()
+
+from PIL import Image  # noqa: E402
+from src.security.analyzer import PhishVisionAnalyzer  # noqa: E402
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]

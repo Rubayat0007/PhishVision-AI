@@ -1,9 +1,13 @@
-﻿import sys
+import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from PIL import Image
+from _preflight import require_runtime  # noqa: E402
+
+require_runtime()
+
+from PIL import Image  # noqa: E402
 
 from src.config import (
     MAX_IMAGE_HEIGHT,

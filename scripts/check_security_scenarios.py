@@ -1,17 +1,21 @@
 import sys
 from pathlib import Path
 
-sys.path.insert(
-    0,
-    str(Path(__file__).resolve().parents[1])
-)
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
-from PIL import Image
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
-from src.security.analyzer import PhishVisionAnalyzer
+from _preflight import require_runtime  # noqa: E402
+
+require_runtime()
+
+from PIL import Image  # noqa: E402
+
+from src.security.analyzer import PhishVisionAnalyzer  # noqa: E402
 
 
-TEST_DIR = Path("data/clean_split_v2/test")
+TEST_DIR = PROJECT_ROOT / "data" / "clean_split_v2" / "test"
 
 
 def find_image(class_name, filename):
