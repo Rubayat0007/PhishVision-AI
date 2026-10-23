@@ -1,0 +1,67 @@
+{
+  "test": {
+    "at_production_threshold": {
+      "balanced_accuracy": 0.638304,
+      "f1": 0.722222,
+      "fn": 5,
+      "fp": 25,
+      "precision": 0.609375,
+      "recall": 0.886364,
+      "specificity": 0.390244,
+      "threshold": 0.35,
+      "tn": 16,
+      "tp": 39,
+      "youden_j": 0.276608
+    },
+    "at_selected_threshold": {
+      "balanced_accuracy": 0.615022,
+      "f1": 0.582278,
+      "fn": 21,
+      "fp": 12,
+      "precision": 0.657143,
+      "recall": 0.522727,
+      "specificity": 0.707317,
+      "threshold": 0.5,
+      "tn": 29,
+      "tp": 23,
+      "youden_j": 0.230044
+    },
+    "auc": 0.694568,
+    "path": "results\\evaluation\\v2-test-035\\predictions.csv",
+    "rows": 85,
+    "sha256": "DE5B95CDC79FE78EC7586542612A93F394335BF6E643EDF5835330FF762E4991"
+  },
+  "val": {
+    "auc": 0.742442,
+    "path": "results\\evaluation\\v2-val-035\\predictions.csv",
+    "production_threshold": {
+      "balanced_accuracy": 0.61686,
+      "f1": 0.71028,
+      "fn": 5,
+      "fp": 26,
+      "precision": 0.59375,
+      "recall": 0.883721,
+      "specificity": 0.35,
+      "threshold": 0.35,
+      "tn": 14,
+      "tp": 38,
+      "youden_j": 0.233721
+    },
+    "rows": 83,
+    "selected": {
+      "balanced_accuracy": 0.701453,
+      "f1": 0.683544,
+      "fn": 16,
+      "fp": 9,
+      "precision": 0.75,
+      "recall": 0.627907,
+      "specificity": 0.775,
+      "threshold": 0.5,
+      "tn": 31,
+      "tp": 27,
+      "youden_j": 0.402907
+    },
+    "selected_threshold": 0.5,
+    "sha256": "F518B79DAEE23AC388CFDBF1A317CBD37BFA43EE46BF1B3CDCA23A6C881E8ABA"
+  }
+}
