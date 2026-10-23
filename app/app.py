@@ -18,11 +18,11 @@ from src.security.analyzer import PhishVisionAnalyzer
 
 st.set_page_config(
     page_title="PhishVision AI",
-    page_icon="ðŸ›¡ï¸",
+    page_icon="🛡️",
     layout="wide",
 )
 
-st.title("ðŸ›¡ï¸ PhishVision AI")
+st.title("🛡️ PhishVision AI")
 st.subheader(
     "AI-Based Phishing Screenshot & Malicious Interface Detection"
 )
@@ -136,7 +136,7 @@ if uploaded_file is not None:
             width="stretch",
         )
 
-        if st.button("ðŸ” Analyze", type="primary"):
+        if st.button("🔍 Analyze", type="primary"):
 
             with st.spinner("Analyzing screenshot..."):
                 result = analyzer.analyze(
