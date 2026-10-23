@@ -166,6 +166,17 @@ def main() -> int:
         "  a deliberate decision: the frozen model, its documented threshold, and",
         "  earlier results all assume 0.35.",
         "",
+        "## Decision",
+        "",
+        "Keep 0.35 as the production operating point. The validation-selected",
+        f"{chosen} scores lower on the test split "
+        f"(F1 {at_chosen['f1']} vs {at_production['f1']}, "
+        f"recall {at_chosen['recall']} vs {at_production['recall']}).",
+        "Choosing 0.35 because it wins on the test split would be test-set",
+        "tuning. Both splits are small (83 and 85 images), so the difference is",
+        "threshold instability, not a mandate to switch. Revisit only with a",
+        "larger independent split.",
+        "",
         "## Inputs",
         "",
         f"- val: `{args.val_predictions}` — rows {len(val)}, sha256 `{summary['val']['sha256'][:16]}…`",

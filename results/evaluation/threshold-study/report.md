@@ -27,6 +27,15 @@ Validation-selected threshold (max Youden J): **0.5**
   a deliberate decision: the frozen model, its documented threshold, and
   earlier results all assume 0.35.
 
+## Decision
+
+Keep 0.35 as the production operating point. The validation-selected
+0.5 scores lower on the test split (F1 0.582278 vs 0.722222, recall 0.522727 vs 0.886364).
+Choosing 0.35 because it wins on the test split would be test-set
+tuning. Both splits are small (83 and 85 images), so the difference is
+threshold instability, not a mandate to switch. Revisit only with a
+larger independent split.
+
 ## Inputs
 
 - val: `results\evaluation\v2-val-035\predictions.csv` — rows 83, sha256 `F518B79DAEE23AC3…`
