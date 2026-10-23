@@ -1,0 +1,11 @@
+# Development, testing, and evaluation tooling.
+#
+# Adds the test runner, the metrics library used by the reproducible
+# predictor evaluation (scripts/evaluate_predictor.py) and the robustness
+# evaluation, and the plotting dependency of the robustness reports.
+
+-r requirements.txt
+
+pytest
+scikit-learn
+matplotlib
