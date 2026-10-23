@@ -26,6 +26,7 @@ import torch
 from PIL import Image
 
 from src.data.transforms import val_transform
+from src.evaluation.model_selection import select_promotion
 from src.models.cnn import PhishVisionCNN
 
 CLASSES = ("legitimate", "phishing")
@@ -129,13 +130,7 @@ def main() -> int:
 
     baseline = next(r for r in rows if r["model"] == baseline_path.name)
 
-    eligible = [
-        r for r in rows
-        if r["model"] != baseline["model"]
-        and r["f1"] >= baseline["f1"] + MIN_F1_GAIN
-        and r["recall"] >= baseline["recall"]
-    ]
-    promoted = max(eligible, key=lambda r: r["f1"]) if eligible else None
+    promoted = select_promotion(rows, baseline, MIN_F1_GAIN)
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
 
