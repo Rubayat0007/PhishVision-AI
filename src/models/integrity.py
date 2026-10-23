@@ -86,6 +86,37 @@ def build_provenance(
     }
 
 
+def read_verified_checkpoint(
+    path: Path | str,
+    *,
+    expected_sha256: str = PRODUCTION_MODEL_SHA256,
+    allow_unverified: bool = False,
+) -> tuple[bytes, str]:
+    """Read a checkpoint once, verify those exact bytes, and return them.
+
+    Hashing and deserialisation use the same buffer, so a file replaced
+    between verification and ``torch.load`` cannot be loaded unverified.
+    """
+    model_path = Path(path)
+
+    if not model_path.is_file():
+        raise FileNotFoundError(f"Model file not found: {model_path}")
+
+    expected = normalize_digest(expected_sha256)
+    data = model_path.read_bytes()
+    actual = hashlib.sha256(data).hexdigest().upper()
+
+    if not allow_unverified and actual != expected:
+        raise ModelIntegrityError(
+            f"Model integrity check failed for {model_path.name}: "
+            f"expected SHA-256 {expected}, got {actual}. "
+            f"Set {BYPASS_ENV_VAR}=1 only for a deliberate experiment "
+            "with a non-production checkpoint."
+        )
+
+    return data, actual
+
+
 def verify_model_file(
     path: Path | str,
     *,

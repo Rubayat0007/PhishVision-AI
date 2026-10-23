@@ -48,10 +48,10 @@ def call_lines(method, attribute):
 def test_verification_precedes_torch_load():
     method = find_method(find_class(load_tree(), "CNNPredictor"), "load_model")
 
-    verify_calls = call_lines(method, "verify_model_file")
+    verify_calls = call_lines(method, "read_verified_checkpoint")
     load_calls = call_lines(method, "load")
 
-    assert verify_calls, "load_model does not call verify_model_file"
+    assert verify_calls, "load_model does not read verified checkpoint bytes"
     assert load_calls, "load_model does not call torch.load"
 
     assert verify_calls[0].lineno < load_calls[0].lineno, (

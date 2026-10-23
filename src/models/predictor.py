@@ -1,4 +1,5 @@
 import sys
+from io import BytesIO
 from pathlib import Path
 
 import torch
@@ -10,6 +11,7 @@ from src.models.integrity import (
     build_provenance,
     ModelIntegrityError,
     is_verification_bypassed,
+    read_verified_checkpoint,
     verify_model_file,
 )
 from src.data.transforms import val_transform
@@ -73,7 +75,7 @@ class CNNPredictor:
 
         allow_unverified = is_verification_bypassed()
 
-        self.model_sha256 = verify_model_file(
+        checkpoint_bytes, self.model_sha256 = read_verified_checkpoint(
             model_path,
             allow_unverified=allow_unverified,
         )
@@ -87,7 +89,7 @@ class CNNPredictor:
 
         try:
             checkpoint = torch.load(
-                model_path,
+                BytesIO(checkpoint_bytes),
                 map_location=self.device,
                 weights_only=True,
             )
