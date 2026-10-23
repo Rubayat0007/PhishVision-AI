@@ -729,3 +729,20 @@ License information will be added after the project's licensing strategy is fina
 The long-term goal of PhishVision AI is to develop a practical and research-oriented cybersecurity system capable of analyzing suspicious web interfaces using multiple sources of evidence.
 
 The project aims to demonstrate how artificial intelligence can support phishing detection by combining **visual intelligence, textual analysis, and cybersecurity reasoning**.
+
+## Claims to evidence
+
+Every claim below names its ledger row in `docs/ledger.md`. Anything not listed
+is **not claimed**.
+
+| Claim | Evidence | Status |
+|---|---|---|
+| 159 tests pass (131 fast, 28 slow) | `R-PV-tests-01`, `pytest -q` | verified |
+| Checkpoint digest is verified before load | `R-PV-integrity-01` | verified |
+| Dataset accepted: 555 images, no cross-split duplicates | `R-PV-dataset-01` | verified |
+| Development-set metrics at 0.35: acc 64.7 %, F1 72.2 %, AUC 0.695 | `R-PV-v2-test-035` | **DEVELOPMENT set, not unseen** |
+| Threshold 0.35 retained after test was consulted | `R-PV-threshold-01` | recorded |
+| Candidate `advtrained_v2` rejected (test F1 0.699 vs 0.722) | `R-PV-advtrained-test` | recorded |
+| QR-code detection, URL extraction from images | — | **not claimed / not implemented** |
+| Sealed-holdout performance | — | **not claimed** |
+| Deployable service | — | **not claimed** |
