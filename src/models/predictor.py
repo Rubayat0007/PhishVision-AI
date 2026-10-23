@@ -7,6 +7,7 @@ from PIL import Image
 from src.models.cnn import PhishVisionCNN
 from src.models.integrity import (
     BYPASS_ENV_VAR,
+    build_provenance,
     ModelIntegrityError,
     is_verification_bypassed,
     verify_model_file,
@@ -102,6 +103,14 @@ class CNNPredictor:
             raise RuntimeError(
                 "Failed to load CNN model safely."
             ) from exc
+
+    def provenance(self) -> dict:
+        """Return the model identity recorded with analysis results."""
+        return build_provenance(
+            loaded=self.model_loaded,
+            sha256=self.model_sha256,
+            threshold=self.threshold,
+        )
 
     def predict(self, image):
 

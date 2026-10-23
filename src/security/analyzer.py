@@ -1,4 +1,6 @@
-﻿from PIL import Image
+﻿import logging
+
+from PIL import Image
 
 from src.config import (
     ACTIVE_MODEL_PATH,
@@ -12,7 +14,10 @@ from src.ocr.ocr_engine import OCREngine
 from src.security.text_analyzer import detect_suspicious_text
 from src.security.url_analyzer import analyze_url
 from src.security.risk_engine import calculate_risk
+from src.models.integrity import build_provenance
 from src.security.security_assessment import build_security_assessment
+
+logger = logging.getLogger("phishvision.analyzer")
 
 
 class PhishVisionAnalyzer:
@@ -217,6 +222,12 @@ class PhishVisionAnalyzer:
         # ---------------------------------------------------------
         security_assessment["component_errors"] = component_errors
 
+        logger.info(
+            "analysis complete: model_loaded=%s threshold=%s",
+            self.cnn.model_loaded,
+            self.cnn.threshold,
+        )
+
         return {
             "extracted_text": extracted_text,
             "text_analysis": text_result,
@@ -224,4 +235,5 @@ class PhishVisionAnalyzer:
             "cnn_analysis": cnn_result,
             "risk": risk_result,
             "security_assessment": security_assessment,
+            "model": self.cnn.provenance(),
         }

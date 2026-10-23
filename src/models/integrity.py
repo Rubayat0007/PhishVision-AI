@@ -70,6 +70,22 @@ def is_verification_bypassed(
     return raw.strip().lower() in _TRUTHY_VALUES
 
 
+def build_provenance(
+    *,
+    loaded: bool,
+    sha256: str | None,
+    threshold: float,
+    name: str = "phishvision_cnn_v2",
+) -> dict:
+    """Describe the model behind an analysis result."""
+    return {
+        "name": name,
+        "loaded": bool(loaded),
+        "sha256": sha256,
+        "threshold": float(threshold),
+    }
+
+
 def verify_model_file(
     path: Path | str,
     *,
