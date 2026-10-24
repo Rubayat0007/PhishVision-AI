@@ -1244,7 +1244,7 @@
       "registered_domain": "hsbc.com",
       "sha256": "f3d52211c00b847c382e2a429a2a7897b50d0a0dde04cd71e5f92776d418aa91",
       "source": "manual feed",
-      "split": "validation"
+      "split": "train"
     },
     {
       "brand_cluster": "google.com",
@@ -1289,7 +1289,7 @@
       "registered_domain": "etsy.com",
       "sha256": "17218db8b3f8b9187ddf1b3c263cc1f607b9d86c2551ef9e4a03aa89d676dab1",
       "source": "manual feed",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "shopify.com",
@@ -1319,7 +1319,7 @@
       "registered_domain": "facebook.com",
       "sha256": "7369b53eeff5ca9a85b2a97542686750e057e550546eb3d90d37cae54323d002",
       "source": "manual feed",
-      "split": "validation"
+      "split": "train"
     },
     {
       "brand_cluster": "pinterest.com",
@@ -1334,7 +1334,7 @@
       "registered_domain": "pinterest.com",
       "sha256": "c59943ab0223f49960ab981cbebcf69851e84af334d19d9b58756c264ae8fc39",
       "source": "manual feed",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "expedia.com",
@@ -1364,7 +1364,7 @@
       "registered_domain": "kayak.com",
       "sha256": "cd61d3cd48ee2e28dab6930959d1b24e440f5c7f135738cc3fce53a12140d988",
       "source": "manual feed",
-      "split": "validation"
+      "split": "train"
     },
     {
       "brand_cluster": "stripe.com",
@@ -1379,7 +1379,7 @@
       "registered_domain": "stripe.com",
       "sha256": "44aaa8cff6d4fe0fe43647bdda3d7ef6ca3dd70fea610bb1b917831d75ac5d25",
       "source": "manual feed",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "wise.com",
@@ -1409,7 +1409,7 @@
       "registered_domain": "zoom.us",
       "sha256": "b4ee1966b906b5991bd6c0143e7efa3b2b0e7aa63397c144e92b353ad05db13f",
       "source": "manual feed",
-      "split": "validation"
+      "split": "train"
     },
     {
       "brand_cluster": "notion.so",
@@ -1424,7 +1424,7 @@
       "registered_domain": "notion.so",
       "sha256": "7621dbb1901f0ec733b8296661ec430df6c5e9e9d285f1c1c283d7ea11c254bb",
       "source": "manual feed",
-      "split": "test"
+      "split": "validation"
     },
     {
       "brand_cluster": "figma.com",
@@ -1439,7 +1439,7 @@
       "registered_domain": "figma.com",
       "sha256": "c80eed57587d77b52999badf4a7e579ab0fcca5d3fcb015a7b5a226c00f6f7f7",
       "source": "manual feed",
-      "split": "train"
+      "split": "test"
     },
     {
       "brand_cluster": "gov.uk",
@@ -1454,7 +1454,7 @@
       "registered_domain": "gov.uk",
       "sha256": "9f5cc6c5111cf5cb589f799385246f79a8356b74d1fb6010e813274282c977a4",
       "source": "manual feed",
-      "split": "validation"
+      "split": "train"
     },
     {
       "brand_cluster": "usa.gov",
@@ -1469,7 +1469,7 @@
       "registered_domain": "usa.gov",
       "sha256": "ce21aa9892c675f5dac68afc8b9c3c020647ff0db7329ca9ea0cd22c3c00b951",
       "source": "manual feed",
-      "split": "test"
+      "split": "validation"
     },
     {
       "brand_cluster": "reuters.com",
@@ -1484,7 +1484,7 @@
       "registered_domain": "reuters.com",
       "sha256": "764cedb42c91352742b64bcfac368fd3803596cb94338302ee6e98c7ac43500d",
       "source": "manual feed",
-      "split": "train"
+      "split": "test"
     },
     {
       "brand_cluster": "theguardian.com",
@@ -1499,7 +1499,7 @@
       "registered_domain": "theguardian.com",
       "sha256": "58198bebc7473ff43db56f08d3d1c45e105b79e67bee6da0ead0b11557839656",
       "source": "manual feed",
-      "split": "validation"
+      "split": "train"
     },
     {
       "brand_cluster": "replit.app",
@@ -1528,6 +1528,321 @@
       "phash": "2c6c607038000000",
       "registered_domain": "imtokein-cdn.xyz",
       "sha256": "d31ee6eaab77fbb9bb912ef42e233ae87bf6a0047fde2ccc46f83a52ff159edb",
+      "source": "manual feed",
+      "split": "test"
+    },
+    {
+      "brand_cluster": "usbank.com",
+      "captured_at": "2026-10-24T12:06:47+00:00",
+      "filename": "legitimate_usbank_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "64e939c686a1a285",
+      "registered_domain": "usbank.com",
+      "sha256": "2c264dcf11bfaf03ffcfd770f38a65d9b61cfd18c89f245f10fa690ee2da3ee2",
+      "source": "manual feed",
+      "split": "validation"
+    },
+    {
+      "brand_cluster": "td.com",
+      "captured_at": "2026-10-24T12:07:02+00:00",
+      "filename": "legitimate_td_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "810099d9d9996959",
+      "registered_domain": "td.com",
+      "sha256": "4a22d32c28388a54479066c215ec67fcf8557874d0c74d8412e5f106b090b502",
+      "source": "manual feed",
+      "split": "test"
+    },
+    {
+      "brand_cluster": "barclays.co.uk",
+      "captured_at": "2026-10-24T12:07:37+00:00",
+      "filename": "legitimate_barclays_co_uk_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "801a5b139b1b1b7a",
+      "registered_domain": "barclays.co.uk",
+      "sha256": "4ba5f37eec3422f7d7767faa7fea48d2394eb628f1c17796df5ed238d6d7115c",
+      "source": "manual feed",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "lloydsbank.com",
+      "captured_at": "2026-10-24T12:07:45+00:00",
+      "filename": "legitimate_lloydsbank_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "61463c7060733300",
+      "registered_domain": "lloydsbank.com",
+      "sha256": "edd32f5ad7f2295806963a4fa50e517cf867abf99817bfdb7dc84f3ac3d6b949",
+      "source": "manual feed",
+      "split": "validation"
+    },
+    {
+      "brand_cluster": "microsoftonline.com",
+      "captured_at": "2026-10-24T12:08:54+00:00",
+      "filename": "legitimate_microsoftonline_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "0020707060600400",
+      "registered_domain": "microsoftonline.com",
+      "sha256": "16a65019f76c0ef01ddfd53afcef09224db935d70a12283878965e68487e0def",
+      "source": "manual feed",
+      "split": "test"
+    },
+    {
+      "brand_cluster": "yahoo.com",
+      "captured_at": "2026-10-24T12:09:08+00:00",
+      "filename": "legitimate_yahoo_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "d4020c130b0e0e01",
+      "registered_domain": "yahoo.com",
+      "sha256": "ec92b356a6ded0d126ecbe8e66a788333452546c256d262f48dbb5d42d22c0d0",
+      "source": "manual feed",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "protonmail.com",
+      "captured_at": "2026-10-24T12:09:22+00:00",
+      "filename": "legitimate_protonmail_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "691686dccc84d4e0",
+      "registered_domain": "protonmail.com",
+      "sha256": "549006e3408405fb1a5fa0c7025a7acc999279c235daa16a2a196ab188bde196",
+      "source": "manual feed",
+      "split": "validation"
+    },
+    {
+      "brand_cluster": "zoho.com",
+      "captured_at": "2026-10-24T12:09:43+00:00",
+      "filename": "legitimate_zoho_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "9963751575658b23",
+      "registered_domain": "zoho.com",
+      "sha256": "2a4ac1dc812f174075028a937e2e577c5c1f8d845f58925721b8b50f583def60",
+      "source": "manual feed",
+      "split": "test"
+    },
+    {
+      "brand_cluster": "oracle.com",
+      "captured_at": "2026-10-24T12:09:55+00:00",
+      "filename": "legitimate_oracle_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "ccccccccd6c4c004",
+      "registered_domain": "oracle.com",
+      "sha256": "87c07d9b2b9d3ab943356436bc23a1281c1cfa50e5ace5d82d9874093790ae1b",
+      "source": "manual feed",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "gitlab.com",
+      "captured_at": "2026-10-24T12:11:15+00:00",
+      "filename": "legitimate_gitlab_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "665691a8e482818c",
+      "registered_domain": "gitlab.com",
+      "sha256": "ca03ab4925d69d370200ec2b54a0bdeb76304859600d5d5b7626e48070672a82",
+      "source": "manual feed",
+      "split": "validation"
+    },
+    {
+      "brand_cluster": "digitalocean.com",
+      "captured_at": "2026-10-24T12:11:52+00:00",
+      "filename": "legitimate_digitalocean_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "87f0f0e020f8e0b9",
+      "registered_domain": "digitalocean.com",
+      "sha256": "95ba5cc1278a1b8752f90f935ce86f1a3e3fe3ee0b569a47c90f8d4a88a4142e",
+      "source": "manual feed",
+      "split": "test"
+    },
+    {
+      "brand_cluster": "vercel.com",
+      "captured_at": "2026-10-24T12:12:34+00:00",
+      "filename": "legitimate_vercel_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "a08914ebefcd32ca",
+      "registered_domain": "vercel.com",
+      "sha256": "a66fe351e55bd7259787c14c78d906788145674d9cae58baf4bd5e2608a47a38",
+      "source": "manual feed",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "coursera.org",
+      "captured_at": "2026-10-24T12:13:23+00:00",
+      "filename": "legitimate_coursera_org_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "847c3e3c7d835b4b",
+      "registered_domain": "coursera.org",
+      "sha256": "3950bf12dcee2a056c719bc92ff45d7b395d1e34a475fff765b9300ac9aaf974",
+      "source": "manual feed",
+      "split": "validation"
+    },
+    {
+      "brand_cluster": "mit.edu",
+      "captured_at": "2026-10-24T12:14:12+00:00",
+      "filename": "legitimate_mit_edu_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "318baf8f8f8f8bd9",
+      "registered_domain": "mit.edu",
+      "sha256": "b636932588b698f1e53f93672ea58165cfeed41af77f37ae633a0f7688fdc74d",
+      "source": "manual feed",
+      "split": "test"
+    },
+    {
+      "brand_cluster": "stanford.edu",
+      "captured_at": "2026-10-24T12:14:37+00:00",
+      "filename": "legitimate_stanford_edu_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "9b24e6c6c7c42fa7",
+      "registered_domain": "stanford.edu",
+      "sha256": "e5f6104613881b152e17080570d5ff78e5269e83ebc21b66a573b735c029597c",
+      "source": "manual feed",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "harvard.edu",
+      "captured_at": "2026-10-24T12:15:08+00:00",
+      "filename": "legitimate_harvard_edu_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "3232716171713313",
+      "registered_domain": "harvard.edu",
+      "sha256": "c53ab276a22802b17d23fde2edcfbc04d7cc02f825ed4c29521fed847742df25",
+      "source": "manual feed",
+      "split": "validation"
+    },
+    {
+      "brand_cluster": "irs.gov",
+      "captured_at": "2026-10-24T12:15:29+00:00",
+      "filename": "legitimate_irs_gov_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "3e565831796949c9",
+      "registered_domain": "irs.gov",
+      "sha256": "31b35514fb04be6f3d78824e6b4147f59e6b7480ad6dfabc96b72a3aaad4c5f7",
+      "source": "manual feed",
+      "split": "test"
+    },
+    {
+      "brand_cluster": "gov.au",
+      "captured_at": "2026-10-24T12:16:15+00:00",
+      "filename": "legitimate_gov_au_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "72746524006b1569",
+      "registered_domain": "gov.au",
+      "sha256": "6653ca0e866e17a15c9bbc0975a6169e3eda59c9c8f78a6bc6256ce5cd31cca3",
+      "source": "manual feed",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "ebay.co.uk",
+      "captured_at": "2026-10-24T12:16:23+00:00",
+      "filename": "legitimate_ebay_co_uk_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "3135b5353535b40c",
+      "registered_domain": "ebay.co.uk",
+      "sha256": "ebde4511b636f68e4882d7a6b124116a744edf5c715716a077a3518be8f14f03",
+      "source": "manual feed",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "telegram.org",
+      "captured_at": "2026-10-24T12:17:53+00:00",
+      "filename": "legitimate_telegram_org_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "690b0b093626b616",
+      "registered_domain": "telegram.org",
+      "sha256": "60d5f3880ab2b55046365ef3370e2319f28b8f67365084ffc774adb52597eef9",
+      "source": "manual feed",
+      "split": "validation"
+    },
+    {
+      "brand_cluster": "whatsapp.com",
+      "captured_at": "2026-10-24T12:18:05+00:00",
+      "filename": "legitimate_whatsapp_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "8435383611191919",
+      "registered_domain": "whatsapp.com",
+      "sha256": "41e60991f2346eb2983ab2e79cb9b48765dfc58888dcfca11ca636e14ff12171",
       "source": "manual feed",
       "split": "test"
     }
