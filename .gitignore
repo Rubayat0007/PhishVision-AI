@@ -42,3 +42,9 @@ results/**/*.jpg
 
 # Local capture kit
 /captures/
+
+# Local analysis outputs (summaries live in docs/measurements)
+/results/component_diagnostics/
+/results/component_diagnostics_cluster/
+/results/data_audit/
+/results/leakage_free/
