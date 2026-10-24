@@ -404,7 +404,7 @@
       "registered_domain": "roblox.rw",
       "sha256": "7eb4c9dace22b669feba02f00ac84272ae4375c5419124cdb17b7ac418ad83db",
       "source": "manual feed",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "com.et",
@@ -494,7 +494,7 @@
       "registered_domain": "3658995.cc",
       "sha256": "dd44ee6a09927868387af59b4b073b35d89c8e96dda78f547174b50be8161f52",
       "source": "manual feed",
-      "split": "train"
+      "split": "test"
     },
     {
       "brand_cluster": "airbnb.com",
@@ -599,7 +599,7 @@
       "registered_domain": "com.gr",
       "sha256": "d7ddaddb6a88c39f43c815b0c58b503244760d04605e14a02116c8cc4b6faa85",
       "source": "manual feed",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "momabb.top",
@@ -614,7 +614,7 @@
       "registered_domain": "momabb.top",
       "sha256": "3c77f5658ed8b07eb5a069716a7b07a0259374eda95f1fd6c940d83774cb4fbf",
       "source": "manual feed",
-      "split": "train"
+      "split": "test"
     },
     {
       "brand_cluster": "jisandev.com",
@@ -644,7 +644,7 @@
       "registered_domain": "base99.online",
       "sha256": "a2a656b7c01c67fa4097354d83b916c5f9d12d6e52ddf3cc333fcb0e51ff5e18",
       "source": "manual feed",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "surl.bot",
@@ -659,7 +659,7 @@
       "registered_domain": "surl.bot",
       "sha256": "2b2f52d47a109aa84e9c325fd99516591d5c8da851f54e31a94001c869be6abd",
       "source": "manual feed",
-      "split": "train"
+      "split": "test"
     },
     {
       "brand_cluster": "replit.app",
@@ -674,7 +674,7 @@
       "registered_domain": "replit.app",
       "sha256": "cbdf818e07796b2fc62b432dd2f5a6add790df525bd0836675417fa69727df27",
       "source": "manual feed",
-      "split": "validation"
+      "split": "train"
     },
     {
       "brand_cluster": "schneider-feuereschutiz.lol",
@@ -689,7 +689,7 @@
       "registered_domain": "schneider-feuereschutiz.lol",
       "sha256": "3e5074742d30d7ba8e4ad3b3a43bb3dc54e5048feedd0f34af1573591f970163",
       "source": "manual feed",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "tokenpoicet.pro",
@@ -704,7 +704,7 @@
       "registered_domain": "tokenpoicet.pro",
       "sha256": "cb99105af786c13a422c2d19bbe521cccc887a0a4b4edc59208b7c877cbe5791",
       "source": "manual feed",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "s4w.in",
@@ -734,7 +734,7 @@
       "registered_domain": "121893coinbase.com",
       "sha256": "cdc551ca65e6de4c5f433a666e7d3254b3e6d6ab01ded492d109df255ea6f8da",
       "source": "manual feed",
-      "split": "validation"
+      "split": "test"
     },
     {
       "brand_cluster": "ebivyt.net",
@@ -749,7 +749,7 @@
       "registered_domain": "ebivyt.net",
       "sha256": "fddd6b47c4e62be0da8cc5331019d4165edd59af56dc2057faece37b378d63cd",
       "source": "manual feed",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "backblazeb2.com",
@@ -779,7 +779,7 @@
       "registered_domain": "com.pt",
       "sha256": "0c8b5cb431da4ba312d57efe827450c94521bbb659a86dce6c243a00c9b1cc2a",
       "source": "manual feed",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "g5.lu",
@@ -794,7 +794,7 @@
       "registered_domain": "g5.lu",
       "sha256": "3b0bff146a5944a391cbfe1267c5cd82fc32b7ede55b4aa8ae50906d302d2e7c",
       "source": "manual feed",
-      "split": "validation"
+      "split": "test"
     },
     {
       "brand_cluster": "u.to",
@@ -809,7 +809,7 @@
       "registered_domain": "u.to",
       "sha256": "b70599c0b52302b7ecfa9ad56b4c0763f49d18db77200953ff321ba8efc3c3cd",
       "source": "manual feed",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "roblox.et",
@@ -839,7 +839,7 @@
       "registered_domain": "tokeim-cdn-sg.homes",
       "sha256": "d31ee6eaab77fbb9bb912ef42e233ae87bf6a0047fde2ccc46f83a52ff159edb",
       "source": "manual feed",
-      "split": "validation"
+      "split": "train"
     },
     {
       "brand_cluster": "imtokein-cdn.autos",
@@ -854,7 +854,7 @@
       "registered_domain": "imtokein-cdn.autos",
       "sha256": "d81526ab7f6d1842bd2afed70c254849f09dc5b826e514567177634542cebc80",
       "source": "manual feed",
-      "split": "test"
+      "split": "validation"
     },
     {
       "brand_cluster": "135461223.site",
@@ -899,7 +899,7 @@
       "registered_domain": "helpnets.info",
       "sha256": "e73ab6b017e4fa527c5a7f84d24c2f21d66282770bb71397fe050550f361beb8",
       "source": "manual feed",
-      "split": "train"
+      "split": "test"
     },
     {
       "brand_cluster": "dndair.com",
@@ -914,7 +914,7 @@
       "registered_domain": "dndair.com",
       "sha256": "b608c35498ed3998946d3e067eea0a21e4692ecd26412446273dd148193cebb2",
       "source": "manual feed",
-      "split": "validation"
+      "split": "train"
     },
     {
       "brand_cluster": "roblox.et",
@@ -929,7 +929,7 @@
       "registered_domain": "roblox.et",
       "sha256": "04ffb80d1e35f59cc0789aedce38251d24149efbdcdb1feffe267081281b9961",
       "source": "manual feed",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "auth-secure.me",
@@ -1064,7 +1064,7 @@
       "registered_domain": "centre-dentaire-bat.com",
       "sha256": "f4e67e36004ff9eac66ee262b9cdea54c7c1ce7ab48860534df6dabe83652ab4",
       "source": "manual feed",
-      "split": "validation"
+      "split": "train"
     },
     {
       "brand_cluster": "netlify.app",
@@ -1079,7 +1079,7 @@
       "registered_domain": "netlify.app",
       "sha256": "8c5483882013d8c7b5f35614ed5c5a6514d186e864e93de0822632196f9a8121",
       "source": "manual feed",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "netlify.app",

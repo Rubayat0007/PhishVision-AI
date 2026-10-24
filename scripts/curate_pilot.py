@@ -38,6 +38,11 @@ def dhash(path: Path) -> int:
 
 
 def clusters_of(items):
+    """Union images that are near-identical OR share a domain OR a brand.
+
+    All three are leakage channels; a group that violates any of them must stay
+    in one split, so they are merged into a single super-cluster.
+    """
     parent = list(range(len(items)))
 
     def find(x):
@@ -46,12 +51,19 @@ def clusters_of(items):
             x = parent[x]
         return x
 
+    def union(left, right):
+        a, b = find(left), find(right)
+        if a != b:
+            parent[b] = a
+
     for i in range(len(items)):
         for j in range(i + 1, len(items)):
-            if bin(items[i]["hash"] ^ items[j]["hash"]).count("1") <= HAMMING:
-                left, right = find(i), find(j)
-                if left != right:
-                    parent[right] = left
+            same_hash = bin(items[i]["hash"] ^ items[j]["hash"]).count("1") <= HAMMING
+            same_domain = (items[i]["domain"] and items[i]["domain"] == items[j]["domain"])
+            same_brand = (items[i]["brand"] and items[i]["brand"] == items[j]["brand"])
+
+            if same_hash or same_domain or same_brand:
+                union(i, j)
 
     groups = defaultdict(list)
     for index in range(len(items)):
@@ -95,6 +107,8 @@ def main() -> int:
     for row in rows:
         path = args.captures / row["filename"]
         items.append({"filename": row["filename"], "label": row["label"],
+                      "domain": row["registered_domain"],
+                      "brand": row["brand_cluster"],
                       "hash": dhash(path)})
 
     groups = clusters_of(items)
