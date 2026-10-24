@@ -1,13 +1,12 @@
 # OCR triage of phishing captures
 
-Triaged 65 images; **21** (32.3%) show neither credential vocabulary nor their own domain token and are flagged as unlikely phishing pages.
+Triaged 105 images; **38** (36.2%) show neither credential vocabulary nor their own domain token and are flagged as unlikely phishing pages.
 
 | Flagged image | Domain token | OCR sample |
 |---|---|---|
 | phishing_trendndailyinsider_com_01.png | trendndailyinsider | Trend I Daity Insider PayPal GIFT CARD siq 00 Are You Ready to Claim Your Free P |
 | phishing_contaboserver_net_01.png | contaboserver | SEUR Enviar Recibir Devolver miSEUR Empresas Puntos Pickup Ayuda Inicia sesion 0 |
 | phishing_blogspot_com_01.png | blogspot | 42 1#3Em4 Jm, {Ffacecook-ran blogspoccom JJMZEIA TTJAT#1Z' #Ee1j2810j1jig? 1327T |
-| phishing_roblox_rw_01.png | roblox | Charts Marketplace Create Something went wrong 404 Page Not found Back Home |
 | phishing_vercel_app_03.png | vercel | amazon Search Amazonin Deliver t0 Guest Update Address Beauty products Explore t |
 | phishing_3658995_cc_01.png | 3658995 | bet365 FIFA WORLD CUP UNITED STATES / CANADA / MEXICO 3 6 5 8 #5z86 service Onli |
 | phishing_roblox_ly_01.png | roblox | Charts Marketplace Create Robux Search Sign Up 3D FreyaPeler9 Joln Add Connectio |
@@ -21,10 +20,15 @@ Triaged 65 images; **21** (32.3%) show neither credential vocabulary nor their o
 | phishing_19504jjb_com_01.png | 19504jjb | #BixW 75ik5 @7uu;IB AX} Blit #ataw TEEBB LJA+373 Mniap aieae |
 | phishing_6686-vn_net_01.png | 6686 | facebook Search for a brandlproductlsuppliers EAONE Fashlon Dress Belts S16.50 / |
 | phishing_cfolks_pl_01.png | cfolks | wxcvb Sample Page Strona nie zostata znaleziona Strona; ktorej szukasz, nie istn |
-| phishing_justns_ru_01.png | justns | Not Found The requested URL was not found on this server Additionally: 404 Not F |
 | phishing_co_za_01.png | za | Beyond limits Home Cookie Policy Privacy Policy Terms Of Use |
 | phishing_weebly_com_01.png | weebly | Aufgrund kirzlicher Serveranderungen werden einige inaktive Konten dauerhaft gel |
 | phishing_imtokein-cdn_xyz_01.png | imtokein | Error 504 IEAJIe: 67.159.48.149 #AIB: 111.92.242.95 @RIAREAf I+AIAH? CDNTRIARERR |
+| phishing_phishing_army_01.png | phishing | Please wait while your request is being verified. |
+| phishing_zapier_app_01.png | zapier | Error Your page could not be found (error 404). Back to home |
+| phishing_hsforms_com_01.png | hsforms | This form is no longer accepting submissions. Thank you for your interest: |
+| phishing_wixstudio_com_01.png | wixstudio | WIX STUDIO Design Development Business solutions Enterprise Logln Start Creating |
+| phishing_r2_dev_01.png | r2 |  |
+| phishing_web_app_01.png | web | ALERTA: BLOQUEO DE TARJETA Banco General Bloqueo de Tarjeta Estimadola) Cliente  |
 
 ## What this is and is not
 

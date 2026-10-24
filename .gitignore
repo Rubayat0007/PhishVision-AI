@@ -51,3 +51,16 @@ results/**/*.jpg
 
 # Feed URLs stay local
 /capture_inputs/phishing_urls.txt
+
+# Raw feeds and derived samples stay local
+/capture_inputs/raw/
+/capture_inputs/phishing_urls_sample.txt
+/capture_inputs/_probe.txt
+/results/adversarial/
+/results/fusion/
+/results/linear_probe/
+/results/p4_sealed/
+/results/pilot_eval/
+/results/pilot_rule_check/
+/results/pilot_triage/
+/results/url_component/
