@@ -29,6 +29,7 @@ from __future__ import annotations
 import argparse
 import csv
 import hashlib
+import re
 import sys
 from pathlib import Path
 from urllib.parse import urlparse
@@ -80,6 +81,66 @@ def read_urls(path: Path) -> list[str]:
     return urls
 
 
+URL_PATTERN = re.compile(r"https?://[^\s\"'<>]+")
+
+
+def extract_urls(text: str, limit: int) -> list[str]:
+    """Pull http(s) URLs out of a feed body, de-duplicated, order preserved."""
+    seen: dict[str, None] = {}
+
+    for match in URL_PATTERN.findall(text):
+        cleaned = match.rstrip(".,);]")
+        seen.setdefault(cleaned, None)
+
+        if len(seen) >= limit:
+            break
+
+    return list(seen)
+
+
+def fetch_feed(url: str, limit: int, timeout: int = 30) -> list[str]:
+    """Download a plaintext feed (OpenPhish, URLhaus) and return its URLs."""
+    import urllib.request
+
+    request = urllib.request.Request(url, headers={"User-Agent": "ucp-pilot-capture/1"})
+
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+        body = response.read(2_000_000).decode("utf-8", "replace")
+
+    return extract_urls(body, limit)
+
+
+BLOCK_PATTERNS = (
+    "just a moment",
+    "attention required",
+    "suspected malware",
+    "suspected phishing",
+    "verify you are human",
+    "checking your browser",
+    "access denied",
+    "ddos protection",
+    "cloudflare ray id",
+    "verifying...",
+)
+
+
+def interstitial_reason(page) -> str:
+    """Return the matched blocker text, or "" when the page looks genuine."""
+    try:
+        title = (page.title() or "").lower()
+        body = (page.inner_text("body") or "").lower()[:4000]
+    except Exception:  # noqa: BLE001 - a detached page is not a blocker verdict
+        return ""
+
+    haystack = f"{title}\n{body}"
+
+    for pattern in BLOCK_PATTERNS:
+        if pattern in haystack:
+            return pattern
+
+    return ""
+
+
 def slug(domain: str) -> str:
     return "".join(ch if ch.isalnum() or ch == "-" else "_" for ch in domain)[:60]
 
@@ -105,6 +166,11 @@ def main() -> int:
     parser.add_argument("--license", default="research use of public page")
     parser.add_argument("--recapture", action="store_true",
                         help="replace rows/files that are already recorded")
+    parser.add_argument("--feed-url", action="append", default=[],
+                        help="plaintext phishing feed to fetch URLs from "
+                             "(e.g. https://openphish.com/feed.txt); repeatable")
+    parser.add_argument("--feed-limit", type=int, default=30,
+                        help="maximum URLs taken from each feed")
     args = parser.parse_args()
 
     width, height = (int(x) for x in args.viewport.lower().split("x"))
@@ -125,7 +191,21 @@ def main() -> int:
         with labels.open(encoding="utf-8", newline="") as handle:
             existing = {row.get("filename", "") for row in csv.DictReader(handle)}
 
-    jobs = [(url, "phishing") for url in read_urls(args.phishing_file)]
+    phishing_urls = read_urls(args.phishing_file)
+
+    for feed in args.feed_url:
+        try:
+            fetched = fetch_feed(feed, args.feed_limit)
+        except Exception as exc:  # noqa: BLE001 - a dead feed must not stop the run
+            print(f"feed failed: {feed} -> {type(exc).__name__}: {str(exc)[:120]}",
+                  file=sys.stderr)
+            continue
+        print(f"feed {feed}: {len(fetched)} URL(s)")
+        phishing_urls.extend(fetched)
+
+    phishing_urls = list(dict.fromkeys(phishing_urls))
+
+    jobs = [(url, "phishing") for url in phishing_urls]
     jobs += [(url, "legitimate") for url in read_urls(args.legit_file)]
 
     from datetime import datetime, timezone
@@ -151,19 +231,31 @@ def main() -> int:
                 skipped += 1
                 page.close()
                 continue
+            blocked = ""
             try:
                 page.goto(url, wait_until="load", timeout=args.timeout_ms)
                 page.wait_for_timeout(1500)
-                page.screenshot(path=str(target), full_page=False)
+
+                # Check before closing: a blocked interstitial ("Just a moment",
+                # Cloudflare malware warning) renders instead of the target page,
+                # and labelling it as phishing teaches the model the blocker.
+                blocked = interstitial_reason(page)
+
+                if not blocked:
+                    page.screenshot(path=str(target), full_page=False)
             except Exception as exc:  # noqa: BLE001 - one bad URL must not stop the run
                 failures.append((url, f"{type(exc).__name__}: {exc}"[:160]))
-                page.close()
                 continue
             finally:
                 try:
                     page.close()
                 except Exception:  # noqa: BLE001
                     pass
+
+            if blocked:
+                target.unlink(missing_ok=True)
+                failures.append((url, f"blocked interstitial: {blocked}"))
+                continue
 
             # A white rectangle means a bot wall or a JS failure, not a page.
             if target.exists() and is_blank(target):

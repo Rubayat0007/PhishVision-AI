@@ -68,6 +68,39 @@ def dedupe_labels(labels: Path, apply: bool = False) -> int:
     return removed
 
 
+def dedupe_content(captures: Path, labels: Path, apply: bool = False) -> list[str]:
+    """Remove images whose bytes repeat an earlier image; keep the first.
+
+    Returns the filenames that are duplicates (removed only when apply=True).
+    """
+    import hashlib
+
+    seen: dict[str, str] = {}
+    duplicates: list[str] = []
+
+    for image in sorted(captures.glob("*.png")):
+        digest = hashlib.sha256(image.read_bytes()).hexdigest()
+        if digest in seen:
+            duplicates.append(image.name)
+            if apply:
+                image.unlink()
+        else:
+            seen[digest] = image.name
+
+    if apply and duplicates and labels.is_file():
+        with labels.open(encoding="utf-8", newline="") as handle:
+            reader = csv.DictReader(handle)
+            fieldnames = reader.fieldnames or []
+            rows = [row for row in reader if row.get("filename") not in set(duplicates)]
+
+        with labels.open("w", encoding="utf-8", newline="") as handle:
+            writer = csv.DictWriter(handle, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(rows)
+
+    return duplicates
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--captures", type=Path, default=Path("captures"))
@@ -76,7 +109,16 @@ def main() -> int:
     parser.add_argument("--apply", action="store_true")
     parser.add_argument("--dedupe", action="store_true",
                         help="also remove repeated filename rows")
+    parser.add_argument("--dedupe-content", action="store_true",
+                        help="remove images whose bytes repeat an earlier image")
     args = parser.parse_args()
+
+    if args.dedupe_content:
+        removed = dedupe_content(args.captures, args.labels, apply=args.apply)
+        action = "removed" if args.apply else "would remove"
+        print(f"byte-identical images {action}: {len(removed)}")
+        for name in removed[:10]:
+            print(f"  {name}")
 
     if args.dedupe:
         removed = dedupe_labels(args.labels, apply=args.apply)
