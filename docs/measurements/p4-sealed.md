@@ -2,14 +2,14 @@
 
 Pre-registered before scoring: promote if detection >= 0.70 and FPR <= 0.25.
 
-Test split: 14 phishing, 8 legitimate (11 rows carry a URL).
+Test split: 19 phishing, 12 legitimate (20 rows carry a URL).
 
 | Metric | Value | 95% Wilson CI | Bound |
 |---|---|---|---|
-| detection | 0.6429 | 0.3876-0.8366 | >= 0.7 |
-| false-positive rate | 0.125 | 0.0224-0.4709 | <= 0.25 |
+| detection | 0.5263 | 0.3171-0.7267 | >= 0.7 |
+| false-positive rate | 0.3333 | 0.1381-0.6094 | <= 0.25 |
 
-**Verdict: INCONCLUSIVE - test split smaller than the pre-registered minimum**
+**Verdict: REJECT**
 
 ## Frames
 

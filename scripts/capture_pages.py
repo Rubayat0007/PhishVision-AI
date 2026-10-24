@@ -187,6 +187,8 @@ def main() -> int:
                              "(e.g. https://openphish.com/feed.txt); repeatable")
     parser.add_argument("--feed-limit", type=int, default=30,
                         help="maximum URLs taken from each feed")
+    parser.add_argument("--allow-large", action="store_true",
+                        help="permit more than 400 URLs in a single run")
     args = parser.parse_args()
 
     width, height = (int(x) for x in args.viewport.lower().split("x"))
@@ -220,6 +222,14 @@ def main() -> int:
         phishing_urls.extend(fetched)
 
     phishing_urls = list(dict.fromkeys(phishing_urls))
+
+    # A full PhishTank export holds tens of thousands of URLs; iterating it by
+    # accident looks like a hang. Refuse rather than crawl for hours.
+    if len(phishing_urls) > 400 and not args.allow_large:
+        raise SystemExit(
+            f"refusing to capture {len(phishing_urls)} URLs in one run; "
+            "use a sample file or pass --allow-large"
+        )
 
     jobs = [(url, "phishing") for url in phishing_urls]
     jobs += [(url, "legitimate") for url in read_urls(args.legit_file)]

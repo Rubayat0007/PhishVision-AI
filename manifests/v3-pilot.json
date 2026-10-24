@@ -34,22 +34,6 @@
       "split": "train"
     },
     {
-      "brand_cluster": "dropbox.com",
-      "captured_at": "2026-10-24T09:26:02+00:00",
-      "filename": "legitimate_dropbox_com_01.png",
-      "kit_cluster": "unknown",
-      "label": "legitimate",
-      "label_basis": "public page captured, no credentials entered",
-      "label_confidence": 0.7,
-      "license": "research use of public page",
-      "phash": "96f00d6c39395cdb",
-      "registered_domain": "dropbox.com",
-      "sha256": "48d53a6bf964fc9dfc7bda6e935cef39737b06d424b8943da4ae3bd3ddc4ab0c",
-      "source": "manual feed",
-      "source_url": "",
-      "split": "train"
-    },
-    {
       "brand_cluster": "netflix.com",
       "captured_at": "2026-10-24T09:49:32+00:00",
       "filename": "legitimate_netflix_com_01.png",
@@ -79,7 +63,7 @@
       "sha256": "6f194c7ead37af0c2f3f9c9b8de80d7d6c1c856a84637d75f0cc93e891fa6e0c",
       "source": "manual feed",
       "source_url": "",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "trendndailyinsider.com",
@@ -95,7 +79,7 @@
       "sha256": "0b14c1f4f2430b2f126cced0f5d24a06b0d6a5168f1401e22d2de836ebcd8fcc",
       "source": "manual feed",
       "source_url": "",
-      "split": "train"
+      "split": "test"
     },
     {
       "brand_cluster": "com.et",
@@ -143,7 +127,7 @@
       "sha256": "90ae5322cae805608cac1ad1cff11a02c9ec39bbb1cacbaad5d5f9e09e97368e",
       "source": "manual feed",
       "source_url": "",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "contaboserver.net",
@@ -159,7 +143,7 @@
       "sha256": "053bcc3e1af513e8a8f49cecc8ffdfe53d04d06207604626f9df8db7dacc31da",
       "source": "manual feed",
       "source_url": "",
-      "split": "train"
+      "split": "test"
     },
     {
       "brand_cluster": "vercel.app",
@@ -223,7 +207,7 @@
       "sha256": "30310399062fb026f890a6b65c94cbf78c742413ee8d5cb84e2db4d7cf20fa9f",
       "source": "manual feed",
       "source_url": "",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "github.io",
@@ -239,7 +223,7 @@
       "sha256": "e9f11835fbb4f27f90f5a497e98470dcf49ec9a2b29ca53f64d1c13a0e897203",
       "source": "manual feed",
       "source_url": "",
-      "split": "train"
+      "split": "test"
     },
     {
       "brand_cluster": "com.et",
@@ -383,7 +367,7 @@
       "sha256": "2a54e5029a307e8f2d0b9b87970b3f4efd989b55fdc5f01f29025e0807b78dfe",
       "source": "manual feed",
       "source_url": "",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "dndair.com",
@@ -415,7 +399,7 @@
       "sha256": "d7ddaddb6a88c39f43c815b0c58b503244760d04605e14a02116c8cc4b6faa85",
       "source": "manual feed",
       "source_url": "",
-      "split": "train"
+      "split": "test"
     },
     {
       "brand_cluster": "momabb.top",
@@ -447,7 +431,7 @@
       "sha256": "56a6fbe5d4b2805632b9eb85155bdeec950c8981938e65f43a494a524a50e00f",
       "source": "manual feed",
       "source_url": "",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "base99.online",
@@ -463,7 +447,7 @@
       "sha256": "a2a656b7c01c67fa4097354d83b916c5f9d12d6e52ddf3cc333fcb0e51ff5e18",
       "source": "manual feed",
       "source_url": "",
-      "split": "train"
+      "split": "test"
     },
     {
       "brand_cluster": "surl.bot",
@@ -495,7 +479,7 @@
       "sha256": "3e5074742d30d7ba8e4ad3b3a43bb3dc54e5048feedd0f34af1573591f970163",
       "source": "manual feed",
       "source_url": "",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "tokenpoicet.pro",
@@ -511,7 +495,7 @@
       "sha256": "cb99105af786c13a422c2d19bbe521cccc887a0a4b4edc59208b7c877cbe5791",
       "source": "manual feed",
       "source_url": "",
-      "split": "validation"
+      "split": "test"
     },
     {
       "brand_cluster": "s4w.in",
@@ -543,7 +527,7 @@
       "sha256": "cdc551ca65e6de4c5f433a666e7d3254b3e6d6ab01ded492d109df255ea6f8da",
       "source": "manual feed",
       "source_url": "",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "ebivyt.net",
@@ -559,7 +543,7 @@
       "sha256": "fddd6b47c4e62be0da8cc5331019d4165edd59af56dc2057faece37b378d63cd",
       "source": "manual feed",
       "source_url": "",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "com.pt",
@@ -575,7 +559,7 @@
       "sha256": "0c8b5cb431da4ba312d57efe827450c94521bbb659a86dce6c243a00c9b1cc2a",
       "source": "manual feed",
       "source_url": "",
-      "split": "validation"
+      "split": "test"
     },
     {
       "brand_cluster": "g5.lu",
@@ -591,7 +575,7 @@
       "sha256": "3b0bff146a5944a391cbfe1267c5cd82fc32b7ede55b4aa8ae50906d302d2e7c",
       "source": "manual feed",
       "source_url": "",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "u.to",
@@ -639,7 +623,7 @@
       "sha256": "d81526ab7f6d1842bd2afed70c254849f09dc5b826e514567177634542cebc80",
       "source": "manual feed",
       "source_url": "",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "135461223.site",
@@ -671,7 +655,7 @@
       "sha256": "e73ab6b017e4fa527c5a7f84d24c2f21d66282770bb71397fe050550f361beb8",
       "source": "manual feed",
       "source_url": "",
-      "split": "validation"
+      "split": "test"
     },
     {
       "brand_cluster": "dndair.com",
@@ -719,7 +703,7 @@
       "sha256": "758bab979e00d9f4815d6289076a87191b2a730909313849f25f220b9562f973",
       "source": "manual feed",
       "source_url": "",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "pages.dev",
@@ -735,7 +719,7 @@
       "sha256": "c10e9afbff8a639ead5e5ef94ab73b0c4a764b068d2d490ed71fb296b051127e",
       "source": "manual feed",
       "source_url": "",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "19504jjb.com",
@@ -751,7 +735,7 @@
       "sha256": "d9783919cfceda6427e4ce904b6b40b87506ed18477813e870f8239b8f612bed",
       "source": "manual feed",
       "source_url": "",
-      "split": "validation"
+      "split": "test"
     },
     {
       "brand_cluster": "imtoke.net",
@@ -767,7 +751,7 @@
       "sha256": "137006beaddedda42a9ec3b4b5438177254b02ddda80e816fd0cafc449a05069",
       "source": "manual feed",
       "source_url": "",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "6686-vn.net",
@@ -783,7 +767,7 @@
       "sha256": "2a974505063d37d6a3cc78d397e19435928b71a8f924716627a4b271208d75ed",
       "source": "manual feed",
       "source_url": "",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "workers.dev",
@@ -799,7 +783,7 @@
       "sha256": "d3f24c487cd44aeaa280e0d37699424106b46d930ff00797c6d4b539a2fcb454",
       "source": "manual feed",
       "source_url": "",
-      "split": "validation"
+      "split": "test"
     },
     {
       "brand_cluster": "135461223.site",
@@ -831,7 +815,7 @@
       "sha256": "f4e67e36004ff9eac66ee262b9cdea54c7c1ce7ab48860534df6dabe83652ab4",
       "source": "manual feed",
       "source_url": "",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "netlify.app",
@@ -895,7 +879,7 @@
       "sha256": "8f7c3c91bd4a0075a6c953b6c7537c8271c018a7d14f0e2a5829e20ac7cc5f6f",
       "source": "manual feed",
       "source_url": "",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "co.za",
@@ -909,22 +893,6 @@
       "phash": "4371516179454579",
       "registered_domain": "co.za",
       "sha256": "0b633942bf4ec353fbd60627fb5d673f00e13132aeef151c40345d9b02edce86",
-      "source": "manual feed",
-      "source_url": "",
-      "split": "validation"
-    },
-    {
-      "brand_cluster": "weebly.com",
-      "captured_at": "2026-10-24T11:05:04+00:00",
-      "filename": "phishing_weebly_com_01.png",
-      "kit_cluster": "unknown",
-      "label": "phishing",
-      "label_basis": "feed URL; OCR found no credential vocabulary or domain token",
-      "label_confidence": 0.3,
-      "license": "research use of public page",
-      "phash": "80501a7068941060",
-      "registered_domain": "weebly.com",
-      "sha256": "c6ef61acc9aa4468f7d17892b7d955776951514802a4ca7a721adbe36ae10d6d",
       "source": "manual feed",
       "source_url": "",
       "split": "test"
@@ -1391,7 +1359,7 @@
       "sha256": "2a4ac1dc812f174075028a937e2e577c5c1f8d845f58925721b8b50f583def60",
       "source": "manual feed",
       "source_url": "",
-      "split": "validation"
+      "split": "train"
     },
     {
       "brand_cluster": "oracle.com",
@@ -1407,7 +1375,7 @@
       "sha256": "87c07d9b2b9d3ab943356436bc23a1281c1cfa50e5ace5d82d9874093790ae1b",
       "source": "manual feed",
       "source_url": "",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "gitlab.com",
@@ -1439,7 +1407,7 @@
       "sha256": "95ba5cc1278a1b8752f90f935ce86f1a3e3fe3ee0b569a47c90f8d4a88a4142e",
       "source": "manual feed",
       "source_url": "",
-      "split": "validation"
+      "split": "train"
     },
     {
       "brand_cluster": "vercel.com",
@@ -1455,7 +1423,7 @@
       "sha256": "a66fe351e55bd7259787c14c78d906788145674d9cae58baf4bd5e2608a47a38",
       "source": "manual feed",
       "source_url": "",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "coursera.org",
@@ -1487,7 +1455,7 @@
       "sha256": "b636932588b698f1e53f93672ea58165cfeed41af77f37ae633a0f7688fdc74d",
       "source": "manual feed",
       "source_url": "",
-      "split": "validation"
+      "split": "train"
     },
     {
       "brand_cluster": "stanford.edu",
@@ -1503,7 +1471,7 @@
       "sha256": "e5f6104613881b152e17080570d5ff78e5269e83ebc21b66a573b735c029597c",
       "source": "manual feed",
       "source_url": "",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "harvard.edu",
@@ -1535,7 +1503,7 @@
       "sha256": "31b35514fb04be6f3d78824e6b4147f59e6b7480ad6dfabc96b72a3aaad4c5f7",
       "source": "manual feed",
       "source_url": "",
-      "split": "validation"
+      "split": "train"
     },
     {
       "brand_cluster": "gov.au",
@@ -1551,7 +1519,7 @@
       "sha256": "6653ca0e866e17a15c9bbc0975a6169e3eda59c9c8f78a6bc6256ce5cd31cca3",
       "source": "manual feed",
       "source_url": "",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "ebay.co.uk",
@@ -1599,7 +1567,7 @@
       "sha256": "41e60991f2346eb2983ab2e79cb9b48765dfc58888dcfca11ca636e14ff12171",
       "source": "manual feed",
       "source_url": "",
-      "split": "validation"
+      "split": "train"
     },
     {
       "brand_cluster": "phishing.army",
@@ -1615,7 +1583,7 @@
       "sha256": "dde4a746441a1a626be93aca600c570f20a7366f2bee41b14f9d5d51b4b52ebf",
       "source": "manual feed",
       "source_url": "",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "wikipedia.org",
@@ -1631,7 +1599,7 @@
       "sha256": "fc5683b22469040faa1657de9e2afd154757edb0c1ba0778b1d7668c56dadb35",
       "source": "manual feed",
       "source_url": "https://www.wikipedia.org/",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "python.org",
@@ -1647,7 +1615,7 @@
       "sha256": "b0c704ef4903d5c427533cf1125fae18fab952e18a18dd6a5dde221c5ea56002",
       "source": "manual feed",
       "source_url": "https://www.python.org/",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "mozilla.org",
@@ -1663,7 +1631,7 @@
       "sha256": "459155adeb2ea497a4c9969c74c6880fd9cb8b9ebeedd5ff9318baaf317a1b6b",
       "source": "manual feed",
       "source_url": "https://www.mozilla.org/",
-      "split": "validation"
+      "split": "test"
     },
     {
       "brand_cluster": "cloudflare.com",
@@ -1679,7 +1647,7 @@
       "sha256": "47540814f49bf17ed21e6ce386a5866fcc10f7719ab203f0cf0942ab139b0f9e",
       "source": "manual feed",
       "source_url": "https://www.cloudflare.com/",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "microsoft.com",
@@ -1695,7 +1663,7 @@
       "sha256": "2652e39d7337d6a07105557ca7cc4411eac09e0913de5e6c99effda68a297e17",
       "source": "manual feed",
       "source_url": "https://www.microsoft.com/",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "apple.com",
@@ -1711,7 +1679,7 @@
       "sha256": "4c85d096d201511cbfe333d948760f6094450d549ee93ec222d374adb2d5b20b",
       "source": "manual feed",
       "source_url": "https://www.apple.com/",
-      "split": "validation"
+      "split": "test"
     },
     {
       "brand_cluster": "ebay.com",
@@ -1743,7 +1711,7 @@
       "sha256": "c8308a00ba0bfa5581a65fdd927fdaffa0f3e3545672bd6dd01f320d6123a101",
       "source": "manual feed",
       "source_url": "https://www.instagram.com/",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "linkedin.com",
@@ -1759,7 +1727,7 @@
       "sha256": "ec16b1091468b6b942ce693ddaf89d215c8297fbf971433748fb05aa09aa91f6",
       "source": "manual feed",
       "source_url": "https://www.linkedin.com/",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "reddit.com",
@@ -1775,7 +1743,7 @@
       "sha256": "c9949bd292b955fdb7c9c8cdc3353c9bdc43ec3fbff6a1df0a3005a15c0fd776",
       "source": "manual feed",
       "source_url": "https://www.reddit.com/",
-      "split": "validation"
+      "split": "test"
     },
     {
       "brand_cluster": "dhl.com",
@@ -1791,7 +1759,7 @@
       "sha256": "b7bb33e7d4dc511776aa82f387f4b91a2dedbdb7b1b2922b1a65b3ae17519515",
       "source": "manual feed",
       "source_url": "https://www.dhl.com/",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "airbnb.com",
@@ -1807,7 +1775,7 @@
       "sha256": "8316f07f2e6114a6c37abd770e934b559373c53337be5fc154fab7a1095c5a55",
       "source": "manual feed",
       "source_url": "https://www.airbnb.com/",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "bit.ly",
@@ -1839,7 +1807,7 @@
       "sha256": "de1582a692dcf8275d3a7fbc46046956d82dc12e18527bde24e3d4fa6ff04308",
       "source": "manual feed",
       "source_url": "https://us16.campaign-archive.com/?u=30ae55e71c5f3b1ccf1a54489&id=54f57296f6",
-      "split": "train"
+      "split": "test"
     },
     {
       "brand_cluster": "zapier.app",
@@ -1855,7 +1823,7 @@
       "sha256": "d95b79ecb7053b8a6492c1e1ed2a3473eda7f6ada36923c2a587b419fe063637",
       "source": "manual feed",
       "source_url": "https://legder-wallte.zapier.app/un-site",
-      "split": "validation"
+      "split": "train"
     },
     {
       "brand_cluster": "tinyurl.com",
@@ -1871,7 +1839,7 @@
       "sha256": "c3639c8d046672c25645ab7ac17be7427a8a80c6841d958058bc68e905053add",
       "source": "manual feed",
       "source_url": "https://tinyurl.com/msew96vd",
-      "split": "test"
+      "split": "validation"
     },
     {
       "brand_cluster": "hsforms.com",
@@ -1887,7 +1855,7 @@
       "sha256": "70a348cde8e1608db05a1fc4ce3a75257502e84f31c8a1a6e102a01f9d36101b",
       "source": "manual feed",
       "source_url": "https://share-eu1.hsforms.com/13YDMlt7iSxWRAhgB8KLWfQ2ew0yz",
-      "split": "train"
+      "split": "test"
     },
     {
       "brand_cluster": "qr-codes.io",
@@ -1903,7 +1871,7 @@
       "sha256": "50f8451c33c811028b2533dd978aa668962dc40b023a7442ff50668f2d7553d9",
       "source": "manual feed",
       "source_url": "https://qr-codes.io/Mb69vx",
-      "split": "validation"
+      "split": "train"
     },
     {
       "brand_cluster": "wixstudio.com",
@@ -1919,7 +1887,7 @@
       "sha256": "4e89b5bef6310d2b4aaed2bb6cc5f0904aaa96b47c81da8536ab7c8556b6d034",
       "source": "manual feed",
       "source_url": "https://startsso-trezriocdn.wixstudio.com/us-en",
-      "split": "test"
+      "split": "validation"
     },
     {
       "brand_cluster": "link.space",
@@ -1935,7 +1903,7 @@
       "sha256": "6da19309bd3046af8ecee5eb929c243c6690540956c5e62c2c09b66ed4a4d027",
       "source": "manual feed",
       "source_url": "https://link.space/@NextStepsRequired",
-      "split": "train"
+      "split": "test"
     },
     {
       "brand_cluster": "r2.dev",
@@ -1983,7 +1951,7 @@
       "sha256": "1652251e39e959a9886eaf293044a2180b06c3c5f74c3f2287d816a618d3cf0a",
       "source": "manual feed",
       "source_url": "https://ex-web3-xdous.teachable.com/p/home",
-      "split": "validation"
+      "split": "train"
     },
     {
       "brand_cluster": "weeblysite.com",
@@ -1999,7 +1967,7 @@
       "sha256": "af7480ed4f95d12905feb6607fe00576228d0d655c537fd1aacaab85b21e4ea0",
       "source": "manual feed",
       "source_url": "https://hotmail-mailbox-100350.weeblysite.com/",
-      "split": "test"
+      "split": "validation"
     },
     {
       "brand_cluster": "flow.page",
@@ -2047,7 +2015,7 @@
       "sha256": "f52fc7b8699d64626752b721684a77ab9c32cdbe3e372afb72f8bc7b75a40c28",
       "source": "manual feed",
       "source_url": "https://surl.li/gmbjx",
-      "split": "train"
+      "split": "test"
     },
     {
       "brand_cluster": "bit.ly",
@@ -2079,7 +2047,7 @@
       "sha256": "4a5feff7ce3b614a69b83ad9d8d5c68eff7b44d1042d7b03798a10402c1bfb89",
       "source": "manual feed",
       "source_url": "https://www.flowcode.com/page/att-paymentinfoupdate-portal",
-      "split": "validation"
+      "split": "train"
     },
     {
       "brand_cluster": "ghost.io",
@@ -2095,7 +2063,7 @@
       "sha256": "870cd8dd6996f891de01c13e6cc3470c98f6e1f53760da1bd5a91ff8f107d0d1",
       "source": "manual feed",
       "source_url": "http://global-exchange.ghost.io/en-bridge",
-      "split": "test"
+      "split": "validation"
     },
     {
       "brand_cluster": "hyundai-motom.ru",
@@ -2111,7 +2079,7 @@
       "sha256": "0b3215578062fd3c3834462e0bd3dd8a3f0ac9255cb587c99e7f75fce2992af9",
       "source": "manual feed",
       "source_url": "http://hpromise.hyundai-motom.ru/wp-God/adobe/?email=3mail@b.c",
-      "split": "train"
+      "split": "test"
     },
     {
       "brand_cluster": "r2.dev",
@@ -2159,7 +2127,7 @@
       "sha256": "c4deb9f1ea0d664ed2cb214f626e59fcf3a81e7adbc46306369d9ddc98c3b930",
       "source": "manual feed",
       "source_url": "https://forms.gle/FNTKmg7Ndc71dsTe9",
-      "split": "validation"
+      "split": "train"
     },
     {
       "brand_cluster": "macizocapital.com",
@@ -2175,7 +2143,7 @@
       "sha256": "cef0c0014b93898e6b2a3e32db9db336ddd74b6d99352cc45e432b4411129e6b",
       "source": "manual feed",
       "source_url": "https://macizocapital.com/htaccess/",
-      "split": "test"
+      "split": "validation"
     },
     {
       "brand_cluster": "takipcigir.com",
@@ -2191,7 +2159,7 @@
       "sha256": "54f66bdc57de42fa3ab8dbaf484ee107eb3cd9ad767888d87cd07a28cc8288a6",
       "source": "manual feed",
       "source_url": "https://takipcigir.com/login",
-      "split": "train"
+      "split": "test"
     },
     {
       "brand_cluster": "replit.dev",
@@ -2207,7 +2175,7 @@
       "sha256": "ebfb7453d467d97a71d0fc812436f54c3572e1cdb84353c5b6da8fe9f91ab19c",
       "source": "manual feed",
       "source_url": "https://522dc3eb-0159-4f84-8b11-2f6b4796a494-00-1dfu7x699vkta.kirk.replit.dev/",
-      "split": "validation"
+      "split": "train"
     },
     {
       "brand_cluster": "r2.dev",
@@ -2255,7 +2223,7 @@
       "sha256": "c25f8e6d0cf800d6ca53a50f13e95553494df919b30712a796049a0a1e05846d",
       "source": "manual feed",
       "source_url": "http://odesli.co/gjnf8c6bfnnnk",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "start.page",
@@ -2303,7 +2271,7 @@
       "sha256": "e96a39d6b455fd383ed10e862f689d9c0a551399dcf9700b3dd0eb5b157b9566",
       "source": "manual feed",
       "source_url": "http://clubeamigosdopedrosegundo.com.br/list/index.php?email=abuse@brain.net.pk",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "crazydomains.com",
@@ -2319,7 +2287,7 @@
       "sha256": "30564e0d6f12bcd3a0b3d0b8e90360793193064a248e0068397b33838f0bc526",
       "source": "manual feed",
       "source_url": "https://23636212-s-p-barber48-pm7ui.sitebeat.crazydomains.com/",
-      "split": "validation"
+      "split": "test"
     },
     {
       "brand_cluster": "bit.ly",
@@ -2351,6 +2319,966 @@
       "sha256": "025e553f1abafeff77554803f703ba5175a877743018ac59ee2bd7b427d3c46b",
       "source": "manual feed",
       "source_url": "https://linqapp.com/ertyu?r=link",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "ead.me",
+      "captured_at": "2026-10-24T15:39:06+00:00",
+      "filename": "phishing_ead_me_01.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "080c0c0c4c0c080c",
+      "registered_domain": "ead.me",
+      "sha256": "c06f5c74213fecad10023f43cfab51b630a90615998be470de3725c0bd7acaca",
+      "source": "manual feed",
+      "source_url": "https://l.ead.me/bgZQak",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "google.com",
+      "captured_at": "2026-10-24T15:39:10+00:00",
+      "filename": "phishing_google_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "1606182515000000",
+      "registered_domain": "google.com",
+      "sha256": "e952229716b08d1900defd3a3de54b13ae4a0dbce72401a3907c03c2a1788682",
+      "source": "manual feed",
+      "source_url": "https://docs.google.com/presentation/d/e/2PACX-1vRetnEM07L1oYMf9EduaI2mGEOjJ-yq1YbKtchesMNvEPQBkynHnL25So7h3E0ZE2HNPqkN-N4m7-lv/pub?start=false&loop=false&delayms=3000&slide=id.p%3E",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "google.com",
+      "captured_at": "2026-10-24T15:39:15+00:00",
+      "filename": "phishing_google_com_02.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "0c0c0c8e06161600",
+      "registered_domain": "google.com",
+      "sha256": "217d4fd40c8a394335936afa74f11a6f67062f4e9a4d45d6c14d9121fbb726c0",
+      "source": "manual feed",
+      "source_url": "https://docs.google.com/presentation/d/13pN-ZlS6ntXxRGOFDcjVrlU5B1aM8L5W-XLqQ-zId0c/pub?start=false&amp;loop=false&amp;delayms=3000&amp;pli=1&amp;slide=id.p",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "google.com",
+      "captured_at": "2026-10-24T15:39:21+00:00",
+      "filename": "phishing_google_com_03.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "0c4c0e170f160002",
+      "registered_domain": "google.com",
+      "sha256": "045f63df6c62acd4149730e3459005bb461e6a7759bce7f6d98af0009b1a8f6b",
+      "source": "manual feed",
+      "source_url": "https://docs.google.com/presentation/d/e/2PACX-1vQf0Lk0MuTtP5pF8HpRpCrSvM-lItsG5Wh_pWSWAaVgXtKumyS2juOJqi3gLOZrWVVBsrmk7HNwecUS/pub?start=false&amp;loop=false&amp;delayms=3000&amp;pli=1&amp;slide=id.p",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "google.com",
+      "captured_at": "2026-10-24T15:39:30+00:00",
+      "filename": "phishing_google_com_04.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "0170353114970004",
+      "registered_domain": "google.com",
+      "sha256": "5e2d2485217101184fcf84ad7123c2aa8c664093d01e61a7883037aa87d6d5d0",
+      "source": "manual feed",
+      "source_url": "https://docs.google.com/presentation/d/e/2PACX-1vTxNfy2WVK-Bk8NpHDzMUpn85We1XnqmCitwYgr0-H744yK8LULEOFCV33yfLAmJjL-QbRr2TqCJSKb/pub?start=false&amp;loop=false&amp;delayms=3000",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "google.com",
+      "captured_at": "2026-10-24T15:39:37+00:00",
+      "filename": "phishing_google_com_05.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "00080c160c061618",
+      "registered_domain": "google.com",
+      "sha256": "6d5b15ccaefc650a95da23385a4b6e3dfc26e507aed268b4663aa3f2adcdc505",
+      "source": "manual feed",
+      "source_url": "https://sites.google.com/view/paypal-loginn/",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "google.com",
+      "captured_at": "2026-10-24T15:40:15+00:00",
+      "filename": "phishing_google_com_06.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "00080c160c061618",
+      "registered_domain": "google.com",
+      "sha256": "1896ff01631d18dd96b9be50c2bc8bde054488e007d5a142ea14da848940975b",
+      "source": "manual feed",
+      "source_url": "https://sites.google.com/view/suchanf-ragen/home",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "firebaseapp.com",
+      "captured_at": "2026-10-24T15:40:18+00:00",
+      "filename": "phishing_firebaseapp_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "a060f0a000000000",
+      "registered_domain": "firebaseapp.com",
+      "sha256": "61d9a1532f256e0bb85c2e91a0a3aaabee524ad0f192e221a534c51fdd10b29b",
+      "source": "manual feed",
+      "source_url": "https://office365login-1f9d1.firebaseapp.com/",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "adobe.com",
+      "captured_at": "2026-10-24T15:40:27+00:00",
+      "filename": "phishing_adobe_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "ceb23232723ab2ca",
+      "registered_domain": "adobe.com",
+      "sha256": "3bcf0864714082b196ecb07abbf24bfd9eee5753d5bc533ccb1ac16a7ece1ddb",
+      "source": "manual feed",
+      "source_url": "https://new.express.adobe.com/webpage/dN3LyteqgvA7w",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "ead.me",
+      "captured_at": "2026-10-24T15:40:41+00:00",
+      "filename": "phishing_ead_me_02.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "160c681400000000",
+      "registered_domain": "ead.me",
+      "sha256": "b078882c8ad850df70e821b136ed165b192e10506b160fefdb9cd0a6001074cc",
+      "source": "manual feed",
+      "source_url": "https://l.ead.me/bfKYKe",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "google.com",
+      "captured_at": "2026-10-24T15:40:45+00:00",
+      "filename": "phishing_google_com_07.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "00080c0e0c061618",
+      "registered_domain": "google.com",
+      "sha256": "7a2a978344be28f1d2264d86e9cbab54b3804b719adbc93d741eefb59b5501d2",
+      "source": "manual feed",
+      "source_url": "https://docs.google.com/drawings/d/1fhG4zwfWyPVoH7Vse1SUFkY1jutDXx0KicJDwKgTyN8/edit",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "adobe.com",
+      "captured_at": "2026-10-24T15:40:54+00:00",
+      "filename": "phishing_adobe_com_02.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "ceb2323a723ab2ca",
+      "registered_domain": "adobe.com",
+      "sha256": "ed149eadc19da5865c7c0f237958df3e3c8ae3322cd6a335a40d99f6aeb38309",
+      "source": "manual feed",
+      "source_url": "https://new.express.adobe.com/webpage/On9SrByPHD1QZ",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "google.com",
+      "captured_at": "2026-10-24T15:40:58+00:00",
+      "filename": "phishing_google_com_08.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "1e06142b07160004",
+      "registered_domain": "google.com",
+      "sha256": "e347502918395c40a8bc81134728094db9ccbc7cd4e3b481658ba3e6e3e58b5e",
+      "source": "manual feed",
+      "source_url": "https://docs.google.com/presentation/d/e/2PACX-1vT8YLBDnu7kqoSI2Sb-2er73ca7e7CmSVcv48v-FozNTSHouoGAdms4n_3Gg7G43zZJwKEfnxvkV4Wj/pub?start=false&amp;loop=false&amp;delayms=3000",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "google.com",
+      "captured_at": "2026-10-24T15:41:29+00:00",
+      "filename": "phishing_google_com_09.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "3b91d1da3688c240",
+      "registered_domain": "google.com",
+      "sha256": "57b337f005a41188ee9bb6d12fc4eb3d229d79380a95abf7777d62f36cb16b15",
+      "source": "manual feed",
+      "source_url": "https://docs.google.com/presentation/d/1gBvfAiCvkPTcu0YFovbn7Wwa_P3j08o0aRSbttl3JlU/pub?start=false&amp;loop=false",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "ead.me",
+      "captured_at": "2026-10-24T15:41:37+00:00",
+      "filename": "phishing_ead_me_04.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "323574a440202300",
+      "registered_domain": "ead.me",
+      "sha256": "604dad713e6fcbb0c4be26207bf2cbf33d370d02d845abe2d2abaddcd363cec2",
+      "source": "manual feed",
+      "source_url": "https://l.ead.me/bgb81A",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "frappe.cloud",
+      "captured_at": "2026-10-24T15:42:04+00:00",
+      "filename": "phishing_frappe_cloud_01.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "101c0c0c4d0c0000",
+      "registered_domain": "frappe.cloud",
+      "sha256": "d1a09e695a229a13e8d48ac4964dce614a213bae2d2f80b913a2c870acf29d7d",
+      "source": "manual feed",
+      "source_url": "https://tubhd.frappe.cloud/tubhd2026?fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExelcyZ0M4TjZJQlB0N203N3NydGMGYXBwX2lkDzU0MTYzOTQ5Mzg4OTAyNQABHtPKkZ2AGI44FoRGnHLKRKXQ6TZxPzKCBt__gjc9QU7ZFM15cT9ofFjnH2e5_aem_Jj4e2i8JB2EVsyrp-GFoqQ",
+      "split": "validation"
+    },
+    {
+      "brand_cluster": "jotform.com",
+      "captured_at": "2026-10-24T15:42:09+00:00",
+      "filename": "phishing_jotform_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "001469694d690400",
+      "registered_domain": "jotform.com",
+      "sha256": "f44f6552464a3ef4ad5389a054607ca498be2ec10a516a3c78170bd68488adae",
+      "source": "manual feed",
+      "source_url": "https://eu.jotform.com/app/252181910524350",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "adobe.com",
+      "captured_at": "2026-10-24T15:42:25+00:00",
+      "filename": "phishing_adobe_com_03.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "ceb2323a723ab2ca",
+      "registered_domain": "adobe.com",
+      "sha256": "abbb50701653e0108a9dbf2597bb7c5d65998e2ec94bc555762595244b1a3ebb",
+      "source": "manual feed",
+      "source_url": "https://new.express.adobe.com/webpage/t7jFanQSi8xqK",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "q-r.to",
+      "captured_at": "2026-10-24T15:42:32+00:00",
+      "filename": "phishing_q-r_to_08.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "080c0c0c1c0c0c0c",
+      "registered_domain": "q-r.to",
+      "sha256": "0a45a8d4e3799928cf280564da15f9c12310749f0f70b465312b7e8028184bb3",
+      "source": "manual feed",
+      "source_url": "https://q-r.to/bfPydw",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "google.com",
+      "captured_at": "2026-10-24T15:42:37+00:00",
+      "filename": "phishing_google_com_10.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "4d0c000606000000",
+      "registered_domain": "google.com",
+      "sha256": "8636640c279bee736f879a8de21968de6ad1ea38fad19a326998e7ddeed3fd9d",
+      "source": "manual feed",
+      "source_url": "https://docs.google.com/presentation/d/e/2PACX-1vRDfxFkj_pLLibvnjtPLgvUFu8aYs9FR-fCpQOHKTF0NIkOJa05K4ARMeSdSlWVOAhfqzWjm-XIo798/pub?start=false&amp;loop=false&amp;delayms=3000",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "firebaseapp.com",
+      "captured_at": "2026-10-24T15:43:23+00:00",
+      "filename": "phishing_firebaseapp_com_02.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "0c0c000000000000",
+      "registered_domain": "firebaseapp.com",
+      "sha256": "8d2fddc391086642225fbc433f003df5e2cea1bcb39a7a7ea3a9fe4c312ca1db",
+      "source": "manual feed",
+      "source_url": "https://frkytw.firebaseapp.com/",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "rdhtire.net",
+      "captured_at": "2026-10-24T15:43:26+00:00",
+      "filename": "phishing_rdhtire_net_01.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "0000000000000000",
+      "registered_domain": "rdhtire.net",
+      "sha256": "d7b298b4c44685250357eb7644139205e0715db01efee9ea27daade053f94244",
+      "source": "manual feed",
+      "source_url": "https://rdhtire.net/",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "ead.me",
+      "captured_at": "2026-10-24T15:43:52+00:00",
+      "filename": "phishing_ead_me_08.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "080c0c080c0c0c04",
+      "registered_domain": "ead.me",
+      "sha256": "649612ae892eecc3676f6daad9fbc7c6a8b9a782d104c257837fda0775cbabba",
+      "source": "manual feed",
+      "source_url": "https://l.ead.me/bfJTLS",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "google.com",
+      "captured_at": "2026-10-24T15:44:01+00:00",
+      "filename": "phishing_google_com_11.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "3c1c001000000000",
+      "registered_domain": "google.com",
+      "sha256": "f69a3f1f99711f70dcbeb872486defdf4ab0e2939499a3d89ab32ec9eb8d6b96",
+      "source": "manual feed",
+      "source_url": "https://docs.google.com/presentation/d/e/2PACX-1vQOIAFHPXr32kRzICeg0pxLtVysBOQMxnbGa7kP4Ns_rvzRfhPxM6iQZxZssKENBaNiO-bNvJyZLomA/pub?start=true&amp;loop=true&amp;delayms=1000",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "google.com",
+      "captured_at": "2026-10-24T15:44:05+00:00",
+      "filename": "phishing_google_com_12.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "0030200c0e0e4d24",
+      "registered_domain": "google.com",
+      "sha256": "a1c032dba4e90e88a0e188726f6985b09a9b8a02b91a9df6df921b0d21f66f84",
+      "source": "manual feed",
+      "source_url": "https://docs.google.com/presentation/d/e/2PACX-1vR-oE_DR345hm8ksqwbkSSpSCzLJnCk6GTlkfTzkLCxckLHll9IMo8pCGOamLlPE8ukH4JV-6ZrSDbX/pub?start=true&amp;loop=true&amp;delayms=1000",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "adobe.com",
+      "captured_at": "2026-10-24T15:44:15+00:00",
+      "filename": "phishing_adobe_com_04.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "ceb23232723ab2ca",
+      "registered_domain": "adobe.com",
+      "sha256": "31cb47f81b20710dedb4e7539acb7420091aa9f4812d80715010346cb5822e88",
+      "source": "manual feed",
+      "source_url": "https://new.express.adobe.com/webpage/9wPmF0LB7tf23",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "fpmodelsonline.com",
+      "captured_at": "2026-10-24T15:44:41+00:00",
+      "filename": "phishing_fpmodelsonline_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "33caf3e3cb8ece2e",
+      "registered_domain": "fpmodelsonline.com",
+      "sha256": "787955144e3917c37c77b523bb1d6f2d35e406fb2b22e2f4ec5c3771bb75340a",
+      "source": "manual feed",
+      "source_url": "https://fpmodelsonline.com/",
+      "split": "test"
+    },
+    {
+      "brand_cluster": "firebaseapp.com",
+      "captured_at": "2026-10-24T15:45:15+00:00",
+      "filename": "phishing_firebaseapp_com_03.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "000c0814144d0c00",
+      "registered_domain": "firebaseapp.com",
+      "sha256": "90ab762f05b20dd5decbbfede08bfb25a13665510cb44cbfe6103a468c709af3",
+      "source": "manual feed",
+      "source_url": "https://adsincoinciousin.firebaseapp.com/",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "google.com",
+      "captured_at": "2026-10-24T15:45:19+00:00",
+      "filename": "phishing_google_com_13.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "0c0c6945144d4d00",
+      "registered_domain": "google.com",
+      "sha256": "3b3cfbe2cbf633a2a3906748abdc3b5e6b673a6fe852dfd023b257e440e92d15",
+      "source": "manual feed",
+      "source_url": "https://docs.google.com/presentation/d/e/2PACX-1vRZ-oTANduSx-4H9CiDLNLc3sEgs2t8XX2Z8ufeaXJ_0sQkpftyra28oV2bxAReOueBYwFWceGhc3m7/pub?start=true&amp;loop=true&amp;delayms=1000",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "adobe.com",
+      "captured_at": "2026-10-24T15:45:31+00:00",
+      "filename": "phishing_adobe_com_05.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "ceb23232723ab2ca",
+      "registered_domain": "adobe.com",
+      "sha256": "96b130e6ed691c4a2673ef1f26206d1bf1524c58e91befe4f38c1c76f00b7c3b",
+      "source": "manual feed",
+      "source_url": "https://new.express.adobe.com/webpage/zKTbQk57LjuBd",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "jotform.com",
+      "captured_at": "2026-10-24T15:45:35+00:00",
+      "filename": "phishing_jotform_com_04.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "03c4868686868686",
+      "registered_domain": "jotform.com",
+      "sha256": "89656212f5a2ea6a8f2c0858a5482e7f6224e5705d2373fa63bd0e306aab8015",
+      "source": "manual feed",
+      "source_url": "https://www.jotform.com/app/252952455650562",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "webwave.dev",
+      "captured_at": "2026-10-24T15:46:14+00:00",
+      "filename": "phishing_webwave_dev_01.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "4600000000000000",
+      "registered_domain": "webwave.dev",
+      "sha256": "df2efed1e57af8493b5dbd5acd9c42bdb632c34c9d8e1df36cf485697f9e051d",
+      "source": "manual feed",
+      "source_url": "https://bru4gp.webwave.dev/",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "google.com",
+      "captured_at": "2026-10-24T15:46:49+00:00",
+      "filename": "phishing_google_com_14.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "0c0c0e0d36260002",
+      "registered_domain": "google.com",
+      "sha256": "d1f3894cef4ce113d8ea08c4e6545898821fe842116dca2c2a0a0580fb1a0d72",
+      "source": "manual feed",
+      "source_url": "https://docs.google.com/presentation/d/e/2PACX-1vR2WHODuYr-KtusY5oXCbeibN9R3IJKamr-vfr4gb8sMpSv1EsGCjENJByxVCwqXyvvuVmjcCO_w2kF/pub?start=false&amp;loop=false&amp;delayms=3000",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "paps.jp",
+      "captured_at": "2026-10-24T15:47:12+00:00",
+      "filename": "phishing_paps_jp_01.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "080c0c0c080c0c0c",
+      "registered_domain": "paps.jp",
+      "sha256": "43b9f5f689bd0a31d28b27e2a85a2a1caed4c10959cb85a2016e7376763f6c5c",
+      "source": "manual feed",
+      "source_url": "https://qr.paps.jp/H8bjK",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "google.com",
+      "captured_at": "2026-10-24T15:47:53+00:00",
+      "filename": "phishing_google_com_15.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "1096861006160014",
+      "registered_domain": "google.com",
+      "sha256": "21003c76cbc3d9916bdc07b8278f91145deab57ec5b09fb4ae5b98529a4bc979",
+      "source": "manual feed",
+      "source_url": "https://docs.google.com/presentation/d/e/2PACX-1vTNIP6xvKgzZ36w6NG84txM0YpzdahMBuupKyerSMs_c8X-SIzSrxddHULi5Fa59e3j3oB8GAxbaDKc/pub?start=false&amp;loop=false&amp;delayms=3000",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "americanexpress.com",
+      "captured_at": "2026-10-24T15:48:02+00:00",
+      "filename": "legitimate_americanexpress_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "9c999d9f8d9d9f9f",
+      "registered_domain": "americanexpress.com",
+      "sha256": "c6df050f9da6c8a5e414c7c9d04d6c9c54856f9cc981bb0842944777970873b4",
+      "source": "manual feed",
+      "source_url": "https://www.americanexpress.com/",
+      "split": "test"
+    },
+    {
+      "brand_cluster": "capitalone.com",
+      "captured_at": "2026-10-24T15:48:19+00:00",
+      "filename": "legitimate_capitalone_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "5c433a8ac9ccc687",
+      "registered_domain": "capitalone.com",
+      "sha256": "652e4938bb7fec0cc6efcfe469fb86d2ae17179b5f79bcbd6884a93dd545410a",
+      "source": "manual feed",
+      "source_url": "https://www.capitalone.com/",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "discover.com",
+      "captured_at": "2026-10-24T15:48:24+00:00",
+      "filename": "legitimate_discover_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "4534b4b428000b1b",
+      "registered_domain": "discover.com",
+      "sha256": "68029757f93d20be07b7a11a17284ffa80fa863813985641370c3a9eec0c4df1",
+      "source": "manual feed",
+      "source_url": "https://www.discover.com/",
+      "split": "validation"
+    },
+    {
+      "brand_cluster": "schwab.com",
+      "captured_at": "2026-10-24T15:48:28+00:00",
+      "filename": "legitimate_schwab_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "85a5000000000000",
+      "registered_domain": "schwab.com",
+      "sha256": "f63b8e2008cee61290094a75a7555b9e1db56f62b55740f52364f169d1c5cdd4",
+      "source": "manual feed",
+      "source_url": "https://www.schwab.com/",
+      "split": "test"
+    },
+    {
+      "brand_cluster": "myfitnesspal.com",
+      "captured_at": "2026-10-24T15:48:54+00:00",
+      "filename": "legitimate_myfitnesspal_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "1813c1c516d4d318",
+      "registered_domain": "myfitnesspal.com",
+      "sha256": "f28b5456caea6b81e2dbcd85ff58fa006355dc6c46d67a4b99cf7cc032d948d3",
+      "source": "manual feed",
+      "source_url": "https://www.myfitnesspal.com/",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "duolingo.com",
+      "captured_at": "2026-10-24T15:49:04+00:00",
+      "filename": "legitimate_duolingo_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "6110331313300037",
+      "registered_domain": "duolingo.com",
+      "sha256": "c84b12bb7f31939476f3dc95a162b6fd05a1dd0d68604abc0bfa94ebf13bc839",
+      "source": "manual feed",
+      "source_url": "https://www.duolingo.com/",
+      "split": "validation"
+    },
+    {
+      "brand_cluster": "canva.com",
+      "captured_at": "2026-10-24T15:49:11+00:00",
+      "filename": "legitimate_canva_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "239acaf031393935",
+      "registered_domain": "canva.com",
+      "sha256": "37ea5efaee4ffc116711bcf6b725b5fbe06e047d483ba7884332d36a80ef697a",
+      "source": "manual feed",
+      "source_url": "https://www.canva.com/",
+      "split": "test"
+    },
+    {
+      "brand_cluster": "box.com",
+      "captured_at": "2026-10-24T15:49:28+00:00",
+      "filename": "legitimate_box_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "dc000e861e5d2231",
+      "registered_domain": "box.com",
+      "sha256": "92c55eaba7d3e5bea7ad4986072c6b51b2a1d180a10705fa699be544429febe5",
+      "source": "manual feed",
+      "source_url": "https://www.box.com/",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "evernote.com",
+      "captured_at": "2026-10-24T15:49:35+00:00",
+      "filename": "legitimate_evernote_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "4d87164d4d736959",
+      "registered_domain": "evernote.com",
+      "sha256": "23fddcd3c947e55ba2d224bf2c953e624177f3095dac8a8b0b3465657587ff50",
+      "source": "manual feed",
+      "source_url": "https://www.evernote.com/",
+      "split": "validation"
+    },
+    {
+      "brand_cluster": "trello.com",
+      "captured_at": "2026-10-24T15:49:44+00:00",
+      "filename": "legitimate_trello_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "dc13c4337371951d",
+      "registered_domain": "trello.com",
+      "sha256": "83b5aceabd7e7d36c90887e3284efcd5c02a41e806e2554acd95b79035632e7c",
+      "source": "manual feed",
+      "source_url": "https://www.trello.com/",
+      "split": "test"
+    },
+    {
+      "brand_cluster": "monday.com",
+      "captured_at": "2026-10-24T15:50:04+00:00",
+      "filename": "legitimate_monday_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "d87333a3e5d2e00c",
+      "registered_domain": "monday.com",
+      "sha256": "fdd7ead1f35a28fa31663bc58ae42a39eb3a3a09cdb60b0a8b2ab49c0f1a3dd7",
+      "source": "manual feed",
+      "source_url": "https://www.monday.com/",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "clickup.com",
+      "captured_at": "2026-10-24T15:50:10+00:00",
+      "filename": "legitimate_clickup_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "4d400b7b60392523",
+      "registered_domain": "clickup.com",
+      "sha256": "270ca10c3434c5b7959a92fa979978962aff677ff23c57932af7a9d731b09c40",
+      "source": "manual feed",
+      "source_url": "https://www.clickup.com/",
+      "split": "validation"
+    },
+    {
+      "brand_cluster": "zendesk.com",
+      "captured_at": "2026-10-24T15:50:19+00:00",
+      "filename": "legitimate_zendesk_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "e0e965609ae0e4e4",
+      "registered_domain": "zendesk.com",
+      "sha256": "0ac1930ab18326075e0f06a72893fbb342c51ce50967dc71d05c871550e2df97",
+      "source": "manual feed",
+      "source_url": "https://www.zendesk.com/",
+      "split": "test"
+    },
+    {
+      "brand_cluster": "intercom.com",
+      "captured_at": "2026-10-24T15:50:25+00:00",
+      "filename": "legitimate_intercom_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "f181c8d4d68a8606",
+      "registered_domain": "intercom.com",
+      "sha256": "e1a3c4ca6521a99ff11821b5af26134e8c009cfa4d3a6e4e1bfd143312831479",
+      "source": "manual feed",
+      "source_url": "https://www.intercom.com/",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "hubspot.com",
+      "captured_at": "2026-10-24T15:50:32+00:00",
+      "filename": "legitimate_hubspot_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "b0620821239c1cb8",
+      "registered_domain": "hubspot.com",
+      "sha256": "7d576672a894f079d1854a246deaea02e88bea16a4d955048bd87c66df8c1c7f",
+      "source": "manual feed",
+      "source_url": "https://www.hubspot.com/",
+      "split": "validation"
+    },
+    {
+      "brand_cluster": "mailchimp.com",
+      "captured_at": "2026-10-24T15:50:39+00:00",
+      "filename": "legitimate_mailchimp_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "a8aceab29acaa092",
+      "registered_domain": "mailchimp.com",
+      "sha256": "6afad5e82bb70d5ee78b1fb36a5fe02039b2f99b8802e3c5b5b3b212a9855b39",
+      "source": "manual feed",
+      "source_url": "https://www.mailchimp.com/",
+      "split": "test"
+    },
+    {
+      "brand_cluster": "squarespace.com",
+      "captured_at": "2026-10-24T15:50:45+00:00",
+      "filename": "legitimate_squarespace_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "b3b638f233696969",
+      "registered_domain": "squarespace.com",
+      "sha256": "300edc49c8922781fc32a43d8f2fe9e574698f6fb51733b4b9d33562ecef9cb3",
+      "source": "manual feed",
+      "source_url": "https://www.squarespace.com/",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "wix.com",
+      "captured_at": "2026-10-24T15:50:57+00:00",
+      "filename": "legitimate_wix_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "c42b330f0f13074d",
+      "registered_domain": "wix.com",
+      "sha256": "ff335db7ca1f948e0e60ded14ac571080109448a5d82d952ac4a2ea95891d718",
+      "source": "manual feed",
+      "source_url": "https://www.wix.com/",
+      "split": "validation"
+    },
+    {
+      "brand_cluster": "dreamhost.com",
+      "captured_at": "2026-10-24T15:51:41+00:00",
+      "filename": "legitimate_dreamhost_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "039c1af0c4d46b00",
+      "registered_domain": "dreamhost.com",
+      "sha256": "1a30fa063e5d1d12deca336f3b7c018c2e0260e0e5295366836917111b858200",
+      "source": "manual feed",
+      "source_url": "https://www.dreamhost.com/",
+      "split": "test"
+    },
+    {
+      "brand_cluster": "linode.com",
+      "captured_at": "2026-10-24T15:51:57+00:00",
+      "filename": "legitimate_linode_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "c0c401491d430058",
+      "registered_domain": "linode.com",
+      "sha256": "c1c12e5ff13e96fc202356f4cd4346cddf172338378a31ce46a2829b85d821dc",
+      "source": "manual feed",
+      "source_url": "https://www.linode.com/",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "salesforce.com",
+      "captured_at": "2026-10-24T15:52:03+00:00",
+      "filename": "legitimate_salesforce_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "2527873424342464",
+      "registered_domain": "salesforce.com",
+      "sha256": "970fd06bffe7c73ea3c063a4fac2fe592804d43c42dc9b453328fc78a423b907",
+      "source": "manual feed",
+      "source_url": "https://login.salesforce.com/",
+      "split": "validation"
+    },
+    {
+      "brand_cluster": "workday.com",
+      "captured_at": "2026-10-24T15:52:23+00:00",
+      "filename": "legitimate_workday_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "666ececec696e0f4",
+      "registered_domain": "workday.com",
+      "sha256": "d16c2d397bf33e398217763e3d6a0c2930b33363a9a144b6f68be4b1cfac20e6",
+      "source": "manual feed",
+      "source_url": "https://www.workday.com/",
+      "split": "test"
+    },
+    {
+      "brand_cluster": "paylocity.com",
+      "captured_at": "2026-10-24T15:52:30+00:00",
+      "filename": "legitimate_paylocity_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "c1410e4d9e8ecc71",
+      "registered_domain": "paylocity.com",
+      "sha256": "be8a6fe3f8459b565922f4172cff091470c3432152e0fa79ccf40dfb6751cf26",
+      "source": "manual feed",
+      "source_url": "https://www.paylocity.com/",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "xero.com",
+      "captured_at": "2026-10-24T15:52:43+00:00",
+      "filename": "legitimate_xero_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "c090b2cd32737b73",
+      "registered_domain": "xero.com",
+      "sha256": "2b49e8309b4c80d03e3f61fb2e8e8f0ee7f6917ae7edd4ccebeac0212bfe2943",
+      "source": "manual feed",
+      "source_url": "https://www.xero.com/",
+      "split": "validation"
+    },
+    {
+      "brand_cluster": "freshbooks.com",
+      "captured_at": "2026-10-24T15:52:53+00:00",
+      "filename": "legitimate_freshbooks_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "c41b3726d9c5d319",
+      "registered_domain": "freshbooks.com",
+      "sha256": "75e92f28f6c9dcaa0a0434c738bcaa1040a7fa8c984196139ffd52feac23c09b",
+      "source": "manual feed",
+      "source_url": "https://www.freshbooks.com/",
       "split": "test"
     }
   ],
