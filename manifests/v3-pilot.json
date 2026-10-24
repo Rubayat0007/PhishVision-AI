@@ -389,7 +389,7 @@
       "registered_domain": "github.io",
       "sha256": "e9f11835fbb4f27f90f5a497e98470dcf49ec9a2b29ca53f64d1c13a0e897203",
       "source": "manual feed",
-      "split": "validation"
+      "split": "train"
     },
     {
       "brand_cluster": "roblox.rw",
@@ -404,7 +404,7 @@
       "registered_domain": "roblox.rw",
       "sha256": "7eb4c9dace22b669feba02f00ac84272ae4375c5419124cdb17b7ac418ad83db",
       "source": "manual feed",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "com.et",
@@ -494,7 +494,7 @@
       "registered_domain": "3658995.cc",
       "sha256": "dd44ee6a09927868387af59b4b073b35d89c8e96dda78f547174b50be8161f52",
       "source": "manual feed",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "airbnb.com",
@@ -569,7 +569,7 @@
       "registered_domain": "800876.xyz",
       "sha256": "2a54e5029a307e8f2d0b9b87970b3f4efd989b55fdc5f01f29025e0807b78dfe",
       "source": "manual feed",
-      "split": "validation"
+      "split": "test"
     },
     {
       "brand_cluster": "dndair.com",
@@ -599,7 +599,7 @@
       "registered_domain": "com.gr",
       "sha256": "d7ddaddb6a88c39f43c815b0c58b503244760d04605e14a02116c8cc4b6faa85",
       "source": "manual feed",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "momabb.top",
@@ -614,7 +614,7 @@
       "registered_domain": "momabb.top",
       "sha256": "3c77f5658ed8b07eb5a069716a7b07a0259374eda95f1fd6c940d83774cb4fbf",
       "source": "manual feed",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "jisandev.com",
@@ -629,7 +629,7 @@
       "registered_domain": "jisandev.com",
       "sha256": "56a6fbe5d4b2805632b9eb85155bdeec950c8981938e65f43a494a524a50e00f",
       "source": "manual feed",
-      "split": "validation"
+      "split": "test"
     },
     {
       "brand_cluster": "base99.online",
@@ -644,7 +644,7 @@
       "registered_domain": "base99.online",
       "sha256": "a2a656b7c01c67fa4097354d83b916c5f9d12d6e52ddf3cc333fcb0e51ff5e18",
       "source": "manual feed",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "surl.bot",
@@ -659,22 +659,7 @@
       "registered_domain": "surl.bot",
       "sha256": "2b2f52d47a109aa84e9c325fd99516591d5c8da851f54e31a94001c869be6abd",
       "source": "manual feed",
-      "split": "train"
-    },
-    {
-      "brand_cluster": "replit.app",
-      "captured_at": "2026-10-24T10:45:59+00:00",
-      "filename": "phishing_replit_app_02.png",
-      "kit_cluster": "unknown",
-      "label": "phishing",
-      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
-      "label_confidence": 0.7,
-      "license": "research use of public page",
-      "phash": "fc7b79726b69308c",
-      "registered_domain": "replit.app",
-      "sha256": "cbdf818e07796b2fc62b432dd2f5a6add790df525bd0836675417fa69727df27",
-      "source": "manual feed",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "schneider-feuereschutiz.lol",
@@ -689,7 +674,7 @@
       "registered_domain": "schneider-feuereschutiz.lol",
       "sha256": "3e5074742d30d7ba8e4ad3b3a43bb3dc54e5048feedd0f34af1573591f970163",
       "source": "manual feed",
-      "split": "validation"
+      "split": "test"
     },
     {
       "brand_cluster": "tokenpoicet.pro",
@@ -704,7 +689,7 @@
       "registered_domain": "tokenpoicet.pro",
       "sha256": "cb99105af786c13a422c2d19bbe521cccc887a0a4b4edc59208b7c877cbe5791",
       "source": "manual feed",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "s4w.in",
@@ -734,7 +719,7 @@
       "registered_domain": "121893coinbase.com",
       "sha256": "cdc551ca65e6de4c5f433a666e7d3254b3e6d6ab01ded492d109df255ea6f8da",
       "source": "manual feed",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "ebivyt.net",
@@ -749,7 +734,7 @@
       "registered_domain": "ebivyt.net",
       "sha256": "fddd6b47c4e62be0da8cc5331019d4165edd59af56dc2057faece37b378d63cd",
       "source": "manual feed",
-      "split": "validation"
+      "split": "test"
     },
     {
       "brand_cluster": "backblazeb2.com",
@@ -779,7 +764,7 @@
       "registered_domain": "com.pt",
       "sha256": "0c8b5cb431da4ba312d57efe827450c94521bbb659a86dce6c243a00c9b1cc2a",
       "source": "manual feed",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "g5.lu",
@@ -794,7 +779,7 @@
       "registered_domain": "g5.lu",
       "sha256": "3b0bff146a5944a391cbfe1267c5cd82fc32b7ede55b4aa8ae50906d302d2e7c",
       "source": "manual feed",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "u.to",
@@ -839,7 +824,7 @@
       "registered_domain": "imtokein-cdn.autos",
       "sha256": "d81526ab7f6d1842bd2afed70c254849f09dc5b826e514567177634542cebc80",
       "source": "manual feed",
-      "split": "validation"
+      "split": "test"
     },
     {
       "brand_cluster": "135461223.site",
@@ -884,7 +869,7 @@
       "registered_domain": "helpnets.info",
       "sha256": "e73ab6b017e4fa527c5a7f84d24c2f21d66282770bb71397fe050550f361beb8",
       "source": "manual feed",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "dndair.com",
@@ -929,7 +914,7 @@
       "registered_domain": "auth-secure.me",
       "sha256": "758bab979e00d9f4815d6289076a87191b2a730909313849f25f220b9562f973",
       "source": "manual feed",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "pages.dev",
@@ -944,7 +929,7 @@
       "registered_domain": "pages.dev",
       "sha256": "c10e9afbff8a639ead5e5ef94ab73b0c4a764b068d2d490ed71fb296b051127e",
       "source": "manual feed",
-      "split": "validation"
+      "split": "test"
     },
     {
       "brand_cluster": "19504jjb.com",
@@ -959,7 +944,7 @@
       "registered_domain": "19504jjb.com",
       "sha256": "d9783919cfceda6427e4ce904b6b40b87506ed18477813e870f8239b8f612bed",
       "source": "manual feed",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "imtoke.net",
@@ -974,7 +959,7 @@
       "registered_domain": "imtoke.net",
       "sha256": "137006beaddedda42a9ec3b4b5438177254b02ddda80e816fd0cafc449a05069",
       "source": "manual feed",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "6686-vn.net",
@@ -989,7 +974,7 @@
       "registered_domain": "6686-vn.net",
       "sha256": "2a974505063d37d6a3cc78d397e19435928b71a8f924716627a4b271208d75ed",
       "source": "manual feed",
-      "split": "validation"
+      "split": "test"
     },
     {
       "brand_cluster": "workers.dev",
@@ -1003,21 +988,6 @@
       "phash": "101c080c18061618",
       "registered_domain": "workers.dev",
       "sha256": "d3f24c487cd44aeaa280e0d37699424106b46d930ff00797c6d4b539a2fcb454",
-      "source": "manual feed",
-      "split": "test"
-    },
-    {
-      "brand_cluster": "replit.app",
-      "captured_at": "2026-10-24T11:01:09+00:00",
-      "filename": "phishing_replit_app_03.png",
-      "kit_cluster": "unknown",
-      "label": "phishing",
-      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
-      "label_confidence": 0.7,
-      "license": "research use of public page",
-      "phash": "e0e2c96969e961e0",
-      "registered_domain": "replit.app",
-      "sha256": "9a508cde12638789cbb2715f02dedc0a70a3f952134310c85a7cb9d71b327a94",
       "source": "manual feed",
       "split": "train"
     },
@@ -1049,7 +1019,7 @@
       "registered_domain": "centre-dentaire-bat.com",
       "sha256": "f4e67e36004ff9eac66ee262b9cdea54c7c1ce7ab48860534df6dabe83652ab4",
       "source": "manual feed",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "netlify.app",
@@ -1109,7 +1079,7 @@
       "registered_domain": "cfolks.pl",
       "sha256": "8f7c3c91bd4a0075a6c953b6c7537c8271c018a7d14f0e2a5829e20ac7cc5f6f",
       "source": "manual feed",
-      "split": "validation"
+      "split": "test"
     },
     {
       "brand_cluster": "justns.ru",
@@ -1139,7 +1109,7 @@
       "registered_domain": "co.za",
       "sha256": "0b633942bf4ec353fbd60627fb5d673f00e13132aeef151c40345d9b02edce86",
       "source": "manual feed",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "weebly.com",
@@ -1154,7 +1124,7 @@
       "registered_domain": "weebly.com",
       "sha256": "c6ef61acc9aa4468f7d17892b7d955776951514802a4ca7a721adbe36ae10d6d",
       "source": "manual feed",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "dreal-xpressdeliverys.com",
@@ -1169,7 +1139,7 @@
       "registered_domain": "dreal-xpressdeliverys.com",
       "sha256": "a7c865ebe5e20d3915837a56f39695aade8650eafce1f92799cc7a913cbcc5f9",
       "source": "manual feed",
-      "split": "validation"
+      "split": "test"
     },
     {
       "brand_cluster": "roblox.ly",
@@ -1502,21 +1472,6 @@
       "split": "train"
     },
     {
-      "brand_cluster": "replit.app",
-      "captured_at": "2026-10-24T11:36:55+00:00",
-      "filename": "phishing_replit_app_01.png",
-      "kit_cluster": "unknown",
-      "label": "phishing",
-      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
-      "label_confidence": 0.7,
-      "license": "research use of public page",
-      "phash": "0c0c144d0d000400",
-      "registered_domain": "replit.app",
-      "sha256": "21a273e9d29d71c36b8507faef1852d2a1f1503fb96142920c83b36d42394cfe",
-      "source": "manual feed",
-      "split": "train"
-    },
-    {
       "brand_cluster": "imtokein-cdn.xyz",
       "captured_at": "2026-10-24T11:40:06+00:00",
       "filename": "phishing_imtokein-cdn_xyz_01.png",
@@ -1529,7 +1484,7 @@
       "registered_domain": "imtokein-cdn.xyz",
       "sha256": "d31ee6eaab77fbb9bb912ef42e233ae87bf6a0047fde2ccc46f83a52ff159edb",
       "source": "manual feed",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "usbank.com",
@@ -1845,6 +1800,21 @@
       "sha256": "41e60991f2346eb2983ab2e79cb9b48765dfc58888dcfca11ca636e14ff12171",
       "source": "manual feed",
       "split": "test"
+    },
+    {
+      "brand_cluster": "phishing.army",
+      "captured_at": "2026-10-24T12:29:21+00:00",
+      "filename": "phishing_phishing_army_01.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "0000080961000000",
+      "registered_domain": "phishing.army",
+      "sha256": "dde4a746441a1a626be93aca600c570f20a7366f2bee41b14f9d5d51b4b52ebf",
+      "source": "manual feed",
+      "split": "validation"
     }
   ],
   "schema_version": 1
