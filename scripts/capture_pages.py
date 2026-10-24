@@ -103,6 +103,8 @@ def main() -> int:
     parser.add_argument("--timeout-ms", type=int, default=30000)
     parser.add_argument("--source", default="manual feed")
     parser.add_argument("--license", default="research use of public page")
+    parser.add_argument("--recapture", action="store_true",
+                        help="replace rows/files that are already recorded")
     args = parser.parse_args()
 
     width, height = (int(x) for x in args.viewport.lower().split("x"))
@@ -118,6 +120,11 @@ def main() -> int:
     args.out_dir.mkdir(parents=True, exist_ok=True)
     labels = args.out_dir / "labels.csv"
 
+    existing: set[str] = set()
+    if labels.is_file() and labels.stat().st_size > 0:
+        with labels.open(encoding="utf-8", newline="") as handle:
+            existing = {row.get("filename", "") for row in csv.DictReader(handle)}
+
     jobs = [(url, "phishing") for url in read_urls(args.phishing_file)]
     jobs += [(url, "legitimate") for url in read_urls(args.legit_file)]
 
@@ -125,6 +132,7 @@ def main() -> int:
 
     rows: list[dict] = []
     failures: list[tuple[str, str]] = []
+    skipped = 0
 
     with sync_playwright() as play:
         browser = play.chromium.launch(headless=True)
@@ -137,6 +145,12 @@ def main() -> int:
 
             page = browser.new_page(viewport={"width": width, "height": height},
                                     accept_downloads=False)
+
+            if filename in existing and not args.recapture:
+                print(f"skip {filename} (already recorded; use --recapture to replace)")
+                skipped += 1
+                page.close()
+                continue
             try:
                 page.goto(url, wait_until="load", timeout=args.timeout_ms)
                 page.wait_for_timeout(1500)
@@ -183,7 +197,7 @@ def main() -> int:
 
     phishing = sum(1 for row in rows if row["label"] == "phishing")
     print(f"\nrow(s) appended: {len(rows)} (phishing {phishing}, "
-          f"legitimate {len(rows) - phishing})")
+          f"legitimate {len(rows) - phishing}); skipped existing: {skipped}")
     print(f"failures: {len(failures)}")
     for url, reason in failures[:10]:
         print(f"  {url} -> {reason}")

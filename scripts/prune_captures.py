@@ -36,13 +36,52 @@ def is_blank(path: Path, threshold: float = BLANK_NONWHITE) -> bool:
         return True
 
 
+def dedupe_labels(labels: Path, apply: bool = False) -> int:
+    """Drop repeated filename rows, keeping the first occurrence."""
+    if not labels.is_file():
+        return 0
+
+    with labels.open(encoding="utf-8", newline="") as handle:
+        reader = csv.DictReader(handle)
+        fieldnames = reader.fieldnames or []
+        seen: set[str] = set()
+        kept: list[dict] = []
+
+        for row in reader:
+            name = row.get("filename", "")
+            if name in seen:
+                continue
+            seen.add(name)
+            kept.append(row)
+
+    with labels.open(encoding="utf-8", newline="") as handle:
+        original = sum(1 for _ in csv.DictReader(handle))
+
+    removed = original - len(kept)
+
+    if apply and removed:
+        with labels.open("w", encoding="utf-8", newline="") as handle:
+            writer = csv.DictWriter(handle, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(kept)
+
+    return removed
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--captures", type=Path, default=Path("captures"))
     parser.add_argument("--labels", type=Path, default=Path("captures/labels.csv"))
     parser.add_argument("--threshold", type=float, default=BLANK_NONWHITE)
     parser.add_argument("--apply", action="store_true")
+    parser.add_argument("--dedupe", action="store_true",
+                        help="also remove repeated filename rows")
     args = parser.parse_args()
+
+    if args.dedupe:
+        removed = dedupe_labels(args.labels, apply=args.apply)
+        action = "removed" if args.apply else "would remove"
+        print(f"duplicate label rows {action}: {removed}")
 
     blank = []
 
