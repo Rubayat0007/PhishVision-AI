@@ -40,6 +40,9 @@ COLUMNS = [
 
 TWO_PART_TLDS = {"co.uk", "com.au", "co.jp", "com.br", "co.in", "org.uk", "ac.uk"}
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from prune_captures import is_blank  # noqa: E402
+
 
 def registered_domain(url: str) -> str:
     host = (urlparse(url).hostname or "").lower()
@@ -147,6 +150,12 @@ def main() -> int:
                     page.close()
                 except Exception:  # noqa: BLE001
                     pass
+
+            # A white rectangle means a bot wall or a JS failure, not a page.
+            if target.exists() and is_blank(target):
+                target.unlink()
+                failures.append((url, "blank render (bot wall or JS failure)"))
+                continue
 
             rows.append({
                 "filename": filename,
