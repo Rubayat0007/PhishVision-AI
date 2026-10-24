@@ -48,3 +48,6 @@ results/**/*.jpg
 /results/component_diagnostics_cluster/
 /results/data_audit/
 /results/leakage_free/
+
+# Feed URLs stay local
+/capture_inputs/phishing_urls.txt

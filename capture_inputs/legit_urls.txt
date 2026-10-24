@@ -1,0 +1,25 @@
+# Legitimate page URLs for the pilot.
+# Edit freely: add the sites your detection actually needs to protect.
+# One URL per line; lines starting with # are ignored.
+# Capture runs headless and never logs in. Do not add pages that require
+# credentials: a login wall screenshot is a hard negative only if it renders.
+https://www.wikipedia.org/
+https://www.python.org/
+https://github.com/login
+https://www.mozilla.org/
+https://www.cloudflare.com/
+https://www.microsoft.com/
+https://www.apple.com/
+https://www.amazon.com/
+https://www.ebay.com/
+https://www.paypal.com/us/home
+https://www.instagram.com/
+https://www.linkedin.com/
+https://www.reddit.com/
+https://www.bbc.com/
+https://www.nytimes.com/
+https://www.dropbox.com/
+https://www.dhl.com/
+https://www.booking.com/
+https://www.airbnb.com/
+https://www.netflix.com/
