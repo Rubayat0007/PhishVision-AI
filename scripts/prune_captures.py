@@ -36,28 +36,36 @@ def is_blank(path: Path, threshold: float = BLANK_NONWHITE) -> bool:
         return True
 
 
-def dedupe_labels(labels: Path, apply: bool = False) -> int:
-    """Drop repeated filename rows, keeping the first occurrence."""
+def dedupe_labels(labels: Path, apply: bool = False, keep: str = "last") -> int:
+    """Drop repeated filename rows.
+
+    Default keeps the LAST occurrence: a re-capture updates metadata (for example
+    adds source_url), so the newest row is the better one.
+    """
     if not labels.is_file():
         return 0
 
     with labels.open(encoding="utf-8", newline="") as handle:
         reader = csv.DictReader(handle)
         fieldnames = reader.fieldnames or []
-        seen: set[str] = set()
-        kept: list[dict] = []
+        rows = list(reader)
 
-        for row in reader:
-            name = row.get("filename", "")
-            if name in seen:
-                continue
-            seen.add(name)
-            kept.append(row)
+    seen: set[str] = set()
+    kept: list[dict] = []
 
-    with labels.open(encoding="utf-8", newline="") as handle:
-        original = sum(1 for _ in csv.DictReader(handle))
+    ordered = reversed(rows) if keep == "last" else rows
 
-    removed = original - len(kept)
+    for row in ordered:
+        name = row.get("filename", "")
+        if name in seen:
+            continue
+        seen.add(name)
+        kept.append(row)
+
+    if keep == "last":
+        kept.reverse()
+
+    removed = len(rows) - len(kept)
 
     if apply and removed:
         with labels.open("w", encoding="utf-8", newline="") as handle:

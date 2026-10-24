@@ -2,96 +2,6 @@
   "dataset_version": "v3-pilot",
   "images": [
     {
-      "brand_cluster": "wikipedia.org",
-      "captured_at": "2026-10-24T09:22:57+00:00",
-      "filename": "legitimate_wikipedia_org_01.png",
-      "kit_cluster": "unknown",
-      "label": "legitimate",
-      "label_basis": "public page captured, no credentials entered",
-      "label_confidence": 0.7,
-      "license": "research use of public page",
-      "phash": "0c020301131303d3",
-      "registered_domain": "wikipedia.org",
-      "sha256": "fc5683b22469040faa1657de9e2afd154757edb0c1ba0778b1d7668c56dadb35",
-      "source": "manual feed",
-      "split": "train"
-    },
-    {
-      "brand_cluster": "python.org",
-      "captured_at": "2026-10-24T09:23:03+00:00",
-      "filename": "legitimate_python_org_01.png",
-      "kit_cluster": "unknown",
-      "label": "legitimate",
-      "label_basis": "public page captured, no credentials entered",
-      "label_confidence": 0.7,
-      "license": "research use of public page",
-      "phash": "9c9c5b191b79e80b",
-      "registered_domain": "python.org",
-      "sha256": "b0c704ef4903d5c427533cf1125fae18fab952e18a18dd6a5dde221c5ea56002",
-      "source": "manual feed",
-      "split": "train"
-    },
-    {
-      "brand_cluster": "mozilla.org",
-      "captured_at": "2026-10-24T09:23:17+00:00",
-      "filename": "legitimate_mozilla_org_01.png",
-      "kit_cluster": "unknown",
-      "label": "legitimate",
-      "label_basis": "public page captured, no credentials entered",
-      "label_confidence": 0.7,
-      "license": "research use of public page",
-      "phash": "cc0808960ec1b7ad",
-      "registered_domain": "mozilla.org",
-      "sha256": "459155adeb2ea497a4c9969c74c6880fd9cb8b9ebeedd5ff9318baaf317a1b6b",
-      "source": "manual feed",
-      "split": "train"
-    },
-    {
-      "brand_cluster": "cloudflare.com",
-      "captured_at": "2026-10-24T09:23:28+00:00",
-      "filename": "legitimate_cloudflare_com_01.png",
-      "kit_cluster": "unknown",
-      "label": "legitimate",
-      "label_basis": "public page captured, no credentials entered",
-      "label_confidence": 0.7,
-      "license": "research use of public page",
-      "phash": "cd456171c4693333",
-      "registered_domain": "cloudflare.com",
-      "sha256": "47540814f49bf17ed21e6ce386a5866fcc10f7719ab203f0cf0942ab139b0f9e",
-      "source": "manual feed",
-      "split": "train"
-    },
-    {
-      "brand_cluster": "apple.com",
-      "captured_at": "2026-10-24T09:24:01+00:00",
-      "filename": "legitimate_apple_com_01.png",
-      "kit_cluster": "unknown",
-      "label": "legitimate",
-      "label_basis": "public page captured, no credentials entered",
-      "label_confidence": 0.7,
-      "license": "research use of public page",
-      "phash": "354e4c4a4c4d4d4d",
-      "registered_domain": "apple.com",
-      "sha256": "70077cbacca36a130da5b3e4c59ba784e1d17a33bed090dee228dabb079d2ec4",
-      "source": "manual feed",
-      "split": "train"
-    },
-    {
-      "brand_cluster": "ebay.com",
-      "captured_at": "2026-10-24T09:24:17+00:00",
-      "filename": "legitimate_ebay_com_01.png",
-      "kit_cluster": "unknown",
-      "label": "legitimate",
-      "label_basis": "public page captured, no credentials entered",
-      "label_confidence": 0.7,
-      "license": "research use of public page",
-      "phash": "3135b5353535b40c",
-      "registered_domain": "ebay.com",
-      "sha256": "f75549ca0419f0d8e9e571dadc42fb1a3e35b80eaceb04a3f69883b8bb22d725",
-      "source": "manual feed",
-      "split": "train"
-    },
-    {
       "brand_cluster": "paypal.com",
       "captured_at": "2026-10-24T09:24:33+00:00",
       "filename": "legitimate_paypal_com_01.png",
@@ -104,51 +14,7 @@
       "registered_domain": "paypal.com",
       "sha256": "9c53599cc6e51cd9e86f8a1d7e5d0dda427326d1a0aa4a8375c382913c924922",
       "source": "manual feed",
-      "split": "train"
-    },
-    {
-      "brand_cluster": "instagram.com",
-      "captured_at": "2026-10-24T09:24:47+00:00",
-      "filename": "legitimate_instagram_com_01.png",
-      "kit_cluster": "unknown",
-      "label": "legitimate",
-      "label_basis": "public page captured, no credentials entered",
-      "label_confidence": 0.7,
-      "license": "research use of public page",
-      "phash": "8437342133332300",
-      "registered_domain": "instagram.com",
-      "sha256": "97f552168ac723f7dbcb73e50dcbb4f2b8808c298513b6ae3d2feeb5d4de989f",
-      "source": "manual feed",
-      "split": "train"
-    },
-    {
-      "brand_cluster": "linkedin.com",
-      "captured_at": "2026-10-24T09:24:53+00:00",
-      "filename": "legitimate_linkedin_com_01.png",
-      "kit_cluster": "unknown",
-      "label": "legitimate",
-      "label_basis": "public page captured, no credentials entered",
-      "label_confidence": 0.7,
-      "license": "research use of public page",
-      "phash": "0461613163231203",
-      "registered_domain": "linkedin.com",
-      "sha256": "c808b018d20034d297785317c45fec3cf0bec9f16eb20b4512a35c5aaa441c9b",
-      "source": "manual feed",
-      "split": "train"
-    },
-    {
-      "brand_cluster": "reddit.com",
-      "captured_at": "2026-10-24T09:25:02+00:00",
-      "filename": "legitimate_reddit_com_01.png",
-      "kit_cluster": "unknown",
-      "label": "legitimate",
-      "label_basis": "public page captured, no credentials entered",
-      "label_confidence": 0.7,
-      "license": "research use of public page",
-      "phash": "0c0c0c0c060e4c00",
-      "registered_domain": "reddit.com",
-      "sha256": "c9949bd292b955fdb7c9c8cdc3353c9bdc43ec3fbff6a1df0a3005a15c0fd776",
-      "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -164,6 +30,7 @@
       "registered_domain": "bbc.com",
       "sha256": "8e093c50dd4dd3d212cadc1e75e582a23d01d3536ef11ce99eac902b55e00afb",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -179,36 +46,7 @@
       "registered_domain": "dropbox.com",
       "sha256": "48d53a6bf964fc9dfc7bda6e935cef39737b06d424b8943da4ae3bd3ddc4ab0c",
       "source": "manual feed",
-      "split": "train"
-    },
-    {
-      "brand_cluster": "dhl.com",
-      "captured_at": "2026-10-24T09:26:04+00:00",
-      "filename": "legitimate_dhl_com_01.png",
-      "kit_cluster": "unknown",
-      "label": "legitimate",
-      "label_basis": "public page captured, no credentials entered",
-      "label_confidence": 0.7,
-      "license": "research use of public page",
-      "phash": "101c340000000000",
-      "registered_domain": "dhl.com",
-      "sha256": "a1cf4a3016d82b755e599dc547c6bee000ff8158300311f86c8e0a615412d0da",
-      "source": "manual feed",
-      "split": "train"
-    },
-    {
-      "brand_cluster": "microsoft.com",
-      "captured_at": "2026-10-24T09:46:57+00:00",
-      "filename": "legitimate_microsoft_com_01.png",
-      "kit_cluster": "unknown",
-      "label": "legitimate",
-      "label_basis": "public page captured, no credentials entered",
-      "label_confidence": 0.7,
-      "license": "research use of public page",
-      "phash": "798e002424137000",
-      "registered_domain": "microsoft.com",
-      "sha256": "865f0229bb8b87da6a287d575cade289c954b320ef5bd308f22a40a3fc83c90d",
-      "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -224,6 +62,7 @@
       "registered_domain": "netflix.com",
       "sha256": "f38c362af0f783d9311f0ba0189ec5a6f21b7b5acb13f5f31c3526f39a6cb8ef",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -239,6 +78,7 @@
       "registered_domain": "forward-box.com",
       "sha256": "6f194c7ead37af0c2f3f9c9b8de80d7d6c1c856a84637d75f0cc93e891fa6e0c",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -254,6 +94,7 @@
       "registered_domain": "trendndailyinsider.com",
       "sha256": "0b14c1f4f2430b2f126cced0f5d24a06b0d6a5168f1401e22d2de836ebcd8fcc",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -269,6 +110,7 @@
       "registered_domain": "com.et",
       "sha256": "a5694d2cba8014e01344f25e68af10cde6c86e669b25ad2960c2e8c2dadb8336",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -284,6 +126,7 @@
       "registered_domain": "mohsenmeysami.com",
       "sha256": "a8a6abd15243917004246a7272a3f7d9a08790d8cd4ff19aafb880fa0cb107c5",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -299,6 +142,7 @@
       "registered_domain": "sirimaneproperties.com",
       "sha256": "90ae5322cae805608cac1ad1cff11a02c9ec39bbb1cacbaad5d5f9e09e97368e",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -314,6 +158,7 @@
       "registered_domain": "contaboserver.net",
       "sha256": "053bcc3e1af513e8a8f49cecc8ffdfe53d04d06207604626f9df8db7dacc31da",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -329,6 +174,7 @@
       "registered_domain": "vercel.app",
       "sha256": "6cd60770c947d4ddc0f4045dd541d198bf52bc14b56137b0593ff486ab1066e5",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -344,6 +190,7 @@
       "registered_domain": "vercel.app",
       "sha256": "5c6e4728ea5465c18c20e765315688cf0415748f7bb08993c6099cfe6586b882",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -359,6 +206,7 @@
       "registered_domain": "webflow.io",
       "sha256": "ec79dcddf00ad48a056897b6705117bae83194017a69cce3da8345479c152dea",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -374,6 +222,7 @@
       "registered_domain": "blogspot.com",
       "sha256": "30310399062fb026f890a6b65c94cbf78c742413ee8d5cb84e2db4d7cf20fa9f",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -389,6 +238,7 @@
       "registered_domain": "github.io",
       "sha256": "e9f11835fbb4f27f90f5a497e98470dcf49ec9a2b29ca53f64d1c13a0e897203",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -404,6 +254,7 @@
       "registered_domain": "roblox.rw",
       "sha256": "7eb4c9dace22b669feba02f00ac84272ae4375c5419124cdb17b7ac418ad83db",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -419,6 +270,7 @@
       "registered_domain": "com.et",
       "sha256": "454a9a0ead8eee28cb6fcb2d7dbb01c5beb7846be58a107c1e9b17038ebc0a4c",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -434,6 +286,7 @@
       "registered_domain": "exvrn.com",
       "sha256": "6e595d7b36dd09ae91f11b368574e782553f9188b05366e2c5fd66f3e85edec8",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -449,6 +302,7 @@
       "registered_domain": "vercel.app",
       "sha256": "6bff6fe388eb466a3f2dbb46f48f61ee056035af136037f24d7501c0193d074d",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -464,6 +318,7 @@
       "registered_domain": "com.bi",
       "sha256": "9a9f6fb9895b23159bd663de47e4c84f8796f99805ddc045364911302e06bee2",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -479,6 +334,7 @@
       "registered_domain": "com.bi",
       "sha256": "928cc6a065fd3485e457b7832cf74b7cf5cb756bb3d8720d796ee79c36003dba",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -494,22 +350,8 @@
       "registered_domain": "3658995.cc",
       "sha256": "dd44ee6a09927868387af59b4b073b35d89c8e96dda78f547174b50be8161f52",
       "source": "manual feed",
+      "source_url": "",
       "split": "validation"
-    },
-    {
-      "brand_cluster": "airbnb.com",
-      "captured_at": "2026-10-24T10:31:11+00:00",
-      "filename": "legitimate_airbnb_com_01.png",
-      "kit_cluster": "unknown",
-      "label": "legitimate",
-      "label_basis": "public page captured, no credentials entered",
-      "label_confidence": 0.7,
-      "license": "research use of public page",
-      "phash": "8531c2410181c101",
-      "registered_domain": "airbnb.com",
-      "sha256": "1b0409eee25f21f471017f7a91216b17a949104727377c887c8fe70202513384",
-      "source": "manual feed",
-      "split": "train"
     },
     {
       "brand_cluster": "roblox.ly",
@@ -524,6 +366,7 @@
       "registered_domain": "roblox.ly",
       "sha256": "f676856ca17727833946ffa46dfd416b1a022faa07c1f35bb443d7ff43b50b99",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -539,6 +382,7 @@
       "registered_domain": "u.to",
       "sha256": "dfaeac7ed92a4795e04f2f6ff28fcd801c1167eb9ddf99af5b3ff46c4d5933ac",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -554,6 +398,7 @@
       "registered_domain": "s4w.in",
       "sha256": "6d509118b35f15d7bd52bf08b9836263d9fe8cc6cb9d8d35d8bf374bab8b9924",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -569,6 +414,7 @@
       "registered_domain": "800876.xyz",
       "sha256": "2a54e5029a307e8f2d0b9b87970b3f4efd989b55fdc5f01f29025e0807b78dfe",
       "source": "manual feed",
+      "source_url": "",
       "split": "test"
     },
     {
@@ -584,6 +430,7 @@
       "registered_domain": "dndair.com",
       "sha256": "e131965da243f8edaae4b40dbe80857f73497a389fdfa3d5a041a2c6e18935de",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -599,6 +446,7 @@
       "registered_domain": "com.gr",
       "sha256": "d7ddaddb6a88c39f43c815b0c58b503244760d04605e14a02116c8cc4b6faa85",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -614,6 +462,7 @@
       "registered_domain": "momabb.top",
       "sha256": "3c77f5658ed8b07eb5a069716a7b07a0259374eda95f1fd6c940d83774cb4fbf",
       "source": "manual feed",
+      "source_url": "",
       "split": "validation"
     },
     {
@@ -629,6 +478,7 @@
       "registered_domain": "jisandev.com",
       "sha256": "56a6fbe5d4b2805632b9eb85155bdeec950c8981938e65f43a494a524a50e00f",
       "source": "manual feed",
+      "source_url": "",
       "split": "test"
     },
     {
@@ -644,6 +494,7 @@
       "registered_domain": "base99.online",
       "sha256": "a2a656b7c01c67fa4097354d83b916c5f9d12d6e52ddf3cc333fcb0e51ff5e18",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -659,6 +510,7 @@
       "registered_domain": "surl.bot",
       "sha256": "2b2f52d47a109aa84e9c325fd99516591d5c8da851f54e31a94001c869be6abd",
       "source": "manual feed",
+      "source_url": "",
       "split": "validation"
     },
     {
@@ -674,6 +526,7 @@
       "registered_domain": "schneider-feuereschutiz.lol",
       "sha256": "3e5074742d30d7ba8e4ad3b3a43bb3dc54e5048feedd0f34af1573591f970163",
       "source": "manual feed",
+      "source_url": "",
       "split": "test"
     },
     {
@@ -689,6 +542,7 @@
       "registered_domain": "tokenpoicet.pro",
       "sha256": "cb99105af786c13a422c2d19bbe521cccc887a0a4b4edc59208b7c877cbe5791",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -704,6 +558,7 @@
       "registered_domain": "s4w.in",
       "sha256": "101f2e75cc8040ada47b26a9939f37fb3c58d70b2b3167c911e4e21ab82eaadf",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -719,6 +574,7 @@
       "registered_domain": "121893coinbase.com",
       "sha256": "cdc551ca65e6de4c5f433a666e7d3254b3e6d6ab01ded492d109df255ea6f8da",
       "source": "manual feed",
+      "source_url": "",
       "split": "validation"
     },
     {
@@ -734,6 +590,7 @@
       "registered_domain": "ebivyt.net",
       "sha256": "fddd6b47c4e62be0da8cc5331019d4165edd59af56dc2057faece37b378d63cd",
       "source": "manual feed",
+      "source_url": "",
       "split": "test"
     },
     {
@@ -749,6 +606,7 @@
       "registered_domain": "backblazeb2.com",
       "sha256": "cf264364e22c12a0dc56d6af34683bc595cc0501926d7311f47ed8afe3abda74",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -764,6 +622,7 @@
       "registered_domain": "com.pt",
       "sha256": "0c8b5cb431da4ba312d57efe827450c94521bbb659a86dce6c243a00c9b1cc2a",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -779,6 +638,7 @@
       "registered_domain": "g5.lu",
       "sha256": "3b0bff146a5944a391cbfe1267c5cd82fc32b7ede55b4aa8ae50906d302d2e7c",
       "source": "manual feed",
+      "source_url": "",
       "split": "validation"
     },
     {
@@ -794,6 +654,7 @@
       "registered_domain": "u.to",
       "sha256": "b70599c0b52302b7ecfa9ad56b4c0763f49d18db77200953ff321ba8efc3c3cd",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -809,6 +670,7 @@
       "registered_domain": "roblox.et",
       "sha256": "1b22e775cef1115653ae67c777869417fd19baed1fd337b49e7067470b81b50c",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -824,6 +686,7 @@
       "registered_domain": "imtokein-cdn.autos",
       "sha256": "d81526ab7f6d1842bd2afed70c254849f09dc5b826e514567177634542cebc80",
       "source": "manual feed",
+      "source_url": "",
       "split": "test"
     },
     {
@@ -839,6 +702,7 @@
       "registered_domain": "135461223.site",
       "sha256": "d4120008a4eaef48dcb9146c3eb6790a474fde02a52778d144f00410daecdaea",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -854,6 +718,7 @@
       "registered_domain": "vwwv-roblox.co",
       "sha256": "d31ee1bfd92e0729908c23f2e93266715070381a597fe90428af315a1515d955",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -869,6 +734,7 @@
       "registered_domain": "helpnets.info",
       "sha256": "e73ab6b017e4fa527c5a7f84d24c2f21d66282770bb71397fe050550f361beb8",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -884,6 +750,7 @@
       "registered_domain": "dndair.com",
       "sha256": "b608c35498ed3998946d3e067eea0a21e4692ecd26412446273dd148193cebb2",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -899,6 +766,7 @@
       "registered_domain": "roblox.et",
       "sha256": "04ffb80d1e35f59cc0789aedce38251d24149efbdcdb1feffe267081281b9961",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -914,6 +782,7 @@
       "registered_domain": "auth-secure.me",
       "sha256": "758bab979e00d9f4815d6289076a87191b2a730909313849f25f220b9562f973",
       "source": "manual feed",
+      "source_url": "",
       "split": "validation"
     },
     {
@@ -929,6 +798,7 @@
       "registered_domain": "pages.dev",
       "sha256": "c10e9afbff8a639ead5e5ef94ab73b0c4a764b068d2d490ed71fb296b051127e",
       "source": "manual feed",
+      "source_url": "",
       "split": "test"
     },
     {
@@ -944,6 +814,7 @@
       "registered_domain": "19504jjb.com",
       "sha256": "d9783919cfceda6427e4ce904b6b40b87506ed18477813e870f8239b8f612bed",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -959,6 +830,7 @@
       "registered_domain": "imtoke.net",
       "sha256": "137006beaddedda42a9ec3b4b5438177254b02ddda80e816fd0cafc449a05069",
       "source": "manual feed",
+      "source_url": "",
       "split": "validation"
     },
     {
@@ -974,6 +846,7 @@
       "registered_domain": "6686-vn.net",
       "sha256": "2a974505063d37d6a3cc78d397e19435928b71a8f924716627a4b271208d75ed",
       "source": "manual feed",
+      "source_url": "",
       "split": "test"
     },
     {
@@ -989,6 +862,7 @@
       "registered_domain": "workers.dev",
       "sha256": "d3f24c487cd44aeaa280e0d37699424106b46d930ff00797c6d4b539a2fcb454",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -1004,6 +878,7 @@
       "registered_domain": "135461223.site",
       "sha256": "465b702620e299ed8632f571185ae45814cccddaa9a4c9499bd796de1c8d59d4",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -1019,6 +894,7 @@
       "registered_domain": "centre-dentaire-bat.com",
       "sha256": "f4e67e36004ff9eac66ee262b9cdea54c7c1ce7ab48860534df6dabe83652ab4",
       "source": "manual feed",
+      "source_url": "",
       "split": "validation"
     },
     {
@@ -1034,6 +910,7 @@
       "registered_domain": "netlify.app",
       "sha256": "8c5483882013d8c7b5f35614ed5c5a6514d186e864e93de0822632196f9a8121",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -1049,6 +926,7 @@
       "registered_domain": "netlify.app",
       "sha256": "123d2b37aa32da4c8fbce034a6a5e0ef1c6bd0bd7dff1230fbf33e5aa743c29e",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -1064,6 +942,7 @@
       "registered_domain": "roblox.ly",
       "sha256": "e8c833bea1476021da786ed2b8513b8bcd81165de2107a0feeffb1268f915b9e",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -1079,6 +958,7 @@
       "registered_domain": "cfolks.pl",
       "sha256": "8f7c3c91bd4a0075a6c953b6c7537c8271c018a7d14f0e2a5829e20ac7cc5f6f",
       "source": "manual feed",
+      "source_url": "",
       "split": "test"
     },
     {
@@ -1094,6 +974,7 @@
       "registered_domain": "justns.ru",
       "sha256": "b6962d2f72658fa177f87d72c2f2b3afbbc5159a80b7f950b55243d04df9d958",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -1109,6 +990,7 @@
       "registered_domain": "co.za",
       "sha256": "0b633942bf4ec353fbd60627fb5d673f00e13132aeef151c40345d9b02edce86",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -1124,6 +1006,7 @@
       "registered_domain": "weebly.com",
       "sha256": "c6ef61acc9aa4468f7d17892b7d955776951514802a4ca7a721adbe36ae10d6d",
       "source": "manual feed",
+      "source_url": "",
       "split": "validation"
     },
     {
@@ -1139,6 +1022,7 @@
       "registered_domain": "dreal-xpressdeliverys.com",
       "sha256": "a7c865ebe5e20d3915837a56f39695aade8650eafce1f92799cc7a913cbcc5f9",
       "source": "manual feed",
+      "source_url": "",
       "split": "test"
     },
     {
@@ -1154,6 +1038,7 @@
       "registered_domain": "roblox.ly",
       "sha256": "0bd91d98aed22d1316f4d2b56a69448c96e3ddbd3c4f8221a58ea0c505c70056",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -1169,6 +1054,7 @@
       "registered_domain": "chase.com",
       "sha256": "b31c17d21744a6ee8efcd911c0bc5db85a2515a8fda6597dde0f1c14ecad3cd3",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -1184,6 +1070,7 @@
       "registered_domain": "bankofamerica.com",
       "sha256": "db5be7a6d68ce4906ff6ee793a684622e7dff5ff1b174147d295b3c9fafa9572",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -1199,6 +1086,7 @@
       "registered_domain": "wellsfargo.com",
       "sha256": "b7ee17fbb12a17a1f7a062822de8bd3d6cd9bb3fe99156ef54aa69affd92dae0",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -1214,6 +1102,7 @@
       "registered_domain": "hsbc.com",
       "sha256": "f3d52211c00b847c382e2a429a2a7897b50d0a0dde04cd71e5f92776d418aa91",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -1229,6 +1118,7 @@
       "registered_domain": "google.com",
       "sha256": "45fd6ae64e8925277fab2ab006d5c93fd753e2ddcdf91cde58aff968e68cc36a",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -1244,6 +1134,7 @@
       "registered_domain": "google.com",
       "sha256": "600ae1c4deddc3af58b8f157282aff3055b4d6d042d47bc820c7ab3adcc239bb",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -1259,6 +1150,7 @@
       "registered_domain": "etsy.com",
       "sha256": "17218db8b3f8b9187ddf1b3c263cc1f607b9d86c2551ef9e4a03aa89d676dab1",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -1274,6 +1166,7 @@
       "registered_domain": "shopify.com",
       "sha256": "f026c86899e4104311f5eceefbd8a715f832cf830dc4631e9cea18d110a2c659",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -1289,6 +1182,7 @@
       "registered_domain": "facebook.com",
       "sha256": "7369b53eeff5ca9a85b2a97542686750e057e550546eb3d90d37cae54323d002",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -1304,6 +1198,7 @@
       "registered_domain": "pinterest.com",
       "sha256": "c59943ab0223f49960ab981cbebcf69851e84af334d19d9b58756c264ae8fc39",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -1319,6 +1214,7 @@
       "registered_domain": "expedia.com",
       "sha256": "807973648fce4163b55ae0c6ad2b7147fe997d2a58ff8d21fcbe5b7f33b17df8",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -1334,6 +1230,7 @@
       "registered_domain": "kayak.com",
       "sha256": "cd61d3cd48ee2e28dab6930959d1b24e440f5c7f135738cc3fce53a12140d988",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -1349,6 +1246,7 @@
       "registered_domain": "stripe.com",
       "sha256": "44aaa8cff6d4fe0fe43647bdda3d7ef6ca3dd70fea610bb1b917831d75ac5d25",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -1364,6 +1262,7 @@
       "registered_domain": "wise.com",
       "sha256": "4500f8f65c6db4efda0915003a9d47776442f1a03e7b4d940be140f66f587fa6",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -1379,6 +1278,7 @@
       "registered_domain": "zoom.us",
       "sha256": "b4ee1966b906b5991bd6c0143e7efa3b2b0e7aa63397c144e92b353ad05db13f",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -1394,7 +1294,8 @@
       "registered_domain": "notion.so",
       "sha256": "7621dbb1901f0ec733b8296661ec430df6c5e9e9d285f1c1c283d7ea11c254bb",
       "source": "manual feed",
-      "split": "validation"
+      "source_url": "",
+      "split": "train"
     },
     {
       "brand_cluster": "figma.com",
@@ -1409,7 +1310,8 @@
       "registered_domain": "figma.com",
       "sha256": "c80eed57587d77b52999badf4a7e579ab0fcca5d3fcb015a7b5a226c00f6f7f7",
       "source": "manual feed",
-      "split": "test"
+      "source_url": "",
+      "split": "train"
     },
     {
       "brand_cluster": "gov.uk",
@@ -1424,7 +1326,8 @@
       "registered_domain": "gov.uk",
       "sha256": "9f5cc6c5111cf5cb589f799385246f79a8356b74d1fb6010e813274282c977a4",
       "source": "manual feed",
-      "split": "train"
+      "source_url": "",
+      "split": "validation"
     },
     {
       "brand_cluster": "usa.gov",
@@ -1439,7 +1342,8 @@
       "registered_domain": "usa.gov",
       "sha256": "ce21aa9892c675f5dac68afc8b9c3c020647ff0db7329ca9ea0cd22c3c00b951",
       "source": "manual feed",
-      "split": "validation"
+      "source_url": "",
+      "split": "test"
     },
     {
       "brand_cluster": "reuters.com",
@@ -1454,7 +1358,8 @@
       "registered_domain": "reuters.com",
       "sha256": "764cedb42c91352742b64bcfac368fd3803596cb94338302ee6e98c7ac43500d",
       "source": "manual feed",
-      "split": "test"
+      "source_url": "",
+      "split": "train"
     },
     {
       "brand_cluster": "theguardian.com",
@@ -1469,7 +1374,8 @@
       "registered_domain": "theguardian.com",
       "sha256": "58198bebc7473ff43db56f08d3d1c45e105b79e67bee6da0ead0b11557839656",
       "source": "manual feed",
-      "split": "train"
+      "source_url": "",
+      "split": "validation"
     },
     {
       "brand_cluster": "imtokein-cdn.xyz",
@@ -1484,6 +1390,7 @@
       "registered_domain": "imtokein-cdn.xyz",
       "sha256": "d31ee6eaab77fbb9bb912ef42e233ae87bf6a0047fde2ccc46f83a52ff159edb",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -1499,7 +1406,8 @@
       "registered_domain": "usbank.com",
       "sha256": "2c264dcf11bfaf03ffcfd770f38a65d9b61cfd18c89f245f10fa690ee2da3ee2",
       "source": "manual feed",
-      "split": "validation"
+      "source_url": "",
+      "split": "test"
     },
     {
       "brand_cluster": "td.com",
@@ -1514,7 +1422,8 @@
       "registered_domain": "td.com",
       "sha256": "4a22d32c28388a54479066c215ec67fcf8557874d0c74d8412e5f106b090b502",
       "source": "manual feed",
-      "split": "test"
+      "source_url": "",
+      "split": "train"
     },
     {
       "brand_cluster": "barclays.co.uk",
@@ -1529,7 +1438,8 @@
       "registered_domain": "barclays.co.uk",
       "sha256": "4ba5f37eec3422f7d7767faa7fea48d2394eb628f1c17796df5ed238d6d7115c",
       "source": "manual feed",
-      "split": "train"
+      "source_url": "",
+      "split": "validation"
     },
     {
       "brand_cluster": "lloydsbank.com",
@@ -1544,7 +1454,8 @@
       "registered_domain": "lloydsbank.com",
       "sha256": "edd32f5ad7f2295806963a4fa50e517cf867abf99817bfdb7dc84f3ac3d6b949",
       "source": "manual feed",
-      "split": "validation"
+      "source_url": "",
+      "split": "test"
     },
     {
       "brand_cluster": "microsoftonline.com",
@@ -1559,7 +1470,8 @@
       "registered_domain": "microsoftonline.com",
       "sha256": "16a65019f76c0ef01ddfd53afcef09224db935d70a12283878965e68487e0def",
       "source": "manual feed",
-      "split": "test"
+      "source_url": "",
+      "split": "train"
     },
     {
       "brand_cluster": "yahoo.com",
@@ -1574,7 +1486,8 @@
       "registered_domain": "yahoo.com",
       "sha256": "ec92b356a6ded0d126ecbe8e66a788333452546c256d262f48dbb5d42d22c0d0",
       "source": "manual feed",
-      "split": "train"
+      "source_url": "",
+      "split": "validation"
     },
     {
       "brand_cluster": "protonmail.com",
@@ -1589,7 +1502,8 @@
       "registered_domain": "protonmail.com",
       "sha256": "549006e3408405fb1a5fa0c7025a7acc999279c235daa16a2a196ab188bde196",
       "source": "manual feed",
-      "split": "validation"
+      "source_url": "",
+      "split": "test"
     },
     {
       "brand_cluster": "zoho.com",
@@ -1604,7 +1518,8 @@
       "registered_domain": "zoho.com",
       "sha256": "2a4ac1dc812f174075028a937e2e577c5c1f8d845f58925721b8b50f583def60",
       "source": "manual feed",
-      "split": "test"
+      "source_url": "",
+      "split": "train"
     },
     {
       "brand_cluster": "oracle.com",
@@ -1619,7 +1534,8 @@
       "registered_domain": "oracle.com",
       "sha256": "87c07d9b2b9d3ab943356436bc23a1281c1cfa50e5ace5d82d9874093790ae1b",
       "source": "manual feed",
-      "split": "train"
+      "source_url": "",
+      "split": "validation"
     },
     {
       "brand_cluster": "gitlab.com",
@@ -1634,7 +1550,8 @@
       "registered_domain": "gitlab.com",
       "sha256": "ca03ab4925d69d370200ec2b54a0bdeb76304859600d5d5b7626e48070672a82",
       "source": "manual feed",
-      "split": "validation"
+      "source_url": "",
+      "split": "test"
     },
     {
       "brand_cluster": "digitalocean.com",
@@ -1649,7 +1566,8 @@
       "registered_domain": "digitalocean.com",
       "sha256": "95ba5cc1278a1b8752f90f935ce86f1a3e3fe3ee0b569a47c90f8d4a88a4142e",
       "source": "manual feed",
-      "split": "test"
+      "source_url": "",
+      "split": "train"
     },
     {
       "brand_cluster": "vercel.com",
@@ -1664,7 +1582,8 @@
       "registered_domain": "vercel.com",
       "sha256": "a66fe351e55bd7259787c14c78d906788145674d9cae58baf4bd5e2608a47a38",
       "source": "manual feed",
-      "split": "train"
+      "source_url": "",
+      "split": "validation"
     },
     {
       "brand_cluster": "coursera.org",
@@ -1679,7 +1598,8 @@
       "registered_domain": "coursera.org",
       "sha256": "3950bf12dcee2a056c719bc92ff45d7b395d1e34a475fff765b9300ac9aaf974",
       "source": "manual feed",
-      "split": "validation"
+      "source_url": "",
+      "split": "test"
     },
     {
       "brand_cluster": "mit.edu",
@@ -1694,7 +1614,8 @@
       "registered_domain": "mit.edu",
       "sha256": "b636932588b698f1e53f93672ea58165cfeed41af77f37ae633a0f7688fdc74d",
       "source": "manual feed",
-      "split": "test"
+      "source_url": "",
+      "split": "train"
     },
     {
       "brand_cluster": "stanford.edu",
@@ -1709,7 +1630,8 @@
       "registered_domain": "stanford.edu",
       "sha256": "e5f6104613881b152e17080570d5ff78e5269e83ebc21b66a573b735c029597c",
       "source": "manual feed",
-      "split": "train"
+      "source_url": "",
+      "split": "validation"
     },
     {
       "brand_cluster": "harvard.edu",
@@ -1724,7 +1646,8 @@
       "registered_domain": "harvard.edu",
       "sha256": "c53ab276a22802b17d23fde2edcfbc04d7cc02f825ed4c29521fed847742df25",
       "source": "manual feed",
-      "split": "validation"
+      "source_url": "",
+      "split": "test"
     },
     {
       "brand_cluster": "irs.gov",
@@ -1739,7 +1662,8 @@
       "registered_domain": "irs.gov",
       "sha256": "31b35514fb04be6f3d78824e6b4147f59e6b7480ad6dfabc96b72a3aaad4c5f7",
       "source": "manual feed",
-      "split": "test"
+      "source_url": "",
+      "split": "train"
     },
     {
       "brand_cluster": "gov.au",
@@ -1754,7 +1678,8 @@
       "registered_domain": "gov.au",
       "sha256": "6653ca0e866e17a15c9bbc0975a6169e3eda59c9c8f78a6bc6256ce5cd31cca3",
       "source": "manual feed",
-      "split": "train"
+      "source_url": "",
+      "split": "validation"
     },
     {
       "brand_cluster": "ebay.co.uk",
@@ -1769,6 +1694,7 @@
       "registered_domain": "ebay.co.uk",
       "sha256": "ebde4511b636f68e4882d7a6b124116a744edf5c715716a077a3518be8f14f03",
       "source": "manual feed",
+      "source_url": "",
       "split": "train"
     },
     {
@@ -1784,7 +1710,8 @@
       "registered_domain": "telegram.org",
       "sha256": "60d5f3880ab2b55046365ef3370e2319f28b8f67365084ffc774adb52597eef9",
       "source": "manual feed",
-      "split": "validation"
+      "source_url": "",
+      "split": "test"
     },
     {
       "brand_cluster": "whatsapp.com",
@@ -1799,7 +1726,8 @@
       "registered_domain": "whatsapp.com",
       "sha256": "41e60991f2346eb2983ab2e79cb9b48765dfc58888dcfca11ca636e14ff12171",
       "source": "manual feed",
-      "split": "test"
+      "source_url": "",
+      "split": "train"
     },
     {
       "brand_cluster": "phishing.army",
@@ -1814,7 +1742,248 @@
       "registered_domain": "phishing.army",
       "sha256": "dde4a746441a1a626be93aca600c570f20a7366f2bee41b14f9d5d51b4b52ebf",
       "source": "manual feed",
+      "source_url": "",
       "split": "validation"
+    },
+    {
+      "brand_cluster": "steamcommvnlty.com",
+      "captured_at": "2026-10-24T13:15:59+00:00",
+      "filename": "phishing_steamcommvnlty_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "b000000000000000",
+      "registered_domain": "steamcommvnlty.com",
+      "sha256": "bd9832a2ee6dace5927fbcef8423d69be6a8554ad659492b612afe3813ddaa77",
+      "source": "manual feed",
+      "source_url": "https://steamcommvnlty.com/id/7656193595737569",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "wikipedia.org",
+      "captured_at": "2026-10-24T13:17:03+00:00",
+      "filename": "legitimate_wikipedia_org_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "0c020301131303d3",
+      "registered_domain": "wikipedia.org",
+      "sha256": "fc5683b22469040faa1657de9e2afd154757edb0c1ba0778b1d7668c56dadb35",
+      "source": "manual feed",
+      "source_url": "https://www.wikipedia.org/",
+      "split": "test"
+    },
+    {
+      "brand_cluster": "python.org",
+      "captured_at": "2026-10-24T13:17:13+00:00",
+      "filename": "legitimate_python_org_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "9c9c5b191b79e80b",
+      "registered_domain": "python.org",
+      "sha256": "b0c704ef4903d5c427533cf1125fae18fab952e18a18dd6a5dde221c5ea56002",
+      "source": "manual feed",
+      "source_url": "https://www.python.org/",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "github.com",
+      "captured_at": "2026-10-24T13:17:22+00:00",
+      "filename": "legitimate_github_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "080c140c0c0c0c02",
+      "registered_domain": "github.com",
+      "sha256": "546196a37c3b7a51144556bdb857f5e7abfa0bf942097cb95840bc2c2bd6335d",
+      "source": "manual feed",
+      "source_url": "https://github.com/login",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "mozilla.org",
+      "captured_at": "2026-10-24T13:17:31+00:00",
+      "filename": "legitimate_mozilla_org_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "cc0808960ec1b7ad",
+      "registered_domain": "mozilla.org",
+      "sha256": "459155adeb2ea497a4c9969c74c6880fd9cb8b9ebeedd5ff9318baaf317a1b6b",
+      "source": "manual feed",
+      "source_url": "https://www.mozilla.org/",
+      "split": "validation"
+    },
+    {
+      "brand_cluster": "cloudflare.com",
+      "captured_at": "2026-10-24T13:17:45+00:00",
+      "filename": "legitimate_cloudflare_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "cd456171c4693333",
+      "registered_domain": "cloudflare.com",
+      "sha256": "47540814f49bf17ed21e6ce386a5866fcc10f7719ab203f0cf0942ab139b0f9e",
+      "source": "manual feed",
+      "source_url": "https://www.cloudflare.com/",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "microsoft.com",
+      "captured_at": "2026-10-24T13:17:58+00:00",
+      "filename": "legitimate_microsoft_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "798e002424137000",
+      "registered_domain": "microsoft.com",
+      "sha256": "2652e39d7337d6a07105557ca7cc4411eac09e0913de5e6c99effda68a297e17",
+      "source": "manual feed",
+      "source_url": "https://www.microsoft.com/",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "apple.com",
+      "captured_at": "2026-10-24T13:18:01+00:00",
+      "filename": "legitimate_apple_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "4f4d4a4c4d4d4d60",
+      "registered_domain": "apple.com",
+      "sha256": "4c85d096d201511cbfe333d948760f6094450d549ee93ec222d374adb2d5b20b",
+      "source": "manual feed",
+      "source_url": "https://www.apple.com/",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "ebay.com",
+      "captured_at": "2026-10-24T13:18:16+00:00",
+      "filename": "legitimate_ebay_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "3135b5353535b40c",
+      "registered_domain": "ebay.com",
+      "sha256": "aec2973b4cb7bb13ac4da483c0742a1b33b0d140f86f8029082a3cec44657e02",
+      "source": "manual feed",
+      "source_url": "https://www.ebay.com/",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "instagram.com",
+      "captured_at": "2026-10-24T13:18:53+00:00",
+      "filename": "legitimate_instagram_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "8477342133333300",
+      "registered_domain": "instagram.com",
+      "sha256": "c8308a00ba0bfa5581a65fdd927fdaffa0f3e3545672bd6dd01f320d6123a101",
+      "source": "manual feed",
+      "source_url": "https://www.instagram.com/",
+      "split": "validation"
+    },
+    {
+      "brand_cluster": "linkedin.com",
+      "captured_at": "2026-10-24T13:19:09+00:00",
+      "filename": "legitimate_linkedin_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "c473732347059a25",
+      "registered_domain": "linkedin.com",
+      "sha256": "ec16b1091468b6b942ce693ddaf89d215c8297fbf971433748fb05aa09aa91f6",
+      "source": "manual feed",
+      "source_url": "https://www.linkedin.com/",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "reddit.com",
+      "captured_at": "2026-10-24T13:19:14+00:00",
+      "filename": "legitimate_reddit_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "0c0c0c0c060e4c00",
+      "registered_domain": "reddit.com",
+      "sha256": "c9949bd292b955fdb7c9c8cdc3353c9bdc43ec3fbff6a1df0a3005a15c0fd776",
+      "source": "manual feed",
+      "source_url": "https://www.reddit.com/",
+      "split": "validation"
+    },
+    {
+      "brand_cluster": "nytimes.com",
+      "captured_at": "2026-10-24T13:19:49+00:00",
+      "filename": "legitimate_nytimes_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "000c0c0c0c0c0008",
+      "registered_domain": "nytimes.com",
+      "sha256": "6150fb4512f3fb770859e542c5f662e7fd10040c8aefb9fd935f08c2975e335d",
+      "source": "manual feed",
+      "source_url": "https://www.nytimes.com/",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "dhl.com",
+      "captured_at": "2026-10-24T13:20:11+00:00",
+      "filename": "legitimate_dhl_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "101c340000000000",
+      "registered_domain": "dhl.com",
+      "sha256": "b7bb33e7d4dc511776aa82f387f4b91a2dedbdb7b1b2922b1a65b3ae17519515",
+      "source": "manual feed",
+      "source_url": "https://www.dhl.com/",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "airbnb.com",
+      "captured_at": "2026-10-24T13:20:26+00:00",
+      "filename": "legitimate_airbnb_com_01.png",
+      "kit_cluster": "unknown",
+      "label": "legitimate",
+      "label_basis": "public page captured, no credentials entered",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "8531c2410181c101",
+      "registered_domain": "airbnb.com",
+      "sha256": "8316f07f2e6114a6c37abd770e934b559373c53337be5fc154fab7a1095c5a55",
+      "source": "manual feed",
+      "source_url": "https://www.airbnb.com/",
+      "split": "train"
     }
   ],
   "schema_version": 1

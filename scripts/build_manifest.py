@@ -91,6 +91,7 @@ def build(images_dir: Path, labels_csv: Path, dataset_version: str) -> dict:
             "source": row["source"],
             "license": row["license"],
             "split": row["split"],
+            "source_url": row.get("source_url", ""),
         })
 
     return {"schema_version": 1, "dataset_version": dataset_version, "images": images}

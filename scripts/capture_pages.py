@@ -37,6 +37,7 @@ from urllib.parse import urlparse
 COLUMNS = [
     "filename", "label", "label_basis", "label_confidence", "registered_domain",
     "brand_cluster", "kit_cluster", "captured_at", "source", "license", "split",
+    "source_url",
 ]
 
 TWO_PART_TLDS = {"co.uk", "com.au", "co.jp", "com.br", "co.in", "org.uk", "ac.uk"}
@@ -147,6 +148,21 @@ def slug(domain: str) -> str:
 
 def append_rows(labels: Path, rows: list[dict]) -> None:
     exists = labels.is_file() and labels.stat().st_size > 0
+
+    if exists:
+        # Migrate older files that predate a column, so appends stay aligned.
+        with labels.open(encoding="utf-8", newline="") as handle:
+            reader = csv.DictReader(handle)
+            existing_fields = reader.fieldnames or []
+            existing_rows = list(reader)
+
+        if existing_fields != COLUMNS:
+            with labels.open("w", encoding="utf-8", newline="") as handle:
+                writer = csv.DictWriter(handle, fieldnames=COLUMNS)
+                writer.writeheader()
+                for row in existing_rows:
+                    writer.writerow({key: row.get(key, "") for key in COLUMNS})
+            print(f"migrated labels.csv to {len(COLUMNS)} columns")
 
     with labels.open("a", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=COLUMNS)
@@ -280,6 +296,7 @@ def main() -> int:
                 "source": args.source,
                 "license": args.license,
                 "split": split_for(domain),
+                "source_url": url,
             })
             print(f"captured {filename}")
 
