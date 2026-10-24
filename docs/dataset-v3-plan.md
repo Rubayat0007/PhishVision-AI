@@ -68,3 +68,22 @@ train and test/sealed, and a sealed holdout below 100 images (pilot floor).
 Capture only pages you are entitled to view; never authenticate; treat every
 capture as hostile content; store hashes and features where possible, and
 delete raw captures that are not needed. Record the licence for every feed used.
+
+## Capture attempt on this host (2026-10-24)
+
+Before asking for manual collection, an automated attempt was made to capture
+legitimate pages with the browsers already installed:
+
+| Attempt | Result |
+|---|---|
+| `msedge.exe --headless=new --screenshot=...` | no file produced, no error output |
+| `chrome.exe --headless --user-data-dir=... --screenshot=...` | no file produced |
+| `urllib` GET of `https://www.wikipedia.org/` | HTTP 403 through the proxy |
+
+Reachable hosts (pypi, github, stratosphereips) are allowlisted by the proxy;
+general browsing is blocked, and headless capture produces nothing on this host.
+
+Consequence: **neither class can be captured here.** The pilot needs a machine
+with normal browsing and an isolated VM for the phishing half. The tooling
+(`build_manifest.py`, `validate_manifest.py`) is ready and tested against
+synthetic images; it has not yet been run on real captures.
