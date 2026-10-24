@@ -247,8 +247,8 @@
       "filename": "phishing_trendndailyinsider_com_01.png",
       "kit_cluster": "unknown",
       "label": "phishing",
-      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
-      "label_confidence": 0.7,
+      "label_basis": "feed URL; OCR found no credential vocabulary or domain token",
+      "label_confidence": 0.3,
       "license": "research use of public page",
       "phash": "004d0c0d4d4d0c00",
       "registered_domain": "trendndailyinsider.com",
@@ -307,8 +307,8 @@
       "filename": "phishing_contaboserver_net_01.png",
       "kit_cluster": "unknown",
       "label": "phishing",
-      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
-      "label_confidence": 0.7,
+      "label_basis": "feed URL; OCR found no credential vocabulary or domain token",
+      "label_confidence": 0.3,
       "license": "research use of public page",
       "phash": "897261e46dd03627",
       "registered_domain": "contaboserver.net",
@@ -367,8 +367,8 @@
       "filename": "phishing_blogspot_com_01.png",
       "kit_cluster": "unknown",
       "label": "phishing",
-      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
-      "label_confidence": 0.7,
+      "label_basis": "feed URL; OCR found no credential vocabulary or domain token",
+      "label_confidence": 0.3,
       "license": "research use of public page",
       "phash": "c058301150610000",
       "registered_domain": "blogspot.com",
@@ -389,7 +389,7 @@
       "registered_domain": "github.io",
       "sha256": "e9f11835fbb4f27f90f5a497e98470dcf49ec9a2b29ca53f64d1c13a0e897203",
       "source": "manual feed",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "roblox.rw",
@@ -397,14 +397,14 @@
       "filename": "phishing_roblox_rw_01.png",
       "kit_cluster": "unknown",
       "label": "phishing",
-      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
-      "label_confidence": 0.7,
+      "label_basis": "feed URL; OCR found no credential vocabulary or domain token",
+      "label_confidence": 0.3,
       "license": "research use of public page",
       "phash": "b000080c48000800",
       "registered_domain": "roblox.rw",
       "sha256": "7eb4c9dace22b669feba02f00ac84272ae4375c5419124cdb17b7ac418ad83db",
       "source": "manual feed",
-      "split": "validation"
+      "split": "test"
     },
     {
       "brand_cluster": "com.et",
@@ -442,8 +442,8 @@
       "filename": "phishing_vercel_app_03.png",
       "kit_cluster": "unknown",
       "label": "phishing",
-      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
-      "label_confidence": 0.7,
+      "label_basis": "feed URL; OCR found no credential vocabulary or domain token",
+      "label_confidence": 0.3,
       "license": "research use of public page",
       "phash": "08b617d52b23c375",
       "registered_domain": "vercel.app",
@@ -487,14 +487,14 @@
       "filename": "phishing_3658995_cc_01.png",
       "kit_cluster": "unknown",
       "label": "phishing",
-      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
-      "label_confidence": 0.7,
+      "label_basis": "feed URL; OCR found no credential vocabulary or domain token",
+      "label_confidence": 0.3,
       "license": "research use of public page",
       "phash": "2b33133337332b2b",
       "registered_domain": "3658995.cc",
       "sha256": "dd44ee6a09927868387af59b4b073b35d89c8e96dda78f547174b50be8161f52",
       "source": "manual feed",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "airbnb.com",
@@ -517,8 +517,8 @@
       "filename": "phishing_roblox_ly_01.png",
       "kit_cluster": "unknown",
       "label": "phishing",
-      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
-      "label_confidence": 0.7,
+      "label_basis": "feed URL; OCR found no credential vocabulary or domain token",
+      "label_confidence": 0.3,
       "license": "research use of public page",
       "phash": "dcc9cc273370771b",
       "registered_domain": "roblox.ly",
@@ -547,8 +547,8 @@
       "filename": "phishing_s4w_in_01.png",
       "kit_cluster": "unknown",
       "label": "phishing",
-      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
-      "label_confidence": 0.7,
+      "label_basis": "feed URL; OCR found no credential vocabulary or domain token",
+      "label_confidence": 0.3,
       "license": "research use of public page",
       "phash": "ccc9c86b7330771b",
       "registered_domain": "s4w.in",
@@ -569,7 +569,7 @@
       "registered_domain": "800876.xyz",
       "sha256": "2a54e5029a307e8f2d0b9b87970b3f4efd989b55fdc5f01f29025e0807b78dfe",
       "source": "manual feed",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "dndair.com",
@@ -599,7 +599,7 @@
       "registered_domain": "com.gr",
       "sha256": "d7ddaddb6a88c39f43c815b0c58b503244760d04605e14a02116c8cc4b6faa85",
       "source": "manual feed",
-      "split": "validation"
+      "split": "test"
     },
     {
       "brand_cluster": "momabb.top",
@@ -607,14 +607,14 @@
       "filename": "phishing_momabb_top_01.png",
       "kit_cluster": "unknown",
       "label": "phishing",
-      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
-      "label_confidence": 0.7,
+      "label_basis": "feed URL; OCR found no credential vocabulary or domain token",
+      "label_confidence": 0.3,
       "license": "research use of public page",
       "phash": "8e98180418188e68",
       "registered_domain": "momabb.top",
       "sha256": "3c77f5658ed8b07eb5a069716a7b07a0259374eda95f1fd6c940d83774cb4fbf",
       "source": "manual feed",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "jisandev.com",
@@ -629,7 +629,7 @@
       "registered_domain": "jisandev.com",
       "sha256": "56a6fbe5d4b2805632b9eb85155bdeec950c8981938e65f43a494a524a50e00f",
       "source": "manual feed",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "base99.online",
@@ -644,7 +644,7 @@
       "registered_domain": "base99.online",
       "sha256": "a2a656b7c01c67fa4097354d83b916c5f9d12d6e52ddf3cc333fcb0e51ff5e18",
       "source": "manual feed",
-      "split": "validation"
+      "split": "test"
     },
     {
       "brand_cluster": "surl.bot",
@@ -659,7 +659,7 @@
       "registered_domain": "surl.bot",
       "sha256": "2b2f52d47a109aa84e9c325fd99516591d5c8da851f54e31a94001c869be6abd",
       "source": "manual feed",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "replit.app",
@@ -689,7 +689,7 @@
       "registered_domain": "schneider-feuereschutiz.lol",
       "sha256": "3e5074742d30d7ba8e4ad3b3a43bb3dc54e5048feedd0f34af1573591f970163",
       "source": "manual feed",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "tokenpoicet.pro",
@@ -697,14 +697,14 @@
       "filename": "phishing_tokenpoicet_pro_01.png",
       "kit_cluster": "unknown",
       "label": "phishing",
-      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
-      "label_confidence": 0.7,
+      "label_basis": "feed URL; OCR found no credential vocabulary or domain token",
+      "label_confidence": 0.3,
       "license": "research use of public page",
       "phash": "ccf488ccccc8988c",
       "registered_domain": "tokenpoicet.pro",
       "sha256": "cb99105af786c13a422c2d19bbe521cccc887a0a4b4edc59208b7c877cbe5791",
       "source": "manual feed",
-      "split": "validation"
+      "split": "test"
     },
     {
       "brand_cluster": "s4w.in",
@@ -712,8 +712,8 @@
       "filename": "phishing_s4w_in_02.png",
       "kit_cluster": "unknown",
       "label": "phishing",
-      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
-      "label_confidence": 0.7,
+      "label_basis": "feed URL; OCR found no credential vocabulary or domain token",
+      "label_confidence": 0.3,
       "license": "research use of public page",
       "phash": "cccdcc637330771b",
       "registered_domain": "s4w.in",
@@ -734,7 +734,7 @@
       "registered_domain": "121893coinbase.com",
       "sha256": "cdc551ca65e6de4c5f433a666e7d3254b3e6d6ab01ded492d109df255ea6f8da",
       "source": "manual feed",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "ebivyt.net",
@@ -749,7 +749,7 @@
       "registered_domain": "ebivyt.net",
       "sha256": "fddd6b47c4e62be0da8cc5331019d4165edd59af56dc2057faece37b378d63cd",
       "source": "manual feed",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "backblazeb2.com",
@@ -772,14 +772,14 @@
       "filename": "phishing_com_pt_01.png",
       "kit_cluster": "unknown",
       "label": "phishing",
-      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
-      "label_confidence": 0.7,
+      "label_basis": "feed URL; OCR found no credential vocabulary or domain token",
+      "label_confidence": 0.3,
       "license": "research use of public page",
       "phash": "b3030013232e0000",
       "registered_domain": "com.pt",
       "sha256": "0c8b5cb431da4ba312d57efe827450c94521bbb659a86dce6c243a00c9b1cc2a",
       "source": "manual feed",
-      "split": "validation"
+      "split": "test"
     },
     {
       "brand_cluster": "g5.lu",
@@ -794,7 +794,7 @@
       "registered_domain": "g5.lu",
       "sha256": "3b0bff146a5944a391cbfe1267c5cd82fc32b7ede55b4aa8ae50906d302d2e7c",
       "source": "manual feed",
-      "split": "test"
+      "split": "train"
     },
     {
       "brand_cluster": "u.to",
@@ -827,28 +827,13 @@
       "split": "train"
     },
     {
-      "brand_cluster": "tokeim-cdn-sg.homes",
-      "captured_at": "2026-10-24T10:55:10+00:00",
-      "filename": "phishing_tokeim-cdn-sg_homes_01.png",
-      "kit_cluster": "unknown",
-      "label": "phishing",
-      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
-      "label_confidence": 0.7,
-      "license": "research use of public page",
-      "phash": "2c6c607038000000",
-      "registered_domain": "tokeim-cdn-sg.homes",
-      "sha256": "d31ee6eaab77fbb9bb912ef42e233ae87bf6a0047fde2ccc46f83a52ff159edb",
-      "source": "manual feed",
-      "split": "train"
-    },
-    {
       "brand_cluster": "imtokein-cdn.autos",
       "captured_at": "2026-10-24T10:55:27+00:00",
       "filename": "phishing_imtokein-cdn_autos_01.png",
       "kit_cluster": "unknown",
       "label": "phishing",
-      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
-      "label_confidence": 0.7,
+      "label_basis": "feed URL; OCR found no credential vocabulary or domain token",
+      "label_confidence": 0.3,
       "license": "research use of public page",
       "phash": "d364035b76634281",
       "registered_domain": "imtokein-cdn.autos",
@@ -937,8 +922,8 @@
       "filename": "phishing_auth-secure_me_01.png",
       "kit_cluster": "unknown",
       "label": "phishing",
-      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
-      "label_confidence": 0.7,
+      "label_basis": "feed URL; OCR found no credential vocabulary or domain token",
+      "label_confidence": 0.3,
       "license": "research use of public page",
       "phash": "30b217f0e8550000",
       "registered_domain": "auth-secure.me",
@@ -967,8 +952,8 @@
       "filename": "phishing_19504jjb_com_01.png",
       "kit_cluster": "unknown",
       "label": "phishing",
-      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
-      "label_confidence": 0.7,
+      "label_basis": "feed URL; OCR found no credential vocabulary or domain token",
+      "label_confidence": 0.3,
       "license": "research use of public page",
       "phash": "3800000000c03313",
       "registered_domain": "19504jjb.com",
@@ -997,8 +982,8 @@
       "filename": "phishing_6686-vn_net_01.png",
       "kit_cluster": "unknown",
       "label": "phishing",
-      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
-      "label_confidence": 0.7,
+      "label_basis": "feed URL; OCR found no credential vocabulary or domain token",
+      "label_confidence": 0.3,
       "license": "research use of public page",
       "phash": "840de91919315151",
       "registered_domain": "6686-vn.net",
@@ -1117,8 +1102,8 @@
       "filename": "phishing_cfolks_pl_01.png",
       "kit_cluster": "unknown",
       "label": "phishing",
-      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
-      "label_confidence": 0.7,
+      "label_basis": "feed URL; OCR found no credential vocabulary or domain token",
+      "label_confidence": 0.3,
       "license": "research use of public page",
       "phash": "807898343a785b5f",
       "registered_domain": "cfolks.pl",
@@ -1132,8 +1117,8 @@
       "filename": "phishing_justns_ru_01.png",
       "kit_cluster": "unknown",
       "label": "phishing",
-      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
-      "label_confidence": 0.7,
+      "label_basis": "feed URL; OCR found no credential vocabulary or domain token",
+      "label_confidence": 0.3,
       "license": "research use of public page",
       "phash": "e86c000000000000",
       "registered_domain": "justns.ru",
@@ -1147,8 +1132,8 @@
       "filename": "phishing_co_za_01.png",
       "kit_cluster": "unknown",
       "label": "phishing",
-      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
-      "label_confidence": 0.7,
+      "label_basis": "feed URL; OCR found no credential vocabulary or domain token",
+      "label_confidence": 0.3,
       "license": "research use of public page",
       "phash": "4371516179454579",
       "registered_domain": "co.za",
@@ -1162,8 +1147,8 @@
       "filename": "phishing_weebly_com_01.png",
       "kit_cluster": "unknown",
       "label": "phishing",
-      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
-      "label_confidence": 0.7,
+      "label_basis": "feed URL; OCR found no credential vocabulary or domain token",
+      "label_confidence": 0.3,
       "license": "research use of public page",
       "phash": "80501a7068941060",
       "registered_domain": "weebly.com",
@@ -1259,7 +1244,7 @@
       "registered_domain": "hsbc.com",
       "sha256": "f3d52211c00b847c382e2a429a2a7897b50d0a0dde04cd71e5f92776d418aa91",
       "source": "manual feed",
-      "split": "train"
+      "split": "validation"
     },
     {
       "brand_cluster": "google.com",
@@ -1277,21 +1262,6 @@
       "split": "train"
     },
     {
-      "brand_cluster": "live.com",
-      "captured_at": "2026-10-24T11:19:53+00:00",
-      "filename": "legitimate_live_com_01.png",
-      "kit_cluster": "unknown",
-      "label": "legitimate",
-      "label_basis": "public page captured, no credentials entered",
-      "label_confidence": 0.7,
-      "license": "research use of public page",
-      "phash": "0000084c4d0c0008",
-      "registered_domain": "live.com",
-      "sha256": "645ba17b64aaac7e69c4c3fb4d117976eaf26ccd7f35b897429cb9873c2ff1b3",
-      "source": "manual feed",
-      "split": "validation"
-    },
-    {
       "brand_cluster": "google.com",
       "captured_at": "2026-10-24T11:20:33+00:00",
       "filename": "legitimate_google_com_02.png",
@@ -1307,21 +1277,6 @@
       "split": "train"
     },
     {
-      "brand_cluster": "aliexpress.com",
-      "captured_at": "2026-10-24T11:22:06+00:00",
-      "filename": "legitimate_aliexpress_com_01.png",
-      "kit_cluster": "unknown",
-      "label": "legitimate",
-      "label_basis": "public page captured, no credentials entered",
-      "label_confidence": 0.7,
-      "license": "research use of public page",
-      "phash": "6008080c0c0c0c04",
-      "registered_domain": "aliexpress.com",
-      "sha256": "d0be61246a1072678bdb3745ba26fbf1130ecd12d21bfc6a43786b6d6d19c7cb",
-      "source": "manual feed",
-      "split": "test"
-    },
-    {
       "brand_cluster": "etsy.com",
       "captured_at": "2026-10-24T11:22:15+00:00",
       "filename": "legitimate_etsy_com_01.png",
@@ -1334,7 +1289,7 @@
       "registered_domain": "etsy.com",
       "sha256": "17218db8b3f8b9187ddf1b3c263cc1f607b9d86c2551ef9e4a03aa89d676dab1",
       "source": "manual feed",
-      "split": "train"
+      "split": "test"
     },
     {
       "brand_cluster": "shopify.com",
@@ -1349,7 +1304,7 @@
       "registered_domain": "shopify.com",
       "sha256": "f026c86899e4104311f5eceefbd8a715f832cf830dc4631e9cea18d110a2c659",
       "source": "manual feed",
-      "split": "validation"
+      "split": "train"
     },
     {
       "brand_cluster": "facebook.com",
@@ -1364,7 +1319,7 @@
       "registered_domain": "facebook.com",
       "sha256": "7369b53eeff5ca9a85b2a97542686750e057e550546eb3d90d37cae54323d002",
       "source": "manual feed",
-      "split": "test"
+      "split": "validation"
     },
     {
       "brand_cluster": "pinterest.com",
@@ -1379,7 +1334,7 @@
       "registered_domain": "pinterest.com",
       "sha256": "c59943ab0223f49960ab981cbebcf69851e84af334d19d9b58756c264ae8fc39",
       "source": "manual feed",
-      "split": "train"
+      "split": "test"
     },
     {
       "brand_cluster": "expedia.com",
@@ -1394,7 +1349,7 @@
       "registered_domain": "expedia.com",
       "sha256": "807973648fce4163b55ae0c6ad2b7147fe997d2a58ff8d21fcbe5b7f33b17df8",
       "source": "manual feed",
-      "split": "validation"
+      "split": "train"
     },
     {
       "brand_cluster": "kayak.com",
@@ -1409,7 +1364,7 @@
       "registered_domain": "kayak.com",
       "sha256": "cd61d3cd48ee2e28dab6930959d1b24e440f5c7f135738cc3fce53a12140d988",
       "source": "manual feed",
-      "split": "test"
+      "split": "validation"
     },
     {
       "brand_cluster": "stripe.com",
@@ -1424,7 +1379,7 @@
       "registered_domain": "stripe.com",
       "sha256": "44aaa8cff6d4fe0fe43647bdda3d7ef6ca3dd70fea610bb1b917831d75ac5d25",
       "source": "manual feed",
-      "split": "train"
+      "split": "test"
     },
     {
       "brand_cluster": "wise.com",
@@ -1439,7 +1394,7 @@
       "registered_domain": "wise.com",
       "sha256": "4500f8f65c6db4efda0915003a9d47776442f1a03e7b4d940be140f66f587fa6",
       "source": "manual feed",
-      "split": "validation"
+      "split": "train"
     },
     {
       "brand_cluster": "zoom.us",
@@ -1454,7 +1409,7 @@
       "registered_domain": "zoom.us",
       "sha256": "b4ee1966b906b5991bd6c0143e7efa3b2b0e7aa63397c144e92b353ad05db13f",
       "source": "manual feed",
-      "split": "test"
+      "split": "validation"
     },
     {
       "brand_cluster": "notion.so",
@@ -1469,7 +1424,7 @@
       "registered_domain": "notion.so",
       "sha256": "7621dbb1901f0ec733b8296661ec430df6c5e9e9d285f1c1c283d7ea11c254bb",
       "source": "manual feed",
-      "split": "train"
+      "split": "test"
     },
     {
       "brand_cluster": "figma.com",
@@ -1484,7 +1439,7 @@
       "registered_domain": "figma.com",
       "sha256": "c80eed57587d77b52999badf4a7e579ab0fcca5d3fcb015a7b5a226c00f6f7f7",
       "source": "manual feed",
-      "split": "validation"
+      "split": "train"
     },
     {
       "brand_cluster": "gov.uk",
@@ -1499,7 +1454,7 @@
       "registered_domain": "gov.uk",
       "sha256": "9f5cc6c5111cf5cb589f799385246f79a8356b74d1fb6010e813274282c977a4",
       "source": "manual feed",
-      "split": "test"
+      "split": "validation"
     },
     {
       "brand_cluster": "usa.gov",
@@ -1514,7 +1469,7 @@
       "registered_domain": "usa.gov",
       "sha256": "ce21aa9892c675f5dac68afc8b9c3c020647ff0db7329ca9ea0cd22c3c00b951",
       "source": "manual feed",
-      "split": "train"
+      "split": "test"
     },
     {
       "brand_cluster": "reuters.com",
@@ -1529,7 +1484,7 @@
       "registered_domain": "reuters.com",
       "sha256": "764cedb42c91352742b64bcfac368fd3803596cb94338302ee6e98c7ac43500d",
       "source": "manual feed",
-      "split": "validation"
+      "split": "train"
     },
     {
       "brand_cluster": "theguardian.com",
@@ -1543,6 +1498,36 @@
       "phash": "0307136e1514f6a3",
       "registered_domain": "theguardian.com",
       "sha256": "58198bebc7473ff43db56f08d3d1c45e105b79e67bee6da0ead0b11557839656",
+      "source": "manual feed",
+      "split": "validation"
+    },
+    {
+      "brand_cluster": "replit.app",
+      "captured_at": "2026-10-24T11:36:55+00:00",
+      "filename": "phishing_replit_app_01.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "URL listed by the supplied phishing feed; screenshot taken, visual review still required",
+      "label_confidence": 0.7,
+      "license": "research use of public page",
+      "phash": "0c0c144d0d000400",
+      "registered_domain": "replit.app",
+      "sha256": "21a273e9d29d71c36b8507faef1852d2a1f1503fb96142920c83b36d42394cfe",
+      "source": "manual feed",
+      "split": "train"
+    },
+    {
+      "brand_cluster": "imtokein-cdn.xyz",
+      "captured_at": "2026-10-24T11:40:06+00:00",
+      "filename": "phishing_imtokein-cdn_xyz_01.png",
+      "kit_cluster": "unknown",
+      "label": "phishing",
+      "label_basis": "feed URL; OCR found no credential vocabulary or domain token",
+      "label_confidence": 0.3,
+      "license": "research use of public page",
+      "phash": "2c6c607038000000",
+      "registered_domain": "imtokein-cdn.xyz",
+      "sha256": "d31ee6eaab77fbb9bb912ef42e233ae87bf6a0047fde2ccc46f83a52ff159edb",
       "source": "manual feed",
       "split": "test"
     }
