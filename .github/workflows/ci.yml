@@ -36,3 +36,6 @@ jobs:
 
       - name: Run tests
         run: python -m pytest -q
+
+      - name: Claims trace to ledger
+        run: python scripts/check_claims.py
