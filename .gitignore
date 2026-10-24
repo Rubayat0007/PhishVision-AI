@@ -39,3 +39,6 @@ results/**/*.jpg
 
 # Local research scripts and experiment artifacts
 /research/
+
+# Local capture kit
+/captures/
