@@ -1,0 +1,80 @@
+{
+  "models": [
+    {
+      "aliases": [
+        "phishvision_cnn",
+        "phishvision_cnn_backup"
+      ],
+      "digest": "F1945E893CB937C10AFF2C150EA3B035E15E3B0EFACE51C2B5838B0098A037BF",
+      "ledger_ref": "R-PV-components-01",
+      "name": "phishvision_cnn_baseline_73",
+      "notes": "baseline weights predating v2; byte-identical to phishvision_cnn, phishvision_cnn_backup",
+      "status": "experimental",
+      "threshold": 0.35,
+      "version": "local"
+    },
+    {
+      "aliases": [],
+      "digest": "8829C71500982CC14AD5D434662408DEE5825A30B986E682214986643209B8C7",
+      "ledger_ref": "R-PV-components-01",
+      "name": "phishvision_cnn_advtrained",
+      "notes": "adversarially trained variant, recall-heavy",
+      "status": "experimental",
+      "threshold": 0.35,
+      "version": "local"
+    },
+    {
+      "aliases": [],
+      "digest": "4BEA642360ADB1F95AA3ACA6B8677B2FB9A6CBD5A5ED5B4EC48983BF724229D4",
+      "ledger_ref": "R-PV-advtrained-test",
+      "name": "phishvision_cnn_advtrained_v2",
+      "notes": "passed the validation rule, failed on test (F1 0.699 vs 0.722); not promoted",
+      "status": "candidate",
+      "threshold": 0.35,
+      "version": "local"
+    },
+    {
+      "aliases": [],
+      "digest": "F3C4B582A0509AB644C984721CD2E8F387C68E74CFE45DA90A465CEBC39D344D",
+      "ledger_ref": "R-PV-components-01",
+      "name": "phishvision_cnn_old",
+      "notes": "superseded checkpoint",
+      "status": "retired",
+      "threshold": 0.35,
+      "version": "local"
+    },
+    {
+      "aliases": [
+        "phishvision_cnn_v2-release"
+      ],
+      "digest": "1403582CCE07BE1E36E70E4A0D425CFB152B86C7ABEE5D1074DEF79CBB2FB628",
+      "ledger_ref": "R-PV-integrity-01",
+      "name": "phishvision_cnn_v2",
+      "notes": "frozen production artifact; digest verified before every load; byte-identical to phishvision_cnn_v2-release",
+      "status": "production",
+      "threshold": 0.35,
+      "version": "local"
+    },
+    {
+      "aliases": [],
+      "digest": "7515557602AEE404FAC297E8E6A14A1CFBE854DD719AE332275DB05CF99BAE2D",
+      "ledger_ref": "R-PV-components-01",
+      "name": "phishvision_cnn_v2_advtrained_eps001",
+      "notes": "eps=0.001 adversarial variant",
+      "status": "experimental",
+      "threshold": 0.35,
+      "version": "local"
+    },
+    {
+      "aliases": [],
+      "digest": "9D5B904C0806D0D27AD52A4CCA946F642CFCAA4FE7486C0C1572DE86D3671829",
+      "ledger_ref": "R-PV-components-01",
+      "name": "phishvision_cnn_v3",
+      "notes": "different architecture (cnn_v3.py); does not load into the v2 model",
+      "status": "experimental",
+      "threshold": 0.35,
+      "version": "local"
+    }
+  ],
+  "schema_version": 1
+}
