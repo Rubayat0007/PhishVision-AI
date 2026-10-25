@@ -241,7 +241,15 @@ The dataset development process will include:
 7. Train/validation/test splitting
 8. Dataset analysis
 
-The final dataset size and composition will be documented after the dataset development phase is completed.
+The evaluation set is **555 screenshots** (387 train / 83 validation / 85 test).
+
+An audit of that split found **735 cross-split near-duplicate pairs**, so exact-file
+checks were insufficient. The split was rebuilt by perceptual cluster (324 clusters,
+none spanning two splits), and all quality figures reported below come from the
+cluster-disjoint evaluation. A separate v3 pilot of 205 captures (fresh PhishTank
+URLs plus real login pages) uses the same cluster, domain and brand grouping, with
+an interstitial/blank guard, byte and perceptual deduplication, and OCR label
+triage; see `docs/dataset-v3-plan.md` and `docs/status.md`.
 
 ---
 
@@ -348,7 +356,38 @@ For phishing detection, accuracy alone may not be sufficient.
 
 **F1-Score** provides a balance between precision and recall.
 
-The final experimental results will be added to this section after model training and evaluation.
+Measured on the cluster-disjoint split (n=83, no image shares a cluster with
+training data):
+
+| Signal | ROC AUC | 95% bootstrap CI |
+|---|---|---|
+| OCR text heuristics | 0.638 | 0.529-0.743 |
+| CNN | 0.657 | 0.537-0.772 |
+| combined score | 0.694 | 0.566-0.808 |
+
+Calibration of the CNN: **Brier 0.230, ECE 0.041**.
+
+The **leaky split recorded F1 72.2 %; the leakage-free figure is 60.8 %**, and the
+earlier number is marked superseded in the evidence ledger. The current model's
+false-positive rate is **0.33** (95% CI 0.14-0.61) on the pilot's legitimate test
+images.
+
+Four candidate remedies for that false-positive rate were tested against
+pre-registered criteria on data they were not tuned on, and **all four were
+rejected**:
+
+| Candidate | Verdict |
+|---|---|
+| Decision threshold risk >= 25/100 (P-1) | rejected: recall 0.60 -> 0.20 |
+| Frozen-backbone linear probe (4.2) | no evidence: AUC 0.50 vs 0.56 |
+| Calibrated text/CNN fusion | no gain: identical to CNN-only; text weight negative |
+| URL supplied + threshold 20/100 (P-4) | rejected: detection 0.526, FPR 0.333 |
+
+The one confirmed effect: supplying the reported URL raises phishing risk by
+**+3.75 points** and legitimate risk by **+0.00** on a 100-point scale (P-3).
+Details in `docs/measurements/` and `docs/pre-registered-experiments.md`.
+
+**Tests:** 171 fast and 36 slow (`pytest -m "not slow"` runs the fast set).
 
 ---
 
