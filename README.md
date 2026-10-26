@@ -230,16 +230,20 @@ The primary classification categories are expected to include:
 * **Phishing**
 * **Legitimate**
 
-The dataset development process will include:
+The dataset pipeline is implemented and guarded (`scripts/capture_pages.py`,
+`prune_captures.py`, `curate_pilot.py`, `build_manifest.py`, `triage_phishing.py`):
 
-1. Dataset research
-2. Data collection
-3. Data cleaning
-4. Duplicate removal
-5. Image preprocessing
-6. Dataset labeling
-7. Train/validation/test splitting
-8. Dataset analysis
+1. Capture with headless Chromium at a fixed viewport, recording each source URL.
+2. Rejection of blank renders and blocked interstitials ("just a moment",
+   "suspected phishing", "verify you are human") before a file is written.
+3. Byte-identical duplicate removal, then perceptual near-duplicate clustering.
+4. Curation: near-duplicate, registered-domain and brand channels are merged into
+   one group, every group assigned to exactly one split, and cross-label
+   contradictions dropped.
+5. Manifest validation (schema, digests, per-domain/per-brand split integrity) and
+   OCR label triage that flags captures with no credential vocabulary.
+
+Running the whole sequence is one command: `python scripts/refresh_pilot.py`.
 
 The evaluation set is **555 screenshots** (387 train / 83 validation / 85 test).
 
@@ -759,7 +763,7 @@ Nanjing Tech University, China
 
 ## 📄 License
 
-License information will be added after the project's licensing strategy is finalized.
+No license has been selected yet. The source is public for review, study and research use; reuse beyond that should be discussed with the author, since the training captures were gathered from third-party feeds under their own terms.
 
 ---
 
